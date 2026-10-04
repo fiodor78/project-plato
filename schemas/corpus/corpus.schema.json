@@ -20,7 +20,7 @@
     "segmentId": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SEG\\.[A-Z0-9_-]+$" },
     "runtimeVisibility": {
       "type": "string",
-      "enum": ["PLATO_VISIBLE", "CUSTODIAN_ONLY", "PUBLIC_METADATA"]
+      "enum": ["THINKER_VISIBLE", "CUSTODIAN_ONLY", "PUBLIC_METADATA"]
     },
     "locator": {
       "type": "object",
@@ -202,7 +202,7 @@
       "additionalProperties": false,
       "required": [
         "schema_version", "entity_type", "thinker_id", "assertion_id", "work_id",
-        "classification", "basis_refs", "runtime_visibility"
+        "classification_system", "classification", "basis_refs", "runtime_visibility"
       ],
       "properties": {
         "schema_version": { "$ref": "#/$defs/schemaVersion" },
@@ -210,11 +210,9 @@
         "thinker_id": { "$ref": "#/$defs/thinkerId" },
         "assertion_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.ASSERT\\.AUTH\\.[A-Z0-9_-]+$" },
         "work_id": { "$ref": "#/$defs/workId" },
-        "classification": { "type": "string", "enum": ["A", "B", "C", "D"] },
-        "classification_label": {
-          "type": "string",
-          "enum": ["STRONGLY_ACCEPTED_AS_PLATONIC", "DISPUTED", "PROBABLY_SPURIOUS", "PSEUDO_PLATONIC"]
-        },
+        "classification_system": { "type": "string", "minLength": 1 },
+        "classification": { "type": "string", "minLength": 1 },
+        "classification_label": { "type": ["string", "null"] },
         "basis_refs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
         "rationale": { "type": ["string", "null"] },
         "runtime_visibility": { "type": "string", "const": "CUSTODIAN_ONLY" }
