@@ -35,6 +35,9 @@
 
 ## Phase 1 — Corpus Platonicum catalog
 
+- [x] Define attestation-based historical scope and catalog schema.
+- [x] Create initial 63-entry catalog inventory and automated structural gate.
+- [x] Define modern-authenticity assessment methodology and assertion schema.
 - [ ] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, Appendix Platonica, ancient spurious/lost attributions).
 - [ ] Build the full Corpus Platonicum catalog.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
