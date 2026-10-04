@@ -1,21 +1,26 @@
 {
-  "schema_version": "0.1.0",
-  "retrieval_event_id": "PL.RET.TEST001",
+  "schema_version": "0.2.0",
+  "thinker_id": "TH.PLATO",
+  "retrieval_event_id": "TH.PLATO.RET.TEST001",
   "instance_id": "PLATO-0.1-TEST",
   "created_at": "2026-10-04T21:00:00Z",
   "mode": "STRUCTURAL",
   "query": {
     "raw_text_hash": null,
-    "work_id": "PL.WORK.TEST",
-    "stephanus_start": "1a",
+    "work_id": "TH.PLATO.WORK.TEST",
+    "locator": {
+      "scheme": "STEPHANUS",
+      "value": "1a",
+      "components": {"page": 1, "section": "a"}
+    },
     "semantic_query_hash": null
   },
-  "index_version": "test-index-0.1.0",
-  "runtime_projection_version": "projection-0.1.0",
+  "index_version": "test-index-0.2.0",
+  "runtime_projection_version": "projection-0.2.0",
   "results": [
     {
-      "segment_id": "PL.SEG.TEST.1A.001",
-      "witness_id": "PL.WIT.GRK.SYNTHETIC_TEST.TEST.1A.001",
+      "segment_id": "TH.PLATO.SEG.TEST001",
+      "witness_id": "TH.PLATO.WIT.TESTA",
       "score": null,
       "rank": 1,
       "selected_for_context": true
