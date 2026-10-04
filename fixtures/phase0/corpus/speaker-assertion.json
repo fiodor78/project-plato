@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "speaker_assertion",
+  "assertion_id": "PL.ASSERT.SPK.TEST001",
+  "segment_id": "PL.SEG.TEST.1A.001",
+  "speaker_id": "PL.SPEAKER.SYNTHETIC_SPEAKER",
+  "speaker_label": "Synthetic Speaker",
+  "assertion_status": "ASSERTED",
+  "basis_ref": "synthetic-fixture",
+  "runtime_visibility": "PLATO_VISIBLE"
+}
