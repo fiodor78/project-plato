@@ -1,17 +1,17 @@
 {
-  "schema_version": "0.1.0",
-  "manifest_id": "PL.MANIFEST.CORPUS.TEST_0_1_0",
-  "corpus_release": "CORPUS-0.1.0-TEST",
+  "schema_version": "0.2.0",
+  "thinker_id": "TH.PLATO",
+  "profile_release": "TH.PLATO.PROFILE-0.1.0",
+  "manifest_id": "TH.PLATO.MANIFEST.CORPUS.TEST_0_2_0",
+  "corpus_release": "CORPUS-0.2.0-TEST",
   "status": "DRAFT",
   "created_at": "2026-10-04T21:00:00Z",
   "schema_refs": {
-    "corpus": "0.1.0",
-    "memory": "0.1.0",
-    "provenance": "0.1.0"
+    "corpus": "0.2.0",
+    "memory": "0.2.0",
+    "provenance": "0.2.0"
   },
-  "works": [
-    "PL.WORK.TEST"
-  ],
+  "works": ["TH.PLATO.WORK.TEST"],
   "artifacts": [
     {
       "artifact_id": "synthetic-work-catalog",
