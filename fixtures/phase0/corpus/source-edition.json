@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "source_edition",
-  "edition_id": "PL.ED.SYNTHETIC_TEST",
+  "thinker_id": "TH.PLATO",
+  "edition_id": "TH.PLATO.ED.SYNTHETIC_TEST",
   "language": "grc",
   "citation": "Synthetic fixture edition; not a scholarly source.",
   "editor_or_translator": null,
