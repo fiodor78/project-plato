@@ -1,13 +1,13 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "authenticity_assertion",
-  "assertion_id": "PL.ASSERT.AUTH.TEST001",
-  "work_id": "PL.WORK.TEST",
+  "thinker_id": "TH.PLATO",
+  "assertion_id": "TH.PLATO.ASSERT.AUTH.TEST001",
+  "work_id": "TH.PLATO.WORK.TEST",
+  "classification_system": "PLATO_AUTHENTICITY_AD",
   "classification": "D",
   "classification_label": "PSEUDO_PLATONIC",
-  "basis_refs": [
-    "synthetic-fixture"
-  ],
+  "basis_refs": ["synthetic-fixture"],
   "rationale": "Synthetic test object.",
   "runtime_visibility": "CUSTODIAN_ONLY"
 }
