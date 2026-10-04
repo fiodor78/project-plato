@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/corpus/corpus.schema.json",
+  "title": "PROJECT PLATO Corpus Schema",
+  "description": "Phase 0 schema for canonical works, logical passages, textual witnesses, translations, speaker assertions, source editions and CUSTODIAN-only authenticity assertions.",
+  "version": "0.1.0",
+  "oneOf": [
+    { "$ref": "#/$defs/work" },
+    { "$ref": "#/$defs/segment" },
+    { "$ref": "#/$defs/sourceEdition" },
+    { "$ref": "#/$defs/textualWitness" },
+    { "$ref": "#/$defs/translation" },
+    { "$ref": "#/$defs/speakerAssertion" },
+    { "$ref": "#/$defs/authenticityAssertion" }
+  ],
+  "$defs": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "workId": {
+      "type": "string",
+      "pattern": "^PL\\.WORK\\.[A-Z0-9_]+$"
+    },
+    "segmentId": {
+      "type": "string",
+      "pattern": "^PL\\.SEG\\.[A-Z0-9_]+\\.[0-9]{1,4}[A-E]\\.[0-9]{3}$"
+    },
+    "stephanusPoint": {
+      "type": "string",
+      "pattern": "^[0-9]{1,4}[a-e]$"
+    },
+    "runtimeVisibility": {
+      "type": "string",
+      "enum": ["PLATO_VISIBLE", "CUSTODIAN_ONLY", "PUBLIC_METADATA"]
+    },
+    "work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "entity_type", "work_id", "slug", "titles", "corpus_status"],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "work" },
+        "work_id": { "$ref": "#/$defs/workId" },
+        "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+        "titles": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["english"],
+          "properties": {
+            "greek": { "type": ["string", "null"] },
+            "latin": { "type": ["string", "null"] },
+            "english": { "type": "string" },
+            "polish": { "type": ["string", "null"] }
+          }
+        },
+        "stephanus_range": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": { "$ref": "#/$defs/stephanusPoint" },
+            "end": { "$ref": "#/$defs/stephanusPoint" }
+          }
+        },
+        "traditional_group": { "type": ["string", "null"] },
+        "traditional_order": { "type": ["integer", "null"], "minimum": 1 },
+        "corpus_status": {
+          "type": "string",
+          "enum": ["IN_SCOPE", "PENDING_SCOPE_REVIEW", "OUT_OF_SCOPE"]
+        },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "segment_id", "work_id",
+        "stephanus", "ordinal_within_stephanus", "sequence_index", "boundary_status"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "segment" },
+        "segment_id": { "$ref": "#/$defs/segmentId" },
+        "work_id": { "$ref": "#/$defs/workId" },
+        "stephanus": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": { "$ref": "#/$defs/stephanusPoint" },
+            "end": { "$ref": "#/$defs/stephanusPoint" }
+          }
+        },
+        "ordinal_within_stephanus": { "type": "integer", "minimum": 1, "maximum": 999 },
+        "sequence_index": { "type": "integer", "minimum": 1 },
+        "boundary_status": {
+          "type": "string",
+          "enum": ["PROVISIONAL", "REVIEWED", "FROZEN"]
+        },
+        "parent_segment_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/segmentId" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "sourceEdition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "edition_id", "language",
+        "citation", "source_uri", "redistribution_status"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "source_edition" },
+        "edition_id": { "type": "string", "pattern": "^PL\\.ED\\.[A-Z0-9_]+$" },
+        "language": { "type": "string" },
+        "citation": { "type": "string", "minLength": 1 },
+        "editor_or_translator": { "type": ["string", "null"] },
+        "publication_year": { "type": ["integer", "null"], "minimum": 1400, "maximum": 3000 },
+        "source_uri": { "type": "string", "format": "uri" },
+        "local_source_ref": { "type": ["string", "null"] },
+        "redistribution_status": {
+          "type": "string",
+          "enum": [
+            "PUBLIC_DOMAIN_CONFIRMED",
+            "OPEN_LICENSE_CONFIRMED",
+            "RESTRICTED",
+            "UNKNOWN_REVIEW_REQUIRED"
+          ]
+        },
+        "license_ref": { "type": ["string", "null"] },
+        "custodian_notes": { "type": ["string", "null"] }
+      }
+    },
+    "textualWitness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "witness_id", "segment_id",
+        "edition_id", "language", "text", "runtime_visibility"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "textual_witness" },
+        "witness_id": {
+          "type": "string",
+          "pattern": "^PL\\.WIT\\.[A-Z]{3}\\.[A-Z0-9_]+\\.[A-Z0-9_]+\\.[0-9]{1,4}[A-E]\\.[0-9]{3}$"
+        },
+        "segment_id": { "$ref": "#/$defs/segmentId" },
+        "edition_id": { "type": "string", "pattern": "^PL\\.ED\\.[A-Z0-9_]+$" },
+        "language": { "type": "string", "const": "grc" },
+        "text": { "type": "string" },
+        "representation": {
+          "type": "string",
+          "enum": ["SOURCE_TRANSCRIPTION", "NORMALIZED", "EDITORIALLY_NORMALIZED"]
+        },
+        "is_preferred_runtime_witness": { "type": "boolean", "default": false },
+        "runtime_visibility": { "$ref": "#/$defs/runtimeVisibility" },
+        "source_checksum": { "type": ["string", "null"] }
+      }
+    },
+    "translation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "translation_id", "segment_id",
+        "edition_id", "language", "text", "runtime_visibility"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "translation" },
+        "translation_id": {
+          "type": "string",
+          "pattern": "^PL\\.TR\\.[A-Z]{2,3}\\.[A-Z0-9_]+\\.[A-Z0-9_]+\\.[0-9]{1,4}[A-E]\\.[0-9]{3}$"
+        },
+        "segment_id": { "$ref": "#/$defs/segmentId" },
+        "edition_id": { "type": "string", "pattern": "^PL\\.ED\\.[A-Z0-9_]+$" },
+        "language": { "type": "string" },
+        "text": { "type": "string" },
+        "runtime_visibility": { "$ref": "#/$defs/runtimeVisibility" }
+      }
+    },
+    "speakerAssertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "assertion_id", "segment_id",
+        "speaker_id", "speaker_label", "assertion_status", "runtime_visibility"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "speaker_assertion" },
+        "assertion_id": { "type": "string", "pattern": "^PL\\.ASSERT\\.SPK\\.[A-Z0-9_-]+$" },
+        "segment_id": { "$ref": "#/$defs/segmentId" },
+        "speaker_id": { "type": "string", "pattern": "^PL\\.SPEAKER\\.[A-Z0-9_]+$" },
+        "speaker_label": { "type": "string" },
+        "assertion_status": {
+          "type": "string",
+          "enum": ["ASSERTED", "UNCERTAIN", "NARRATOR", "EMBEDDED_QUOTATION", "CHORAL_OR_MULTIPLE"]
+        },
+        "basis_ref": { "type": ["string", "null"] },
+        "runtime_visibility": { "$ref": "#/$defs/runtimeVisibility" }
+      }
+    },
+    "authenticityAssertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "assertion_id", "work_id",
+        "classification", "basis_refs", "runtime_visibility"
+      ],
+      "properties": {
+        "schema_version": { "$ref": "#/$defs/schemaVersion" },
+        "entity_type": { "const": "authenticity_assertion" },
+        "assertion_id": { "type": "string", "pattern": "^PL\\.ASSERT\\.AUTH\\.[A-Z0-9_-]+$" },
+        "work_id": { "$ref": "#/$defs/workId" },
+        "classification": {
+          "type": "string",
+          "enum": ["A", "B", "C", "D"]
+        },
+        "classification_label": {
+          "type": "string",
+          "enum": [
+            "STRONGLY_ACCEPTED_AS_PLATONIC",
+            "DISPUTED",
+            "PROBABLY_SPURIOUS",
+            "PSEUDO_PLATONIC"
+          ]
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "rationale": { "type": ["string", "null"] },
+        "runtime_visibility": {
+          "type": "string",
+          "const": "CUSTODIAN_ONLY"
+        }
+      }
+    }
+  }
+}
