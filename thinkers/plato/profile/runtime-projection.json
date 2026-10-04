@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "TH.PLATO",
+  "entity_rules": {
+    "work": {
+      "required_visibility": "THINKER_VISIBLE",
+      "model_fields": ["entity_type", "titles", "canonical_range"]
+    },
+    "segment": {
+      "required_visibility": "THINKER_VISIBLE",
+      "model_fields": ["entity_type", "locator", "end_locator"]
+    },
+    "textual_witness": {
+      "required_visibility": "THINKER_VISIBLE",
+      "model_fields": ["entity_type", "language", "text"]
+    },
+    "translation": {
+      "required_visibility": "THINKER_VISIBLE",
+      "model_fields": ["entity_type", "language", "text"]
+    },
+    "speaker_assertion": {
+      "required_visibility": "THINKER_VISIBLE",
+      "model_fields": ["entity_type", "speaker_label", "assertion_status"]
+    }
+  }
+}
