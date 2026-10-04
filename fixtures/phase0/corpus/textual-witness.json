@@ -1,13 +1,14 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "textual_witness",
-  "witness_id": "PL.WIT.GRK.SYNTHETIC_TEST.TEST.1A.001",
-  "segment_id": "PL.SEG.TEST.1A.001",
-  "edition_id": "PL.ED.SYNTHETIC_TEST",
+  "thinker_id": "TH.PLATO",
+  "witness_id": "TH.PLATO.WIT.TESTA",
+  "segment_id": "TH.PLATO.SEG.TEST001",
+  "edition_id": "TH.PLATO.ED.SYNTHETIC_TEST",
   "language": "grc",
   "text": "[SYNTHETIC GREEK WITNESS — NOT CORPUS TEXT]",
   "representation": "SOURCE_TRANSCRIPTION",
   "is_preferred_runtime_witness": true,
-  "runtime_visibility": "PLATO_VISIBLE",
+  "runtime_visibility": "THINKER_VISIBLE",
   "source_checksum": null
 }
