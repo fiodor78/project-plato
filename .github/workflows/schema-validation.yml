@@ -25,3 +25,6 @@ jobs:
 
       - name: Run Phase 0 synthetic ingestion gate
         run: python scripts/check_phase0_gate.py
+
+      - name: Run runtime epistemic projection leakage test
+        run: python scripts/test_runtime_projection.py
