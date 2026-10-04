@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/framework/thinker-profile.schema.json",
+  "title": "Thinker Profile Schema",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "thinker_id", "slug", "display_name",
+    "profile_version", "original_languages", "locator_schemes",
+    "corpus_policy", "runtime"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "0.1.0" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+    "display_name": { "type": "string", "minLength": 1 },
+    "profile_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[A-Za-z0-9._-]+)?$" },
+    "original_languages": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
+    "locator_schemes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["scheme", "label", "profile_validator"],
+        "properties": {
+          "scheme": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+          "label": { "type": "string" },
+          "profile_validator": { "type": "string" }
+        }
+      }
+    },
+    "corpus_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope_document", "authenticity_model"],
+      "properties": {
+        "scope_document": { "type": "string" },
+        "authenticity_model": { "type": "string" }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["internet_access", "external_search_access", "memory_classes"],
+      "properties": {
+        "internet_access": { "type": "boolean", "const": false },
+        "external_search_access": { "type": "boolean", "const": false },
+        "memory_classes": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["ORIGINAL", "ACQUIRED", "EPISODIC", "INFERENCE"] },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}
