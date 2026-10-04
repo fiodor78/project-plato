@@ -1,39 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/releases/plato-snapshot.schema.json",
-  "title": "PROJECT PLATO Instance Snapshot",
-  "version": "0.1.0",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/releases/thinker-snapshot.schema.json",
+  "title": "Thinker Framework Instance Snapshot",
+  "version": "0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "snapshot_id", "instance_id", "created_at",
-    "baseline_release", "corpus_manifest_id", "state"
+    "schema_version", "thinker_id", "snapshot_id", "instance_id",
+    "created_at", "profile_release", "baseline_release",
+    "corpus_manifest_id", "state"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.1.0" },
-    "snapshot_id": {
-      "type": "string",
-      "pattern": "^PL\\.SNAP\\.[A-Z0-9._-]+$"
-    },
-    "instance_id": {
-      "type": "string",
-      "pattern": "^PLATO-[A-Z0-9._-]+$"
-    },
+    "schema_version": { "type": "string", "const": "0.2.0" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "snapshot_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SNAP\\.[A-Z0-9._-]+$" },
+    "instance_id": { "type": "string" },
     "created_at": { "type": "string", "format": "date-time" },
-    "baseline_release": {
-      "type": "string",
-      "pattern": "^PLATO-[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[A-Z0-9._-]+)?$"
-    },
-    "corpus_manifest_id": {
-      "type": "string",
-      "pattern": "^PL\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$"
-    },
-    "parent_snapshot_id": {
-      "oneOf": [
-        { "type": "string", "pattern": "^PL\\.SNAP\\.[A-Z0-9._-]+$" },
-        { "type": "null" }
-      ]
-    },
+    "profile_release": { "type": "string" },
+    "baseline_release": { "type": "string" },
+    "corpus_manifest_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$" },
+    "parent_snapshot_id": { "type": ["string", "null"] },
     "lineage_id": { "type": "string", "minLength": 1 },
     "state": {
       "type": "object",
@@ -42,10 +28,7 @@
       "properties": {
         "memory_count": { "type": "integer", "minimum": 0 },
         "last_memory_id": { "type": ["string", "null"] },
-        "memory_store_checksum": {
-          "type": "string",
-          "pattern": "^[a-f0-9]{64}$"
-        }
+        "memory_store_checksum": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
       }
     }
   }
