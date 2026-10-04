@@ -1,6 +1,6 @@
 # SPEC-0002 — Segmentation and discourse annotation policy
 
-**Status:** Active Phase 0 specification, revised after Segmentation Pilot 0001.
+**Status:** Frozen for the first production-ingestion iteration (Phase 0 accepted).
 
 ## Objective
 
@@ -144,6 +144,4 @@ Segmentation Pilot 0001 tested:
 - epistolary material;
 - lexical/pseudo-Platonic material.
 
-The remaining Phase 0 requirement is an executable discourse-annotation schema plus a synthetic nested-voice fixture.
-
-After those pass CI, this specification can be frozen for the first production-ingestion iteration.
+The executable discourse-annotation schema and synthetic nested-voice fixtures passed the Phase 0 validation gate. This policy is therefore frozen for the first production-ingestion iteration. Any later incompatible change requires an explicit migration decision and, where architectural, a superseding ADR/spec revision.
