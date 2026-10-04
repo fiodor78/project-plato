@@ -1,6 +1,7 @@
 {
-  "schema_version": "0.1.0",
-  "memory_id": "PL.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+  "schema_version": "0.2.0",
+  "thinker_id": "TH.PLATO",
+  "memory_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
   "instance_id": "PLATO-0.1-TEST",
   "memory_type": "ACQUIRED",
   "created_at": "2026-10-04T20:00:00Z",
@@ -16,9 +17,7 @@
   "conversation_id": "TEST-CONVERSATION-001",
   "event_id": "TEST-EVENT-001",
   "derived_from": [],
-  "provenance_ids": [
-    "PL.PROV.TEST001"
-  ],
+  "provenance_ids": ["TH.PLATO.PROV.TEST001"],
   "supersedes_memory_id": null,
   "status": "ACTIVE"
 }
