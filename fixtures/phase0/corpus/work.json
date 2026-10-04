@@ -1,17 +1,26 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "work",
-  "work_id": "PL.WORK.TEST",
+  "thinker_id": "TH.PLATO",
+  "work_id": "TH.PLATO.WORK.TEST",
   "slug": "synthetic-test-dialogue",
   "titles": {
-    "greek": null,
+    "original": null,
     "latin": null,
     "english": "Synthetic Test Dialogue",
     "polish": "Syntetyczny dialog testowy"
   },
-  "stephanus_range": {
-    "start": "1a",
-    "end": "1b"
+  "canonical_range": {
+    "start": {
+      "scheme": "STEPHANUS",
+      "value": "1a",
+      "components": {"page": 1, "section": "a"}
+    },
+    "end": {
+      "scheme": "STEPHANUS",
+      "value": "1b",
+      "components": {"page": 1, "section": "b"}
+    }
   },
   "traditional_group": null,
   "traditional_order": 1,
