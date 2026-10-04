@@ -4,15 +4,21 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from jsonschema import Draft202012Validator
+
 ROOT = Path(__file__).resolve().parents[1]
 FIX = ROOT / "fixtures" / "phase0"
+
+
+def load_json(path: Path):
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def load_dir(name: str):
     out = []
     for path in sorted((FIX / name).glob("*.json")):
-        with path.open("r", encoding="utf-8") as f:
-            obj = json.load(f)
+        obj = load_json(path)
         obj["_fixture_path"] = str(path.relative_to(ROOT))
         out.append(obj)
     return out
@@ -25,11 +31,50 @@ def require(condition: bool, message: str):
 
 
 def main() -> int:
+    profile = load_json(ROOT / "thinkers/plato/profile/profile.json")
+    thinker_id = profile["thinker_id"]
+
     corpus = load_dir("corpus")
     memories = load_dir("memory")
     provenance = load_dir("provenance")
     retrievals = load_dir("retrieval")
     ingestion = load_dir("ingestion")
+
+    require(thinker_id == "TH.PLATO", "Plato profile has an explicit thinker_id")
+
+    scoped_objects = [
+        x for x in corpus + memories + provenance + retrievals + ingestion
+        if x.get("thinker_id") is not None
+    ]
+    require(
+        scoped_objects and all(x.get("thinker_id") == thinker_id for x in scoped_objects),
+        "all Plato fixtures are thinker-scoped consistently"
+    )
+
+    # Validate profile-specific locator semantics separately from the generic core schema.
+    locator_def = profile["locator_schemes"][0]
+    locator_schema = load_json(ROOT / locator_def["profile_validator"])
+    locator_validator = Draft202012Validator(locator_schema)
+
+    locator_objects = []
+    for item in corpus:
+        if "locator" in item:
+            locator_objects.append(item["locator"])
+        if item.get("canonical_range"):
+            locator_objects.extend([
+                item["canonical_range"]["start"],
+                item["canonical_range"]["end"],
+            ])
+    for event in retrievals:
+        locator = event.get("query", {}).get("locator")
+        if locator:
+            locator_objects.append(locator)
+
+    require(bool(locator_objects), "Plato fixtures contain canonical locators")
+    require(
+        all(not list(locator_validator.iter_errors(loc)) for loc in locator_objects),
+        "all Plato locators validate through the Stephanus profile adapter"
+    )
 
     works = [x for x in corpus if x.get("entity_type") == "work"]
     segments = [x for x in corpus if x.get("entity_type") == "segment"]
@@ -43,10 +88,10 @@ def main() -> int:
 
     seg = segments[0]["segment_id"]
     same_seg_witnesses = [w for w in witnesses if w["segment_id"] == seg]
-    require(len(same_seg_witnesses) >= 2, "two Greek witnesses attach to the same segment")
+    require(len(same_seg_witnesses) >= 2, "two textual witnesses attach to the same segment")
     require(
         len({w["edition_id"] for w in same_seg_witnesses}) >= 2,
-        "Greek witnesses come from distinct editions"
+        "textual witnesses come from distinct editions"
     )
 
     require(any(t["segment_id"] == seg for t in translations), "translation attaches without changing segment identity")
@@ -54,6 +99,16 @@ def main() -> int:
     require(
         authenticity and all(a["runtime_visibility"] == "CUSTODIAN_ONLY" for a in authenticity),
         "authenticity classification is CUSTODIAN-only"
+    )
+
+    visible = [
+        x for x in corpus
+        if x.get("runtime_visibility") == "THINKER_VISIBLE"
+    ]
+    require(bool(visible), "runtime corpus contains explicitly THINKER_VISIBLE objects")
+    require(
+        all(x.get("entity_type") != "authenticity_assertion" for x in visible),
+        "authenticity assertions cannot enter the Thinker-visible projection"
     )
 
     require(bool(retrievals), "structural retrieval event exists")
@@ -71,8 +126,10 @@ def main() -> int:
 
     acq_id = acquired[0]["memory_id"]
     inf = inferred[0]
-    require(seg in inf["derived_from"] and acq_id in inf["derived_from"],
-            "inference explicitly derives from ORIGINAL corpus + ACQUIRED memory")
+    require(
+        seg in inf["derived_from"] and acq_id in inf["derived_from"],
+        "inference explicitly derives from ORIGINAL corpus + ACQUIRED memory"
+    )
 
     prov_by_subject = {p["subject_id"]: p for p in provenance}
     require(inf["memory_id"] in prov_by_subject, "inference has a provenance record")
@@ -84,8 +141,10 @@ def main() -> int:
     require("USER_UTTERANCE" in acq_source_kinds, "acquired knowledge traces back to interlocutor testimony")
 
     require(bool(ingestion), "immutable source-asset fixture exists")
-    require(all("sha256" in x for x in ingestion if x.get("entity_type") == "source_asset"),
-            "source assets are checksum-addressed")
+    require(
+        all("sha256" in x for x in ingestion if x.get("entity_type") == "source_asset"),
+        "source assets are checksum-addressed"
+    )
 
     print("\nTRACE where-did-this-come-from:")
     print(f"  {inf['memory_id']}")
