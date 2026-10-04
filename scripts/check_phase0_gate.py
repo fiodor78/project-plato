@@ -39,11 +39,12 @@ def main() -> int:
     provenance = load_dir("provenance")
     retrievals = load_dir("retrieval")
     ingestion = load_dir("ingestion")
+    annotations = load_dir("annotations")
 
     require(thinker_id == "TH.PLATO", "Plato profile has an explicit thinker_id")
 
     scoped_objects = [
-        x for x in corpus + memories + provenance + retrievals + ingestion
+        x for x in corpus + memories + provenance + retrievals + ingestion + annotations
         if x.get("thinker_id") is not None
     ]
     require(
@@ -139,6 +140,25 @@ def main() -> int:
     require(acq_id in prov_by_subject, "acquired memory has testimony provenance")
     acq_source_kinds = {s["source_kind"] for s in prov_by_subject[acq_id]["sources"]}
     require("USER_UTTERANCE" in acq_source_kinds, "acquired knowledge traces back to interlocutor testimony")
+
+    require(bool(annotations), "discourse annotation fixtures exist")
+    require(
+        all(a["segment_id"] == seg for a in annotations),
+        "discourse annotations attach without changing logical segment identity"
+    )
+    require(
+        any(a["scope"] == "SEGMENT" and a["frame_depth"] == 0 for a in annotations),
+        "outer discourse frame is represented"
+    )
+    require(
+        any(a["scope"] == "WITNESS_SPAN" and a["frame_depth"] > 0 for a in annotations),
+        "nested witness-specific discourse frame is represented"
+    )
+    for annotation in annotations:
+        if annotation["scope"] == "WITNESS_SPAN":
+            span = annotation["span"]
+            require(span["end_char"] > span["start_char"], "witness-span offsets are non-empty")
+            require(bool(annotation["normalized_text_sha256"]), "witness-span annotation pins normalized text checksum")
 
     require(bool(ingestion), "immutable source-asset fixture exists")
     require(
