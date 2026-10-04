@@ -1,41 +1,42 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/retrieval/retrieval-event.schema.json",
-  "title": "PROJECT PLATO Retrieval Event",
-  "version": "0.1.0",
+  "title": "Thinker Framework Retrieval Event",
+  "version": "0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "retrieval_event_id", "instance_id", "created_at",
-    "mode", "query", "index_version", "results"
+    "schema_version", "thinker_id", "retrieval_event_id", "instance_id",
+    "created_at", "mode", "query", "index_version", "results"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.1.0" },
-    "retrieval_event_id": {
-      "type": "string",
-      "pattern": "^PL\\.RET\\.[A-Z0-9_-]+$"
-    },
-    "instance_id": {
-      "type": "string",
-      "pattern": "^PLATO-[A-Z0-9._-]+$"
-    },
+    "schema_version": { "type": "string", "const": "0.2.0" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "retrieval_event_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.RET\\.[A-Z0-9_-]+$" },
+    "instance_id": { "type": "string" },
     "created_at": { "type": "string", "format": "date-time" },
-    "mode": {
-      "type": "string",
-      "enum": ["STRUCTURAL", "SEMANTIC", "HYBRID"]
-    },
+    "mode": { "type": "string", "enum": ["STRUCTURAL", "SEMANTIC", "HYBRID"] },
     "query": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "raw_text_hash": { "type": ["string", "null"] },
-        "work_id": {
+        "work_id": { "type": ["string", "null"] },
+        "locator": {
           "oneOf": [
-            { "type": "string", "pattern": "^PL\\.WORK\\.[A-Z0-9_]+$" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["scheme", "value"],
+              "properties": {
+                "scheme": { "type": "string" },
+                "value": { "type": "string" },
+                "components": { "type": "object" }
+              }
+            },
             { "type": "null" }
           ]
         },
-        "stephanus_start": { "type": ["string", "null"], "pattern": "^[0-9]{1,4}[a-e]$" },
         "semantic_query_hash": { "type": ["string", "null"] }
       }
     },
@@ -48,10 +49,7 @@
         "additionalProperties": false,
         "required": ["segment_id", "selected_for_context"],
         "properties": {
-          "segment_id": {
-            "type": "string",
-            "pattern": "^PL\\.SEG\\.[A-Z0-9_]+\\.[0-9]{1,4}[A-E]\\.[0-9]{3}$"
-          },
+          "segment_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SEG\\.[A-Z0-9_-]+$" },
           "witness_id": { "type": ["string", "null"] },
           "score": { "type": ["number", "null"] },
           "rank": { "type": ["integer", "null"], "minimum": 1 },
