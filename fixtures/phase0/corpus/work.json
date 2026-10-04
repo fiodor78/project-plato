@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "entity_type": "work",
   "thinker_id": "TH.PLATO",
   "work_id": "TH.PLATO.WORK.TEST",
@@ -14,16 +14,23 @@
     "start": {
       "scheme": "STEPHANUS",
       "value": "1a",
-      "components": {"page": 1, "section": "a"}
+      "components": {
+        "page": 1,
+        "section": "a"
+      }
     },
     "end": {
       "scheme": "STEPHANUS",
       "value": "1b",
-      "components": {"page": 1, "section": "b"}
+      "components": {
+        "page": 1,
+        "section": "b"
+      }
     }
   },
   "traditional_group": null,
   "traditional_order": 1,
   "corpus_status": "IN_SCOPE",
-  "notes": "Synthetic fixture only. Not part of Corpus Platonicum."
+  "notes": "Synthetic fixture only. Not part of Corpus Platonicum.",
+  "runtime_visibility": "THINKER_VISIBLE"
 }
