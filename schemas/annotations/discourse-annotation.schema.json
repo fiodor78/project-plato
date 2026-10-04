@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/annotations/discourse-annotation.schema.json",
+  "title": "Thinker Framework Discourse Annotation",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "entity_type",
+    "thinker_id",
+    "annotation_id",
+    "segment_id",
+    "scope",
+    "discourse_mode",
+    "frame_depth",
+    "assertion_status",
+    "runtime_visibility"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "0.1.0" },
+    "entity_type": { "const": "discourse_annotation" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "annotation_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+\\.ANN\\.DISCOURSE\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "segment_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+\\.SEG\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["SEGMENT", "WITNESS_SPAN"]
+    },
+    "witness_id": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^TH\\.[A-Z0-9_]+\\.WIT\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        { "type": "null" }
+      ],
+      "default": null
+    },
+    "normalized_text_sha256": {
+      "oneOf": [
+        { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        { "type": "null" }
+      ],
+      "default": null
+    },
+    "span": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start_char", "end_char"],
+          "properties": {
+            "start_char": { "type": "integer", "minimum": 0 },
+            "end_char": { "type": "integer", "minimum": 1 }
+          }
+        },
+        { "type": "null" }
+      ],
+      "default": null
+    },
+    "discourse_mode": {
+      "type": "string",
+      "enum": [
+        "DIALOGUE_TURN",
+        "NARRATION",
+        "LONG_SPEECH",
+        "REPORTED_SPEECH",
+        "EMBEDDED_QUOTATION",
+        "EPISTOLARY",
+        "LEXICAL_ENTRY",
+        "OTHER"
+      ]
+    },
+    "speaker_id": {
+      "oneOf": [
+        { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SPEAKER\\.[A-Z0-9_]+$" },
+        { "type": "null" }
+      ],
+      "default": null
+    },
+    "attributed_source_label": {
+      "type": ["string", "null"],
+      "default": null
+    },
+    "frame_depth": { "type": "integer", "minimum": 0 },
+    "assertion_status": {
+      "type": "string",
+      "enum": ["ASSERTED", "UNCERTAIN"]
+    },
+    "basis_ref": { "type": ["string", "null"], "default": null },
+    "runtime_visibility": {
+      "type": "string",
+      "enum": ["THINKER_VISIBLE", "CUSTODIAN_ONLY", "PUBLIC_METADATA"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "scope": { "const": "WITNESS_SPAN" } },
+        "required": ["scope"]
+      },
+      "then": {
+        "required": ["witness_id", "normalized_text_sha256", "span"],
+        "properties": {
+          "witness_id": { "type": "string" },
+          "normalized_text_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "span": {
+            "type": "object",
+            "required": ["start_char", "end_char"]
+          }
+        }
+      }
+    }
+  ]
+}
