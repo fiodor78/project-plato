@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "thinker_id": "TH.PLATO",
-  "snapshot_id": "TH.PLATO.SNAP.PLATO_0_1_TEST_001",
+  "snapshot_id": "TH.PLATO.SNAP.01a108c0-479a-779f-b7d7-296af4618052",
   "instance_id": "PLATO-0.1-TEST",
   "created_at": "2026-10-04T21:00:00Z",
   "profile_release": "TH.PLATO.PROFILE-0.1.0",
@@ -11,7 +11,7 @@
   "lineage_id": "TEST-LINEAGE-A",
   "state": {
     "memory_count": 1,
-    "last_memory_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+    "last_memory_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.01a108c0-479a-7564-8ca3-c86135ae79fe",
     "memory_store_checksum": "3333333333333333333333333333333333333333333333333333333333333333"
   }
 }
