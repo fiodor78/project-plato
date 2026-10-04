@@ -1,9 +1,9 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "entity_type": "translation",
   "thinker_id": "TH.PLATO",
-  "translation_id": "TH.PLATO.TR.TESTPL001",
-  "segment_id": "TH.PLATO.SEG.TEST001",
+  "translation_id": "TH.PLATO.TR.01a108c0-479a-7b14-bc4a-a27d22606e50",
+  "segment_id": "TH.PLATO.SEG.01a108c0-4799-75a7-9445-69a6fdd19b35",
   "edition_id": "TH.PLATO.ED.SYNTHETIC_TRANSLATION",
   "language": "pl",
   "text": "[SYNTETYCZNY PRZEKŁAD — NIE JEST TEKSTEM KORPUSU]",
