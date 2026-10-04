@@ -1,88 +1,149 @@
-# SPEC-0002 — Segmentation and speaker annotation policy
+# SPEC-0002 — Segmentation and discourse annotation policy
 
-**Status:** Active draft; must be tested against real Corpus Platonicum sources before freeze.
+**Status:** Active Phase 0 specification, revised after Segmentation Pilot 0001.
 
 ## Objective
 
-Create stable logical passage units that are independent of a particular Greek edition while remaining fine-grained enough for speaker-aware retrieval and provenance.
+Create stable logical passage units that are independent of a particular textual witness while remaining fine-grained enough for retrieval, scholarly citation and discourse-aware provenance.
 
-## Proposed canonical segment
+## Canonical segmentation rule
 
-A logical segment is the intersection of:
+A logical segment is:
 
-1. a Stephanus subdivision boundary, and
-2. a top-level dialogue speaker turn or narrative block.
+> the maximal structurally coherent span that does not cross a canonical locator boundary or a profile-defined primary structural boundary.
 
-This means:
+For the Plato profile, the canonical locator is normally a Stephanus subdivision.
 
-- a speaker turn that crosses from `514a` to `514b` becomes at least two logical segments;
-- several speaker turns inside `514a` receive sequential ordinals;
-- segment identity does not contain the speaker name;
-- changing a speaker annotation does not change `segment_id`.
+Primary structural boundaries may include:
 
-Example:
+- a Stephanus subdivision boundary;
+- an explicit top-level dialogue turn where reliably encoded;
+- a lexical/definition entry boundary;
+- a work-specific structural boundary approved by the profile.
 
-```text
-PL.SEG.REP.514A.001
-PL.SEG.REP.514A.002
-PL.SEG.REP.514B.001
-```
+A segment identity does **not** contain:
 
-## Why not sentence-level segmentation
+- speaker name;
+- narrator;
+- attributed author/source;
+- authenticity classification;
+- textual edition;
+- translation;
+- sentence number;
+- token count;
+- semantic topic.
 
-Sentence punctuation is editorial and varies by edition. Sentence-based identity would therefore make the canonical topology depend too strongly on a modern editor.
+## Why the earlier rule was revised
 
-## Why not fixed token chunks
+The initial draft defined a segment as the intersection of a Stephanus subdivision and a speaker turn or narrative block.
 
-Token chunks are model- and tokenizer-dependent, unsuitable as scholarly identifiers, and unstable across preprocessing changes.
+Testing against real structures showed this is too narrow:
 
-## Speaker model
+- **Apology** contains long uninterrupted speeches crossing locator subdivisions.
+- **Republic** contains narration with embedded direct/reported voices.
+- **Symposium** contains nested narrative frames.
+- **Menexenus** contains discourse uttered by one character but attributed to another source.
+- **Letter VII** is epistolary rather than dialogical.
+- **Definitiones** is organized as lexical entries rather than speaker turns or ordinary narrative.
 
-Speaker identity is an annotation, not part of passage identity.
+See `docs/research/SEGMENTATION-PILOT-0001.md`.
 
-A speaker assertion records:
+## Hard boundaries
 
-- stable `speaker_id`;
-- display label;
-- assertion status;
-- basis/reference;
-- runtime visibility.
+### Locator boundary
 
-Top-level statuses currently include:
+A segment must not cross a canonical locator subdivision chosen by the profile.
 
-- `ASSERTED`
-- `UNCERTAIN`
-- `NARRATOR`
+For Plato, a passage continuing from `514a` to `514b` becomes at least two segments even when the same voice continues.
+
+### Profile structural boundary
+
+A profile may define boundaries that occur inside a locator cell.
+
+For example, Definitiones may split at definition-entry boundaries.
+
+Such boundaries must be based on explicit structural evidence, not semantic chunking by an LLM.
+
+## Non-boundaries by default
+
+The following do not automatically create canonical segment boundaries:
+
+- modern sentence punctuation;
+- tokenizer chunks;
+- embedding windows;
+- topic changes inferred by a model;
+- every embedded quotation;
+- every inferred change of reported voice.
+
+These may be represented as annotations.
+
+## Discourse annotation
+
+Speaker/voice information is annotation, not identity.
+
+The annotation layer must be capable of representing:
+
+- discourse mode;
+- speaker/utterer;
+- narrator;
+- attributed source/composer;
+- frame depth;
+- reported or embedded speech;
+- witness-specific spans where a phenomenon affects only part of a segment.
+
+Expected modes include:
+
+- `DIALOGUE_TURN`
+- `NARRATION`
+- `LONG_SPEECH`
+- `REPORTED_SPEECH`
 - `EMBEDDED_QUOTATION`
-- `CHORAL_OR_MULTIPLE`
+- `EPISTOLARY`
+- `LEXICAL_ENTRY`
+- `OTHER`
 
-Embedded quotations and reported dialogue may require a second annotation layer. They do not automatically redefine the top-level segment boundary.
+A speaker correction must not change `segment_id`.
+
+## Witness-specific spans
+
+Some discourse phenomena cannot safely be promoted to canonical boundaries because editions may differ in punctuation or quotation rendering.
+
+Such annotations should target:
+
+- a stable logical segment;
+- a specific normalized textual witness;
+- offsets in that witness representation;
+- the checksum/version of the normalized text to which offsets apply.
 
 ## Structural-source rule
 
-The canonical topology may use one designated structural source to locate speaker and Stephanus boundaries during ingestion. That source does **not** become the sole authoritative Greek witness merely because it provides topology.
+One designated structural source may be used during ingestion to locate explicit boundaries.
 
-Textual witnesses remain separate objects aligned to the logical segment.
+That source does **not** become the sole authoritative textual witness merely because it supplies topology.
+
+Boundary decisions must retain provenance.
 
 ## Boundary corrections
 
 Before a corpus release is frozen, provisional boundaries may be corrected.
 
-After a release is frozen:
+After release freeze:
 
-- metadata corrections preserve IDs where identity is unchanged;
-- a true boundary redefinition creates an explicit migration map from old segment IDs to new segment IDs;
+- metadata/annotation corrections preserve IDs where logical identity is unchanged;
+- true boundary redefinition creates new segment IDs plus an explicit migration map;
 - historical releases are not rewritten.
 
-## Validation required before freeze
+## Validation status
 
-The policy must be tested on at least:
+Segmentation Pilot 0001 tested:
 
-- a simple Socratic dialogue;
-- a dialogue with framing/narration;
-- a work containing long speeches;
-- nested quotation/reported dialogue;
-- letters or non-dialogue material;
-- pseudo-Platonic material included in the historical corpus.
+- long speech;
+- narrated dialogue;
+- nested narrative frame;
+- attributed embedded speech;
+- epistolary material;
+- lexical/pseudo-Platonic material.
 
-Only then may this specification become frozen.
+The remaining Phase 0 requirement is an executable discourse-annotation schema plus a synthetic nested-voice fixture.
+
+After those pass CI, this specification can be frozen for the first production-ingestion iteration.
