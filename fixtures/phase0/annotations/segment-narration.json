@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "discourse_annotation",
+  "thinker_id": "TH.PLATO",
+  "annotation_id": "TH.PLATO.ANN.DISCOURSE.01a108c0-479a-7abc-8abc-1234567890ab",
+  "segment_id": "TH.PLATO.SEG.01a108c0-4799-75a7-9445-69a6fdd19b35",
+  "scope": "SEGMENT",
+  "witness_id": null,
+  "normalized_text_sha256": null,
+  "span": null,
+  "discourse_mode": "NARRATION",
+  "speaker_id": "TH.PLATO.SPEAKER.SYNTHETIC_SPEAKER",
+  "attributed_source_label": null,
+  "frame_depth": 0,
+  "assertion_status": "ASSERTED",
+  "basis_ref": "synthetic-phase0",
+  "runtime_visibility": "THINKER_VISIBLE"
+}
