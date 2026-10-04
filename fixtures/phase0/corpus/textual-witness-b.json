@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "textual_witness",
+  "witness_id": "PL.WIT.GRK.SYNTHETIC_TEST_B.TEST.1A.001",
+  "segment_id": "PL.SEG.TEST.1A.001",
+  "edition_id": "PL.ED.SYNTHETIC_TEST_B",
+  "language": "grc",
+  "text": "[SECOND SYNTHETIC GREEK WITNESS — NOT CORPUS TEXT]",
+  "representation": "SOURCE_TRANSCRIPTION",
+  "is_preferred_runtime_witness": false,
+  "runtime_visibility": "PLATO_VISIBLE",
+  "source_checksum": null
+}
