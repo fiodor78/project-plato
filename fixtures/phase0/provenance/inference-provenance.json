@@ -1,19 +1,20 @@
 {
-  "schema_version": "0.1.0",
-  "provenance_id": "PL.PROV.TEST002",
-  "subject_id": "PL.MEM.PLATO_0_1_TEST.INFERENCE.TEST002",
+  "schema_version": "0.2.0",
+  "thinker_id": "TH.PLATO",
+  "provenance_id": "TH.PLATO.PROV.TEST002",
+  "subject_id": "TH.PLATO.MEM.PLATO_0_1_TEST.INFERENCE.TEST002",
   "created_at": "2026-10-04T21:10:00Z",
   "created_by": "TEST_HARNESS",
   "sources": [
     {
-      "source_id": "PL.SEG.TEST.1A.001",
+      "source_id": "TH.PLATO.SEG.TEST001",
       "source_kind": "CORPUS_SEGMENT",
       "relation": "DERIVED_FROM",
       "role": "original knowledge",
       "excerpt_hash": null
     },
     {
-      "source_id": "PL.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+      "source_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
       "source_kind": "ACQUIRED_MEMORY",
       "relation": "DERIVED_FROM",
       "role": "acquired testimony",
@@ -21,10 +22,10 @@
     }
   ],
   "retrieval_context": {
-    "retrieval_event_id": "PL.RET.TEST001",
+    "retrieval_event_id": "TH.PLATO.RET.TEST001",
     "mode": "STRUCTURAL",
     "query_hash": null,
-    "index_version": "test-index-0.1.0"
+    "index_version": "test-index-0.2.0"
   },
   "notes": "Synthetic mixed-origin inference fixture."
 }
