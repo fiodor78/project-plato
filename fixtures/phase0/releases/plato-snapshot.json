@@ -1,15 +1,17 @@
 {
-  "schema_version": "0.1.0",
-  "snapshot_id": "PL.SNAP.PLATO_0_1_TEST_001",
+  "schema_version": "0.2.0",
+  "thinker_id": "TH.PLATO",
+  "snapshot_id": "TH.PLATO.SNAP.PLATO_0_1_TEST_001",
   "instance_id": "PLATO-0.1-TEST",
   "created_at": "2026-10-04T21:00:00Z",
+  "profile_release": "TH.PLATO.PROFILE-0.1.0",
   "baseline_release": "PLATO-0.1.0-TEST",
-  "corpus_manifest_id": "PL.MANIFEST.CORPUS.TEST_0_1_0",
+  "corpus_manifest_id": "TH.PLATO.MANIFEST.CORPUS.TEST_0_2_0",
   "parent_snapshot_id": null,
   "lineage_id": "TEST-LINEAGE-A",
   "state": {
     "memory_count": 1,
-    "last_memory_id": "PL.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+    "last_memory_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
     "memory_store_checksum": "3333333333333333333333333333333333333333333333333333333333333333"
   }
 }
