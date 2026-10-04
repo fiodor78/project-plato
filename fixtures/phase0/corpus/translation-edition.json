@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "entity_type": "source_edition",
   "thinker_id": "TH.PLATO",
   "edition_id": "TH.PLATO.ED.SYNTHETIC_TRANSLATION",
@@ -11,5 +11,6 @@
   "local_source_ref": null,
   "redistribution_status": "PUBLIC_DOMAIN_CONFIRMED",
   "license_ref": null,
-  "custodian_notes": "Fixture only."
+  "custodian_notes": "Fixture only.",
+  "runtime_visibility": "CUSTODIAN_ONLY"
 }
