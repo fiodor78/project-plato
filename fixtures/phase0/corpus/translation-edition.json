@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "source_edition",
-  "edition_id": "PL.ED.SYNTHETIC_TRANSLATION",
+  "thinker_id": "TH.PLATO",
+  "edition_id": "TH.PLATO.ED.SYNTHETIC_TRANSLATION",
   "language": "pl",
   "citation": "Synthetic Polish translation fixture; not a scholarly translation.",
   "editor_or_translator": "Synthetic fixture",
