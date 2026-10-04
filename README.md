@@ -1,15 +1,71 @@
 # PROJECT PLATO
 
-PROJECT PLATO is an experimental attempt to construct an epistemically constrained language-based cognitive agent whose primary knowledge is derived from the **Corpus Platonicum**, while later knowledge is acquired through controlled interaction.
+PROJECT PLATO is the first reference implementation of a reusable **Thinker Framework** for constructing epistemically constrained language-based cognitive agents grounded in the corpus of a historical philosopher.
 
-The goal is **not** to imitate an ancient philosopher stylistically, and not to build an encyclopedia about Plato. The experiment asks a stricter question:
+The first Thinker Profile is **PLATO**. Its primary knowledge will be derived from the approved **Corpus Platonicum**; later knowledge may be acquired through controlled interaction.
+
+The goal is **not** to imitate Plato stylistically and not to build an encyclopedia about Plato. The experiment asks:
 
 > If an agent had access to Plato's corpus, a reconstructed Platonic mode of inquiry, and a controlled history of later experience, how would it reason about questions and phenomena outside its original world?
 
-## Two environments
+## Reusable architecture
 
-- **CUSTODIAN** — researcher, librarian, architect, observer and auditor. CUSTODIAN may use modern scholarship and external sources.
-- **PLATO** — the experimental agent. PLATO may use only its approved original corpus, explicitly acquired knowledge, its episodic history and its own derived inferences.
+The framework is deliberately designed so the same method can later support other isolated philosopher profiles.
+
+Examples:
+
+- PLATO — Stephanus citation adapter;
+- ARISTOTLE — Bekker citation adapter;
+- NIETZSCHE — work/section or aphorism adapter;
+- WITTGENSTEIN — proposition/remark adapter.
+
+Each thinker receives a separate profile, corpus release, memory store and experimental lineage. Their epistemic worlds are not mixed by default.
+
+## Three layers
+
+### THINKER CORE
+
+Generic:
+
+- source ingestion;
+- corpus objects;
+- acquired/episodic/inference memory;
+- provenance;
+- structural + semantic retrieval;
+- access projection;
+- releases and snapshots;
+- integrity/leakage tests.
+
+### THINKER PROFILE
+
+Philosopher-specific:
+
+- corpus scope;
+- citation/locator schemes;
+- work registry;
+- attribution/authenticity rules;
+- speaker/narrator annotations where relevant;
+- epistemic constitution;
+- cognitive/personality reconstruction;
+- profile-specific tests.
+
+PLATO lives under `thinkers/plato/`.
+
+### THINKER INSTANCE
+
+A running experimental lineage created from a frozen profile release, for example:
+
+```text
+PLATO-1.0-A
+PLATO-1.0-B
+```
+
+Two instances may begin identically and acquire different experiences.
+
+## CUSTODIAN and the thinker
+
+- **CUSTODIAN** — researcher, librarian, architect, observer and auditor. It may use modern scholarship and external sources.
+- **PLATO** — the first experimental thinker. It may use only its approved original corpus, explicitly acquired knowledge, episodic history and its own derived inferences.
 
 CUSTODIAN is not PLATO and is not intended to answer on PLATO's behalf during normal experiments.
 
@@ -17,72 +73,62 @@ CUSTODIAN is not PLATO and is not intended to answer on PLATO's behalf during no
 
 Epistemic honesty takes precedence over fluency.
 
-If PLATO cannot justify knowledge through an admissible source, the correct answer may be:
+If the active thinker cannot justify knowledge through an admissible source, the correct answer may be:
 
 > I do not know.
 
-The project therefore focuses on **controlled access to knowledge**, not on pretending that the base language model's latent knowledge does not exist.
+The system therefore controls **permission to use knowledge**, rather than pretending the base LLM contains no latent modern knowledge.
 
 ## Knowledge classes
 
-- **ORIGINAL** — read-only access to the approved Corpus Platonicum release.
+- **ORIGINAL** — read-only access to the frozen profile corpus.
 - **ACQUIRED** — information introduced during the experiment.
 - **EPISODIC** — remembered conversations and events.
-- **INFERENCE** — conclusions derived by PLATO from admissible sources.
-- **PROVENANCE** — an audit layer recording where claims and inferences came from.
+- **INFERENCE** — conclusions derived from admissible sources.
+- **PROVENANCE** — audit lineage showing where claims and inferences came from.
 
-ORIGINAL is a logical memory class, not a mutable duplicate of the corpus.
+ORIGINAL is a logical memory class, not a mutable duplicate of corpus data.
 
 ## Repository role
 
-This public repository is the canonical source of truth for:
+This public repository is the canonical source of truth for architecture, schemas, tests, profile definitions and redistributable metadata.
 
-- Architecture Decision Records (ADRs)
-- technical specifications
-- schemas
-- runtime code
-- tests
-- experiment protocols
-- release manifests
-- redistributable corpus metadata
-
-Google Drive is complementary storage for working documents, source scans/PDFs, large files and material that cannot legally be redistributed.
+Google Drive remains complementary storage for working research, scans/PDFs, large source files and material that cannot legally be redistributed.
 
 ## Current status
 
-The project is in **Phase 0 — architecture before corpus ingestion**.
+The project is in **Phase 0 — architecture before real corpus ingestion**.
 
-No corpus source is considered production-ingested until stable identifiers, schemas, provenance and access boundaries are defined.
-
-### Phase 0 exit criteria
-
-1. Stable identifier convention.
-2. Corpus data model.
-3. Memory data model.
-4. Provenance data model.
-5. Structural + semantic retrieval design.
-6. CUSTODIAN / PLATO access separation.
-7. Versioning and snapshot model.
-8. Infrastructure migration path.
-9. Deterministic ingestion acceptance criteria.
+The generic Core/Profile boundary has been introduced before importing actual Platonic source text.
 
 ## Repository structure
 
 ```text
+framework/
+  README.md
+
+thinkers/
+  plato/
+    profile/
+
 docs/
   adr/
   specs/
   architecture/
+
 schemas/
+  framework/
   corpus/
+  ingestion/
   memory/
   provenance/
-tests/
+  retrieval/
+  releases/
+
+fixtures/
+scripts/
 experiments/
 runtime/
-corpus/
-  metadata/
-  manifests/
 releases/
 ```
 
@@ -90,4 +136,4 @@ Large or non-redistributable source texts are intentionally not committed by def
 
 ## Licensing
 
-No project-wide license has been selected yet. Licensing of project code/documentation and licensing or public-domain status of corpus sources will be decided separately before redistribution beyond materials that are unquestionably safe to publish.
+No project-wide license has yet been selected. Code/documentation licensing and source-text redistribution rights will be decided explicitly before public redistribution of real corpus assets.
