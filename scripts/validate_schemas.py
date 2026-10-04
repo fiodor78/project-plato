@@ -15,6 +15,7 @@ TARGETS = {
     ROOT / "schemas/releases/corpus-manifest.schema.json": ROOT / "fixtures/phase0/releases",
     ROOT / "schemas/retrieval/retrieval-event.schema.json": ROOT / "fixtures/phase0/retrieval",
     ROOT / "schemas/releases/plato-snapshot.schema.json": ROOT / "fixtures/phase0/releases",
+    ROOT / "schemas/ingestion/source-asset.schema.json": ROOT / "fixtures/phase0/ingestion",
 }
 
 
