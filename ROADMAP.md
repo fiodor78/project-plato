@@ -26,10 +26,10 @@
 ## Remaining Phase 0
 
 - [x] Verify full CI after the generic-framework migration.
-- [ ] Add explicit runtime-projection leakage tests (including hidden edition metadata).
-- [ ] Freeze generated-ID strategy.
-- [ ] Test segmentation policy on representative real source structures without ingesting the complete corpus.
-- [ ] Pass final Phase 0 architecture gate.
+- [x] Add explicit runtime-projection leakage tests (including hidden edition metadata).
+- [x] Freeze generated-ID strategy (UUIDv7 for opaque runtime objects).
+- [x] Test segmentation policy on representative real source structures without ingesting the complete corpus.
+- [ ] Validate nested discourse annotations in CI and freeze SPEC-0002 for first ingestion iteration.\n- [ ] Pass final Phase 0 architecture gate.
 
 ## Then: Phase 1 / Phase 2
 
