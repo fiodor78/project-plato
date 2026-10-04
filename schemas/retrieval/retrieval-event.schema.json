@@ -2,58 +2,144 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/retrieval/retrieval-event.schema.json",
   "title": "Thinker Framework Retrieval Event",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "thinker_id", "retrieval_event_id", "instance_id",
-    "created_at", "mode", "query", "index_version", "results"
+    "schema_version",
+    "thinker_id",
+    "retrieval_event_id",
+    "instance_id",
+    "created_at",
+    "mode",
+    "query",
+    "index_version",
+    "results"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.2.0" },
-    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
-    "retrieval_event_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.RET\\.[A-Z0-9_-]+$" },
-    "instance_id": { "type": "string" },
-    "created_at": { "type": "string", "format": "date-time" },
-    "mode": { "type": "string", "enum": ["STRUCTURAL", "SEMANTIC", "HYBRID"] },
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.1"
+    },
+    "thinker_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+$"
+    },
+    "retrieval_event_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+\\.RET\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "instance_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "STRUCTURAL",
+        "SEMANTIC",
+        "HYBRID"
+      ]
+    },
     "query": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "raw_text_hash": { "type": ["string", "null"] },
-        "work_id": { "type": ["string", "null"] },
+        "raw_text_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "work_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "locator": {
           "oneOf": [
             {
               "type": "object",
               "additionalProperties": false,
-              "required": ["scheme", "value"],
+              "required": [
+                "scheme",
+                "value"
+              ],
               "properties": {
-                "scheme": { "type": "string" },
-                "value": { "type": "string" },
-                "components": { "type": "object" }
+                "scheme": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "components": {
+                  "type": "object"
+                }
               }
             },
-            { "type": "null" }
+            {
+              "type": "null"
+            }
           ]
         },
-        "semantic_query_hash": { "type": ["string", "null"] }
+        "semantic_query_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "index_version": { "type": "string", "minLength": 1 },
-    "runtime_projection_version": { "type": ["string", "null"] },
+    "index_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime_projection_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "results": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["segment_id", "selected_for_context"],
+        "required": [
+          "segment_id",
+          "selected_for_context"
+        ],
         "properties": {
-          "segment_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SEG\\.[A-Z0-9_-]+$" },
-          "witness_id": { "type": ["string", "null"] },
-          "score": { "type": ["number", "null"] },
-          "rank": { "type": ["integer", "null"], "minimum": 1 },
-          "selected_for_context": { "type": "boolean" }
+          "segment_id": {
+            "type": "string",
+            "pattern": "^TH\\.[A-Z0-9_]+\\.SEG\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "witness_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "rank": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "selected_for_context": {
+            "type": "boolean"
+          }
         }
       }
     }
