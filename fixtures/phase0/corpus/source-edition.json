@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "source_edition",
+  "edition_id": "PL.ED.SYNTHETIC_TEST",
+  "language": "grc",
+  "citation": "Synthetic fixture edition; not a scholarly source.",
+  "editor_or_translator": null,
+  "publication_year": 2026,
+  "source_uri": "https://example.invalid/project-plato/synthetic-test",
+  "local_source_ref": null,
+  "redistribution_status": "PUBLIC_DOMAIN_CONFIRMED",
+  "license_ref": null,
+  "custodian_notes": "Fixture only."
+}
