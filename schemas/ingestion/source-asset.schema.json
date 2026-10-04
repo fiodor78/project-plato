@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/ingestion/source-asset.schema.json",
+  "title": "PROJECT PLATO Source Asset and Transformation",
+  "version": "0.1.0",
+  "oneOf": [
+    { "$ref": "#/$defs/sourceAsset" },
+    { "$ref": "#/$defs/transformation" }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "sourceAsset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "source_asset_id",
+        "source_uri", "acquired_at", "media_type", "byte_size",
+        "sha256", "redistribution_status", "custodian_storage_ref"
+      ],
+      "properties": {
+        "schema_version": { "type": "string", "const": "0.1.0" },
+        "entity_type": { "const": "source_asset" },
+        "source_asset_id": {
+          "type": "string",
+          "pattern": "^PL\\.SRC\\.[A-Z0-9_-]+$"
+        },
+        "source_uri": { "type": "string", "format": "uri" },
+        "acquired_at": { "type": "string", "format": "date-time" },
+        "original_filename": { "type": ["string", "null"] },
+        "media_type": { "type": "string", "minLength": 1 },
+        "byte_size": { "type": "integer", "minimum": 0 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "redistribution_status": {
+          "type": "string",
+          "enum": [
+            "PUBLIC_DOMAIN_CONFIRMED",
+            "OPEN_LICENSE_CONFIRMED",
+            "RESTRICTED",
+            "UNKNOWN_REVIEW_REQUIRED"
+          ]
+        },
+        "license_ref": { "type": ["string", "null"] },
+        "custodian_storage_ref": { "type": "string", "minLength": 1 },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "transformation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "entity_type", "transformation_id",
+        "input_sha256", "output_sha256", "performed_at",
+        "method", "tool_version"
+      ],
+      "properties": {
+        "schema_version": { "type": "string", "const": "0.1.0" },
+        "entity_type": { "const": "source_transformation" },
+        "transformation_id": {
+          "type": "string",
+          "pattern": "^PL\\.XFORM\\.[A-Z0-9_-]+$"
+        },
+        "input_sha256": { "$ref": "#/$defs/sha256" },
+        "output_sha256": { "$ref": "#/$defs/sha256" },
+        "performed_at": { "type": "string", "format": "date-time" },
+        "method": {
+          "type": "string",
+          "enum": [
+            "EXTRACT_TEXT",
+            "DECOMPRESS",
+            "ENCODING_NORMALIZATION",
+            "UNICODE_NORMALIZATION",
+            "TEI_PARSE",
+            "STRUCTURAL_ALIGNMENT",
+            "MANUAL_CORRECTION"
+          ]
+        },
+        "tool_version": { "type": "string", "minLength": 1 },
+        "parameters": { "type": "object" },
+        "notes": { "type": ["string", "null"] }
+      }
+    }
+  }
+}
