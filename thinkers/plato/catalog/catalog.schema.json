@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/catalog.schema.json",
+  "title": "Plato Historical Attribution Catalog",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "catalog_version", "thinker_id", "sources", "entries"],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "catalog_version": { "type": "string" },
+    "thinker_id": { "const": "TH.PLATO" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "citation", "url"],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^PLSRC\\.[A-Z0-9_]+$" },
+          "citation": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "source_type": {
+            "type": "string",
+            "enum": ["ANCIENT_TESTIMONY", "CRITICAL_EDITION", "MODERN_SCHOLARSHIP", "CATALOG", "ANTHOLOGY"]
+          },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "catalog_id", "entry_type", "canonical_title", "alternate_titles",
+          "survival_status", "runtime_candidacy", "attestations",
+          "review_status", "runtime_visibility"
+        ],
+        "properties": {
+          "catalog_id": { "type": "string", "pattern": "^TH\\.PLATO\\.CAT\\.[A-Z0-9_]+$" },
+          "entry_type": {
+            "type": "string",
+            "enum": ["WORK", "COLLECTION", "MEMBER", "LOST_TITLE", "ANTHOLOGY_COLLECTION"]
+          },
+          "canonical_title": { "type": "string", "minLength": 1 },
+          "alternate_titles": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "provisional_work_code": { "type": ["string", "null"] },
+          "parent_catalog_id": { "type": ["string", "null"] },
+          "survival_status": {
+            "type": "string",
+            "enum": ["EXTANT", "LOST", "FRAGMENTARY", "UNKNOWN"]
+          },
+          "runtime_candidacy": {
+            "type": "string",
+            "enum": ["TEXT_CANDIDATE", "CATALOG_ONLY", "PENDING_REVIEW"]
+          },
+          "attestations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["source_id", "system", "status"],
+              "properties": {
+                "source_id": { "type": "string", "pattern": "^PLSRC\\.[A-Z0-9_]+$" },
+                "system": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
+                "status": {
+                  "type": "string",
+                  "enum": ["INCLUDED", "EXPLICITLY_SPURIOUS", "ASCRIBED", "EDITORIALLY_INCLUDED"]
+                },
+                "position": { "type": ["string", "null"] },
+                "note": { "type": ["string", "null"] }
+              }
+            }
+          },
+          "review_status": {
+            "type": "string",
+            "enum": ["PROVISIONAL", "SOURCE_VERIFIED", "FROZEN"]
+          },
+          "notes": { "type": ["string", "null"] },
+          "runtime_visibility": { "const": "CUSTODIAN_ONLY" }
+        }
+      }
+    }
+  }
+}
