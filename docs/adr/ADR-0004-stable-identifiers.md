@@ -1,34 +1,32 @@
 # ADR-0004 — Stable identifiers and edition-independent passage identity
 
-**Status:** Accepted
+**Status:** Superseded in part by ADR-0011
 
 ## Context
 
-PROJECT PLATO must preserve stable references across changes in source edition, speaker annotation, translation, segmentation metadata and future corrections.
+The original decision established an important principle: logical corpus identity must remain separate from source edition, translation, speaker annotation and other mutable interpretation.
 
-## Decision
+Its first identifier examples were Plato-specific and embedded Stephanus coordinates directly in segment IDs.
 
-Logical corpus identity is separated from textual witnesses and annotations.
+ADR-0011 generalized the architecture so the same framework can support other philosophers and citation systems.
 
-Examples:
+## Decision retained
+
+- Logical corpus identity is separate from textual witnesses and annotations.
+- Correcting speaker attribution, preferred edition, translation or authenticity metadata must not normally change logical identity.
+- Multiple textual witnesses may align to one logical segment.
+- Provenance refers to stable logical objects.
+
+## Decision superseded
+
+The earlier examples such as:
 
 ```text
-PL.WORK.REP
 PL.SEG.REP.514A.001
-PL.WIT.GRK.SLINGS2003.REP.514A.001
-PL.TR.PL.<EDITION>.REP.514A.001
-PL.MEM.<INSTANCE>.<TYPE>.<ID>
-PL.PROV.<ID>
-PL.EXP.<LINEAGE>.<DATE>.<SEQUENCE>
 ```
 
-A `segment_id` identifies a location in the canonical corpus topology. It does **not** encode speaker, authenticity class, edition, translation, tokenization or interpretation.
+are no longer the canonical identifier design.
 
-Speaker annotations are versioned assertions attached to `segment_id`.
+The generic Thinker Framework uses thinker-scoped, citation-scheme-independent machine IDs, while Stephanus/Bekker/aphorism/proposition references live in separate locator objects.
 
-## Consequences
-
-- Correcting speaker attribution does not break references.
-- Multiple editions can coexist for the same logical segment.
-- Provenance can refer to stable corpus objects.
-- Storage migration does not change identity.
+See ADR-0011 and `docs/architecture/stable-identifiers.md`.
