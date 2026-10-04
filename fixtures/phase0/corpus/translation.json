@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "translation",
+  "translation_id": "PL.TR.PL.SYNTHETIC_TRANSLATION.TEST.1A.001",
+  "segment_id": "PL.SEG.TEST.1A.001",
+  "edition_id": "PL.ED.SYNTHETIC_TRANSLATION",
+  "language": "pl",
+  "text": "[SYNTETYCZNY PRZEKŁAD — NIE JEST TEKSTEM KORPUSU]",
+  "runtime_visibility": "PLATO_VISIBLE"
+}
