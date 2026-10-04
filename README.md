@@ -48,13 +48,11 @@ The base model inevitably contains latent modern knowledge. The experiment there
 
 ## Current maturity
 
-**Status: Phase 0 — architecture before production corpus ingestion.**
+**Status: Phase 0 accepted; Phase 1 (Corpus Platonicum catalog) has begun.**
 
-The architecture, schemas, synthetic fixtures, runtime visibility model and CI tests are being finalized **before** the full Corpus Platonicum is ingested.
+The architecture, schemas, synthetic fixtures, runtime visibility model, segmentation/discourse model and CI integrity tests have passed the Phase 0 acceptance gate. Production corpus ingestion has **not** started yet; Phase 1 first establishes the historical corpus catalog, transmission classes and attribution metadata.
 
-Production corpus ingestion has intentionally not started yet.
-
-The current Phase 0 gate requires the project to demonstrate that it can:
+The accepted Phase 0 architecture demonstrates that it can:
 
 1. assign stable logical identities independent of editions and scholarly locators;
 2. align multiple textual witnesses and translations to one logical segment;
@@ -418,7 +416,7 @@ A static documentation site is maintained under `site/` and deployed through Git
 
 ## Road ahead
 
-Once Phase 0 passes its final architecture gate, the next work is:
+With Phase 0 accepted, the next work is:
 
 1. build the complete historical Corpus Platonicum catalog;
 2. establish profile-specific attribution/authenticity assessments with cited scholarly basis;
