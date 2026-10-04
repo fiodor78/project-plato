@@ -1,4 +1,4 @@
-name: Phase 0 validation
+name: Project validation
 
 on:
   push:
@@ -28,3 +28,6 @@ jobs:
 
       - name: Run runtime epistemic projection leakage test
         run: python scripts/test_runtime_projection.py
+
+      - name: Run Phase 1 historical catalog gate
+        run: python scripts/check_phase1_catalog.py
