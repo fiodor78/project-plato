@@ -1,0 +1,1613 @@
+{
+  "schema_version": "0.1.0",
+  "catalog_version": "0.1.0",
+  "thinker_id": "TH.PLATO",
+  "sources": [
+    {
+      "source_id": "PLSRC.DL_3_57_62",
+      "citation": "Diogenes Laertius, Lives of Eminent Philosophers III.57–62 (trans. R. D. Hicks), Perseus Digital Library.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0004.tlg001.perseus-eng1:3.1",
+      "source_type": "ANCIENT_TESTIMONY",
+      "notes": "Primary ancient testimony for Thrasyllan tetralogies, thirteen Epistles, and an explicit list of spurious dialogues."
+    },
+    {
+      "source_id": "PLSRC.BURNET_V_PERSEUS",
+      "citation": "John Burnet (ed.), Platonis Opera, Tomus V: Tetralogia IX, Definitiones, et Spuria; Perseus catalog record.",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg034.perseus-grc1",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Catalog metadata records volume contents including Minos, Laws, Epinomis, Epistles, Definitiones, De iusto, De virtute, Demodocus, Sisyphus, Eryxias, Axiochus."
+    },
+    {
+      "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+      "citation": "John Burnet (ed.), Platonis Epistulae / Letters; Perseus catalog record.",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg036.opp-grc1",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Edition-level attestation for the extant thirteen-letter collection; member-level recipient metadata remains under review."
+    },
+    {
+      "source_id": "PLSRC.JAZDZEWSKA_2022",
+      "citation": "Katarzyna Jażdżewska, 'Platonic Dubia and the Appendix Platonica', in Greek Dialogue in Antiquity: Post-Platonic Transformations (Oxford University Press, 2022).",
+      "url": "https://doi.org/10.1093/oso/9780192893352.003.0005",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Modern analytical distinction between Thrasyllan dubia and extra-canonical pseudo-Platonic dialogues."
+    },
+    {
+      "source_id": "PLSRC.HALCYON_PERSEUS",
+      "citation": "Pseudo-Lucian, Halcyon, ed. Karl Jacobitz; First1KGreek / Perseus.",
+      "url": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1/",
+      "source_type": "CATALOG",
+      "notes": "Extant Halcyon survives in the Pseudo-Lucian textual tradition; Diogenes III.62 attests an ancient Platonic ascription while calling it spurious."
+    },
+    {
+      "source_id": "PLSRC.PERSEUS_EPIGRAMMATA",
+      "citation": "Perseus Catalog, Epigrammata under the Plato textgroup (tlg0059.tlg039).",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg039",
+      "source_type": "ANTHOLOGY",
+      "notes": "Catalog evidence for a corpus of epigrams transmitted/ascribed under Plato's name."
+    },
+    {
+      "source_id": "PLSRC.PAGE_EPIGRAMS",
+      "citation": "Denys L. Page, Further Greek Epigrams, Part 2: Epigrams ascribed to famous names of the pre-Alexandrian era (Cambridge University Press, online 2010).",
+      "url": "https://doi.org/10.1017/CBO9780511719998.005",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Reports collections of epigrams ascribed to Plato circulating before the end of the second century BCE; authenticity is a separate question."
+    }
+  ],
+  "entries": [
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EUTHYPHRO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EUTHYPHRO",
+      "entry_type": "WORK",
+      "canonical_title": "Euthyphro",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "APOLOGY",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.APOLOGY",
+      "entry_type": "WORK",
+      "canonical_title": "Apology of Socrates",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRITO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRITO",
+      "entry_type": "WORK",
+      "canonical_title": "Crito",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHAEDO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEDO",
+      "entry_type": "WORK",
+      "canonical_title": "Phaedo",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRATYLUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRATYLUS",
+      "entry_type": "WORK",
+      "canonical_title": "Cratylus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "THEAETETUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.THEAETETUS",
+      "entry_type": "WORK",
+      "canonical_title": "Theaetetus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "SOPHIST",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SOPHIST",
+      "entry_type": "WORK",
+      "canonical_title": "Sophist",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "STATESMAN",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.STATESMAN",
+      "entry_type": "WORK",
+      "canonical_title": "Statesman",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PARMENIDES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PARMENIDES",
+      "entry_type": "WORK",
+      "canonical_title": "Parmenides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHILEBUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHILEBUS",
+      "entry_type": "WORK",
+      "canonical_title": "Philebus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "SYMPOSIUM",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SYMPOSIUM",
+      "entry_type": "WORK",
+      "canonical_title": "Symposium",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHAEDRUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEDRUS",
+      "entry_type": "WORK",
+      "canonical_title": "Phaedrus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Alcibiades",
+        "Greater Alcibiades"
+      ],
+      "provisional_work_code": "ALCIBIADES_I",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_I",
+      "entry_type": "WORK",
+      "canonical_title": "Alcibiades I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Second Alcibiades"
+      ],
+      "provisional_work_code": "ALCIBIADES_II",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_II",
+      "entry_type": "WORK",
+      "canonical_title": "Alcibiades II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "HIPPARCHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPARCHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Hipparchus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Lovers",
+        "Rivals"
+      ],
+      "provisional_work_code": "RIVAL_LOVERS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.RIVAL_LOVERS",
+      "entry_type": "WORK",
+      "canonical_title": "Rival Lovers",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "THEAGES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.THEAGES",
+      "entry_type": "WORK",
+      "canonical_title": "Theages",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CHARMIDES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CHARMIDES",
+      "entry_type": "WORK",
+      "canonical_title": "Charmides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LACHES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LACHES",
+      "entry_type": "WORK",
+      "canonical_title": "Laches",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LYSIS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LYSIS",
+      "entry_type": "WORK",
+      "canonical_title": "Lysis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EUTHYDEMUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EUTHYDEMUS",
+      "entry_type": "WORK",
+      "canonical_title": "Euthydemus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PROTAGORAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PROTAGORAS",
+      "entry_type": "WORK",
+      "canonical_title": "Protagoras",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "GORGIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.GORGIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Gorgias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MENO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MENO",
+      "entry_type": "WORK",
+      "canonical_title": "Meno",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Greater Hippias"
+      ],
+      "provisional_work_code": "HIPPIAS_MAJOR",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MAJOR",
+      "entry_type": "WORK",
+      "canonical_title": "Hippias Major",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Lesser Hippias"
+      ],
+      "provisional_work_code": "HIPPIAS_MINOR",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MINOR",
+      "entry_type": "WORK",
+      "canonical_title": "Hippias Minor",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "ION",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ION",
+      "entry_type": "WORK",
+      "canonical_title": "Ion",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MENEXENUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MENEXENUS",
+      "entry_type": "WORK",
+      "canonical_title": "Menexenus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CLITOPHON",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CLITOPHON",
+      "entry_type": "WORK",
+      "canonical_title": "Clitophon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "REPUBLIC",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.REPUBLIC",
+      "entry_type": "WORK",
+      "canonical_title": "Republic",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "TIMAEUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.TIMAEUS",
+      "entry_type": "WORK",
+      "canonical_title": "Timaeus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRITIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRITIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Critias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MINOS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MINOS",
+      "entry_type": "WORK",
+      "canonical_title": "Minos",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LAWS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LAWS",
+      "entry_type": "WORK",
+      "canonical_title": "Laws",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPINOMIS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPINOMIS",
+      "entry_type": "WORK",
+      "canonical_title": "Epinomis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Letters",
+        "Epistulae"
+      ],
+      "provisional_work_code": "EPISTLES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "entry_type": "COLLECTION",
+      "canonical_title": "Epistles",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.4",
+          "note": "Collection occupies the fourth position of Tetralogy IX; Diogenes says it contains thirteen letters."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_I",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_I",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "I",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "I",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_II",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_II",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "II",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "II",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_III",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_III",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle III",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "III",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "III",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_IV",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IV",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle IV",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "IV",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "IV",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_V",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_V",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle V",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "V",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "V",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VI",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VI",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VI",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VI",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VII",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VIII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VIII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VIII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VIII",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_IX",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IX",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle IX",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "IX",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "IX",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_X",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_X",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle X",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "X",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "X",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XI",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XI",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XI",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XI",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XII",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XIII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Recipient/addressee mapping will be verified before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XIII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XIII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XIII",
+          "note": null
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "DEFINITIONES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.DEFINITIONES",
+      "entry_type": "WORK",
+      "canonical_title": "Definitions",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "De iusto"
+      ],
+      "provisional_work_code": "ON_JUSTICE",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ON_JUSTICE",
+      "entry_type": "WORK",
+      "canonical_title": "On Justice",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "De virtute"
+      ],
+      "provisional_work_code": "ON_VIRTUE",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ON_VIRTUE",
+      "entry_type": "WORK",
+      "canonical_title": "On Virtue",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "DEMODOCUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.DEMODOCUS",
+      "entry_type": "WORK",
+      "canonical_title": "Demodocus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Acephali"
+      ],
+      "provisional_work_code": "SISYPHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SISYPHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Sisyphus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Erasistratus"
+      ],
+      "provisional_work_code": "ERYXIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ERYXIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Eryxias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "AXIOCHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.AXIOCHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Axiochus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Alcyon"
+      ],
+      "provisional_work_code": "HALCYON",
+      "parent_catalog_id": null,
+      "notes": "Requires explicit profile decision on runtime inclusion because the surviving textual tradition is not the Burnet Platonic corpus.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HALCYON",
+      "entry_type": "WORK",
+      "canonical_title": "Halcyon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Diogenes reports the Platonic ascription while treating the work as spurious."
+        },
+        {
+          "source_id": "PLSRC.HALCYON_PERSEUS",
+          "system": "PSEUDO_LUCIAN_TRANSMISSION",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": "Extant Greek text is cataloged in the Pseudo-Lucian tradition."
+        },
+        {
+          "source_id": "PLSRC.JAZDZEWSKA_2022",
+          "system": "MODERN_APPENDIX_DISCUSSION",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Discussed among pseudo-Platonic / Appendix Platonica dialogues."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Horse-breeder"
+      ],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MIDON",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Midon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEACIANS",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Phaeacians",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CHELIDON",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Chelidon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SEVENTH_DAY",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Seventh Day",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIMENIDES",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Epimenides",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED"
+    },
+    {
+      "alternate_titles": [
+        "Epigrams"
+      ],
+      "provisional_work_code": "EPIGRAMMATA",
+      "parent_catalog_id": null,
+      "notes": "Individual epigrams and competing attributions must be resolved before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "entry_type": "ANTHOLOGY_COLLECTION",
+      "canonical_title": "Epigrammata",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PERSEUS_EPIGRAMMATA",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Perseus catalogs an Epigrammata work under the Plato textgroup."
+        },
+        {
+          "source_id": "PLSRC.PAGE_EPIGRAMS",
+          "system": "HISTORICAL_EPIGRAM_COLLECTIONS",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Modern scholarship reports collections ascribed to Plato circulating by the late second century BCE."
+        }
+      ],
+      "review_status": "PROVISIONAL"
+    }
+  ]
+}
