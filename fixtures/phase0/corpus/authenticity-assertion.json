@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "authenticity_assertion",
+  "assertion_id": "PL.ASSERT.AUTH.TEST001",
+  "work_id": "PL.WORK.TEST",
+  "classification": "D",
+  "classification_label": "PSEUDO_PLATONIC",
+  "basis_refs": [
+    "synthetic-fixture"
+  ],
+  "rationale": "Synthetic test object.",
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
