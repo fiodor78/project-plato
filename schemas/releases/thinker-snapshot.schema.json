@@ -2,33 +2,83 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/releases/thinker-snapshot.schema.json",
   "title": "Thinker Framework Instance Snapshot",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "thinker_id", "snapshot_id", "instance_id",
-    "created_at", "profile_release", "baseline_release",
-    "corpus_manifest_id", "state"
+    "schema_version",
+    "thinker_id",
+    "snapshot_id",
+    "instance_id",
+    "created_at",
+    "profile_release",
+    "baseline_release",
+    "corpus_manifest_id",
+    "state"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.2.0" },
-    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
-    "snapshot_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.SNAP\\.[A-Z0-9._-]+$" },
-    "instance_id": { "type": "string" },
-    "created_at": { "type": "string", "format": "date-time" },
-    "profile_release": { "type": "string" },
-    "baseline_release": { "type": "string" },
-    "corpus_manifest_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$" },
-    "parent_snapshot_id": { "type": ["string", "null"] },
-    "lineage_id": { "type": "string", "minLength": 1 },
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.1"
+    },
+    "thinker_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+$"
+    },
+    "snapshot_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+\\.SNAP\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "instance_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "profile_release": {
+      "type": "string"
+    },
+    "baseline_release": {
+      "type": "string"
+    },
+    "corpus_manifest_id": {
+      "type": "string",
+      "pattern": "^TH\\.[A-Z0-9_]+\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$"
+    },
+    "parent_snapshot_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lineage_id": {
+      "type": "string",
+      "minLength": 1
+    },
     "state": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["memory_count", "last_memory_id", "memory_store_checksum"],
+      "required": [
+        "memory_count",
+        "last_memory_id",
+        "memory_store_checksum"
+      ],
       "properties": {
-        "memory_count": { "type": "integer", "minimum": 0 },
-        "last_memory_id": { "type": ["string", "null"] },
-        "memory_store_checksum": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        "memory_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "last_memory_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "memory_store_checksum": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
       }
     }
   }
