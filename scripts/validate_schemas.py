@@ -19,6 +19,7 @@ TARGETS = {
     ROOT / "schemas/framework/thinker-profile.schema.json": ROOT / "thinkers/plato/profile",
     ROOT / "schemas/runtime/runtime-projection.schema.json": ROOT / "thinkers/plato/profile",
     ROOT / "schemas/annotations/discourse-annotation.schema.json": ROOT / "fixtures/phase0/annotations",
+    ROOT / "thinkers/plato/catalog/catalog.schema.json": ROOT / "thinkers/plato/catalog",
 }
 
 
