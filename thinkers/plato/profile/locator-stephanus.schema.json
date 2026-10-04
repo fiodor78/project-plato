@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/locator-stephanus.schema.json",
+  "title": "Plato Profile — Stephanus Locator",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scheme", "value", "components"],
+  "properties": {
+    "scheme": { "const": "STEPHANUS" },
+    "value": { "type": "string", "pattern": "^[0-9]{1,4}[a-e]$" },
+    "components": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page", "section"],
+      "properties": {
+        "page": { "type": "integer", "minimum": 1 },
+        "section": { "type": "string", "enum": ["a", "b", "c", "d", "e"] }
+      }
+    }
+  }
+}
