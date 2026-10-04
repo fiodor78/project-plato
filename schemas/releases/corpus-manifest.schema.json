@@ -1,37 +1,27 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/releases/corpus-manifest.schema.json",
-  "title": "PROJECT PLATO Corpus Release Manifest",
-  "version": "0.1.0",
+  "title": "Thinker Framework Corpus Release Manifest",
+  "version": "0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "manifest_id", "corpus_release", "status",
-    "created_at", "schema_refs", "works", "artifacts", "manifest_checksum"
+    "schema_version", "thinker_id", "profile_release", "manifest_id",
+    "corpus_release", "status", "created_at", "schema_refs",
+    "works", "artifacts", "manifest_checksum"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.1.0" },
-    "manifest_id": {
-      "type": "string",
-      "pattern": "^PL\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$"
-    },
-    "corpus_release": {
-      "type": "string",
-      "pattern": "^CORPUS-[0-9]+\\.[0-9]+\\.[0-9]+(?:-[A-Z0-9._-]+)?$"
-    },
-    "status": {
-      "type": "string",
-      "enum": ["DRAFT", "FROZEN", "RETIRED"]
-    },
+    "schema_version": { "type": "string", "const": "0.2.0" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "profile_release": { "type": "string", "minLength": 1 },
+    "manifest_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$" },
+    "corpus_release": { "type": "string", "pattern": "^CORPUS-[0-9]+\\.[0-9]+\\.[0-9]+(?:-[A-Z0-9._-]+)?$" },
+    "status": { "type": "string", "enum": ["DRAFT", "FROZEN", "RETIRED"] },
     "created_at": { "type": "string", "format": "date-time" },
-    "schema_refs": {
-      "type": "object",
-      "additionalProperties": { "type": "string" },
-      "minProperties": 1
-    },
+    "schema_refs": { "type": "object", "additionalProperties": { "type": "string" }, "minProperties": 1 },
     "works": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^PL\\.WORK\\.[A-Z0-9_]+$" },
+      "items": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.WORK\\.[A-Z0-9_]+$" },
       "uniqueItems": true
     },
     "artifacts": {
@@ -44,33 +34,15 @@
           "artifact_id": { "type": "string" },
           "kind": {
             "type": "string",
-            "enum": [
-              "WORK_CATALOG",
-              "SEGMENTS",
-              "TEXTUAL_WITNESSES",
-              "TRANSLATIONS",
-              "SPEAKER_ASSERTIONS",
-              "RUNTIME_PROJECTION"
-            ]
+            "enum": ["WORK_CATALOG", "SEGMENTS", "TEXTUAL_WITNESSES", "TRANSLATIONS", "ANNOTATIONS", "RUNTIME_PROJECTION"]
           },
           "path_or_ref": { "type": "string" },
-          "sha256": {
-            "type": "string",
-            "pattern": "^[a-f0-9]{64}$"
-          }
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
         }
       }
     },
-    "manifest_checksum": {
-      "type": "string",
-      "pattern": "^[a-f0-9]{64}$"
-    },
-    "parent_manifest_id": {
-      "oneOf": [
-        { "type": "string", "pattern": "^PL\\.MANIFEST\\.CORPUS\\.[A-Z0-9._-]+$" },
-        { "type": "null" }
-      ]
-    },
+    "manifest_checksum": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "parent_manifest_id": { "type": ["string", "null"] },
     "notes": { "type": ["string", "null"] }
   }
 }
