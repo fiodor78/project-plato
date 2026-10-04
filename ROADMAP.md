@@ -25,7 +25,7 @@
 
 ## Remaining Phase 0
 
-- [ ] Verify full CI after the generic-framework migration.
+- [x] Verify full CI after the generic-framework migration.
 - [ ] Add explicit runtime-projection leakage tests (including hidden edition metadata).
 - [ ] Freeze generated-ID strategy.
 - [ ] Test segmentation policy on representative real source structures without ingesting the complete corpus.
