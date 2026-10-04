@@ -1,13 +1,16 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "segment",
-  "segment_id": "PL.SEG.TEST.1A.001",
-  "work_id": "PL.WORK.TEST",
-  "stephanus": {
-    "start": "1a",
-    "end": "1a"
+  "thinker_id": "TH.PLATO",
+  "segment_id": "TH.PLATO.SEG.TEST001",
+  "work_id": "TH.PLATO.WORK.TEST",
+  "locator": {
+    "scheme": "STEPHANUS",
+    "value": "1a",
+    "components": {"page": 1, "section": "a"}
   },
-  "ordinal_within_stephanus": 1,
+  "end_locator": null,
+  "ordinal_within_locator": 1,
   "sequence_index": 1,
   "boundary_status": "PROVISIONAL",
   "parent_segment_id": null
