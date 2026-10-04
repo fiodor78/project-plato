@@ -1,29 +1,20 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/memory/memory.schema.json",
-  "title": "PROJECT PLATO Mutable Memory Schema",
-  "description": "Persistent memory created after boot. ORIGINAL is intentionally absent because it is a read-only corpus view, not a mutable memory record.",
-  "version": "0.1.0",
+  "title": "Thinker Framework Mutable Memory Schema",
+  "version": "0.2.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schema_version", "memory_id", "instance_id", "memory_type",
+    "schema_version", "thinker_id", "memory_id", "instance_id", "memory_type",
     "created_at", "content", "epistemic_status"
   ],
   "properties": {
-    "schema_version": { "type": "string", "const": "0.1.0" },
-    "memory_id": {
-      "type": "string",
-      "pattern": "^PL\\.MEM\\.[A-Z0-9_-]+\\.(ACQUIRED|EPISODIC|INFERENCE)\\.[A-Z0-9_-]+$"
-    },
-    "instance_id": {
-      "type": "string",
-      "pattern": "^PLATO-[A-Z0-9._-]+$"
-    },
-    "memory_type": {
-      "type": "string",
-      "enum": ["ACQUIRED", "EPISODIC", "INFERENCE"]
-    },
+    "schema_version": { "type": "string", "const": "0.2.0" },
+    "thinker_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+$" },
+    "memory_id": { "type": "string", "pattern": "^TH\\.[A-Z0-9_]+\\.MEM\\.[A-Z0-9_-]+\\.(ACQUIRED|EPISODIC|INFERENCE)\\.[A-Z0-9_-]+$" },
+    "instance_id": { "type": "string", "pattern": "^[A-Z0-9_-]+-[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[A-Z0-9._-]+)?$" },
+    "memory_type": { "type": "string", "enum": ["ACQUIRED", "EPISODIC", "INFERENCE"] },
     "created_at": { "type": "string", "format": "date-time" },
     "updated_at": { "type": ["string", "null"], "format": "date-time" },
     "content": {
@@ -38,72 +29,21 @@
     },
     "epistemic_status": {
       "type": "string",
-      "enum": [
-        "REPORTED",
-        "TENTATIVELY_ACCEPTED",
-        "ACCEPTED_FOR_REASONING",
-        "DOUBTED",
-        "CONTRADICTED",
-        "INFERRED"
-      ]
+      "enum": ["REPORTED", "TENTATIVELY_ACCEPTED", "ACCEPTED_FOR_REASONING", "DOUBTED", "CONTRADICTED", "INFERRED"]
     },
-    "confidence": {
-      "type": ["number", "null"],
-      "minimum": 0,
-      "maximum": 1,
-      "description": "Optional system confidence; not a truth probability."
-    },
-    "source_actor": {
-      "type": ["string", "null"],
-      "description": "Who supplied an acquired claim or participated in an episode."
-    },
+    "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "source_actor": { "type": ["string", "null"] },
     "conversation_id": { "type": ["string", "null"] },
     "event_id": { "type": ["string", "null"] },
-    "derived_from": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^(PL\\.(SEG|MEM|PROV)\\.|PLATO-).+"
-      },
-      "uniqueItems": true,
-      "default": []
-    },
-    "provenance_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^PL\\.PROV\\.[A-Z0-9_-]+$"
-      },
-      "uniqueItems": true,
-      "default": []
-    },
-    "supersedes_memory_id": {
-      "oneOf": [
-        {
-          "type": "string",
-          "pattern": "^PL\\.MEM\\.[A-Z0-9_-]+\\.(ACQUIRED|EPISODIC|INFERENCE)\\.[A-Z0-9_-]+$"
-        },
-        { "type": "null" }
-      ]
-    },
-    "status": {
-      "type": "string",
-      "enum": ["ACTIVE", "SUPERSEDED", "RETRACTED"],
-      "default": "ACTIVE"
-    }
+    "derived_from": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "default": [] },
+    "provenance_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "default": [] },
+    "supersedes_memory_id": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["ACTIVE", "SUPERSEDED", "RETRACTED"], "default": "ACTIVE" }
   },
   "allOf": [
     {
-      "if": {
-        "properties": { "memory_type": { "const": "INFERENCE" } },
-        "required": ["memory_type"]
-      },
-      "then": {
-        "properties": {
-          "epistemic_status": { "const": "INFERRED" }
-        },
-        "required": ["derived_from"]
-      }
+      "if": { "properties": { "memory_type": { "const": "INFERENCE" } }, "required": ["memory_type"] },
+      "then": { "properties": { "epistemic_status": { "const": "INFERRED" } }, "required": ["derived_from"] }
     }
   ]
 }
