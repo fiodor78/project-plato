@@ -1,4 +1,4 @@
-# Phase 0 roadmap
+# PROJECT PLATO roadmap
 
 ## Completed
 
@@ -23,19 +23,25 @@
 - [x] Synthetic fixtures include two witnesses, a translation, speaker assertion, acquired memory and mixed-origin inference.
 - [x] Automated validation and executable Phase 0 ingestion gate.
 
-## Remaining Phase 0
+## Phase 0 — accepted
 
 - [x] Verify full CI after the generic-framework migration.
 - [x] Add explicit runtime-projection leakage tests (including hidden edition metadata).
 - [x] Freeze generated-ID strategy (UUIDv7 for opaque runtime objects).
 - [x] Test segmentation policy on representative real source structures without ingesting the complete corpus.
-- [ ] Validate nested discourse annotations in CI and freeze SPEC-0002 for first ingestion iteration.\n- [ ] Pass final Phase 0 architecture gate.
+- [x] Validate nested discourse annotations in CI.
+- [x] Freeze SPEC-0002 for the first ingestion iteration.
+- [x] Pass the final Phase 0 architecture gate.
 
-## Then: Phase 1 / Phase 2
+## Phase 1 — Corpus Platonicum catalog
 
-- [ ] Build full Corpus Platonicum catalog.
+- [ ] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, Appendix Platonica, ancient spurious/lost attributions).
+- [ ] Build the full Corpus Platonicum catalog.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
 - [ ] Freeze Plato work-code registry.
+
+## Phase 2 — source editions and ingestion
+
 - [ ] Select and register Greek source editions.
 - [ ] Verify legal/redistribution status.
 - [ ] Begin deterministic real corpus ingestion.
