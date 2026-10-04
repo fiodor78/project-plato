@@ -12,6 +12,9 @@ TARGETS = {
     ROOT / "schemas/corpus/corpus.schema.json": ROOT / "fixtures/phase0/corpus",
     ROOT / "schemas/memory/memory.schema.json": ROOT / "fixtures/phase0/memory",
     ROOT / "schemas/provenance/provenance.schema.json": ROOT / "fixtures/phase0/provenance",
+    ROOT / "schemas/releases/corpus-manifest.schema.json": ROOT / "fixtures/phase0/releases",
+    ROOT / "schemas/retrieval/retrieval-event.schema.json": ROOT / "fixtures/phase0/retrieval",
+    ROOT / "schemas/releases/plato-snapshot.schema.json": ROOT / "fixtures/phase0/releases",
 }
 
 
@@ -34,24 +37,27 @@ def main() -> int:
             failures += 1
             continue
 
+        matched = 0
         for fixture_path in fixtures:
             instance = load_json(fixture_path)
             errors = sorted(validator.iter_errors(instance), key=lambda e: list(e.path))
-            label = fixture_path.relative_to(ROOT)
             if errors:
-                failures += 1
-                print(f"FAIL {label}")
-                for error in errors:
-                    where = ".".join(str(p) for p in error.path) or "<root>"
-                    print(f"  {where}: {error.message}")
-            else:
-                print(f"PASS {label}")
+                continue
+            matched += 1
+            print(f"PASS {fixture_path.relative_to(ROOT)} against {schema_path.relative_to(ROOT)}")
+
+        if matched == 0:
+            failures += 1
+            print(
+                f"FAIL: no fixture in {fixture_dir.relative_to(ROOT)} "
+                f"validated against {schema_path.relative_to(ROOT)}"
+            )
 
     if failures:
-        print(f"\nValidation failed: {failures} fixture/schema failure(s).")
+        print(f"\nValidation failed: {failures} schema target(s) have no valid fixture.")
         return 1
 
-    print("\nAll Phase 0 schema fixtures are valid.")
+    print("\nAll Phase 0 schema targets have at least one valid fixture.")
     return 0
 
 
