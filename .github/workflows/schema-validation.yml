@@ -31,3 +31,6 @@ jobs:
 
       - name: Run Phase 1 historical catalog gate
         run: python scripts/check_phase1_catalog.py
+
+      - name: Run authenticity assertion gate
+        run: python scripts/check_authenticity_assertions.py
