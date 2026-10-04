@@ -1,9 +1,9 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "entity_type": "textual_witness",
   "thinker_id": "TH.PLATO",
-  "witness_id": "TH.PLATO.WIT.TESTA",
-  "segment_id": "TH.PLATO.SEG.TEST001",
+  "witness_id": "TH.PLATO.WIT.01a108c0-479a-70b5-9a39-df1254c2ef27",
+  "segment_id": "TH.PLATO.SEG.01a108c0-4799-75a7-9445-69a6fdd19b35",
   "edition_id": "TH.PLATO.ED.SYNTHETIC_TEST",
   "language": "grc",
   "text": "[SYNTHETIC GREEK WITNESS — NOT CORPUS TEXT]",
