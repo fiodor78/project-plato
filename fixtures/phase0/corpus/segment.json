@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "segment",
+  "segment_id": "PL.SEG.TEST.1A.001",
+  "work_id": "PL.WORK.TEST",
+  "stephanus": {
+    "start": "1a",
+    "end": "1a"
+  },
+  "ordinal_within_stephanus": 1,
+  "sequence_index": 1,
+  "boundary_status": "PROVISIONAL",
+  "parent_segment_id": null
+}
