@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "provenance_id": "PL.PROV.TEST001",
+  "subject_id": "PL.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+  "created_at": "2026-10-04T20:00:00Z",
+  "created_by": "TEST_HARNESS",
+  "sources": [
+    {
+      "source_id": "TEST-UTTERANCE-001",
+      "source_kind": "USER_UTTERANCE",
+      "relation": "REPORTED_BY",
+      "role": "test-interlocutor",
+      "excerpt_hash": null
+    }
+  ],
+  "retrieval_context": null,
+  "notes": "Synthetic fixture only."
+}
