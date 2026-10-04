@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "source_asset",
+  "source_asset_id": "PL.SRC.TEST001",
+  "source_uri": "https://example.invalid/project-plato/source-fixture",
+  "acquired_at": "2026-10-04T21:00:00Z",
+  "original_filename": "synthetic-source.txt",
+  "media_type": "text/plain",
+  "byte_size": 42,
+  "sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+  "redistribution_status": "PUBLIC_DOMAIN_CONFIRMED",
+  "license_ref": null,
+  "custodian_storage_ref": "fixtures-only",
+  "notes": "Synthetic source fixture; no real corpus material."
+}
