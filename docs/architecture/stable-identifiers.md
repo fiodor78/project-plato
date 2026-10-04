@@ -1,48 +1,70 @@
 # Stable identifier conventions
 
-**Status:** Phase 0 draft implementing ADR-0004  
-**Schema family:** v0.1.0
+**Status:** Phase 0 draft implementing ADR-0011  
+**Schema family:** v0.2.x
 
 ## Principle
 
-Identifiers encode **identity**, not mutable interpretation.
+Identifiers encode **identity**, not mutable scholarly interpretation or one philosopher's citation convention.
 
-Do not put speaker attribution, authenticity classification, preferred edition, translation quality, model version or semantic labels inside a logical passage ID.
+Do not embed speaker attribution, authenticity classification, preferred edition, translation quality, model version, Stephanus/Bekker numbers or semantic labels in a logical segment ID.
 
-## Namespaces
+## Thinker-scoped namespaces
 
-| Entity | Pattern | Example |
+| Entity | Pattern | Plato example |
 |---|---|---|
-| Work | `PL.WORK.<WORK>` | `PL.WORK.REP` |
-| Logical segment | `PL.SEG.<WORK>.<STEPHANUS>.<ORDINAL>` | `PL.SEG.REP.514A.001` |
-| Edition | `PL.ED.<EDITION>` | `PL.ED.SLINGS2003` |
-| Greek witness | `PL.WIT.GRK.<EDITION>.<WORK>.<STEPHANUS>.<ORDINAL>` | `PL.WIT.GRK.SLINGS2003.REP.514A.001` |
-| Translation | `PL.TR.<LANG>.<EDITION>.<WORK>.<STEPHANUS>.<ORDINAL>` | `PL.TR.PL.WITWICKI.REP.514A.001` |
-| Speaker assertion | `PL.ASSERT.SPK.<ID>` | `PL.ASSERT.SPK.01J...` |
-| Authenticity assertion | `PL.ASSERT.AUTH.<ID>` | `PL.ASSERT.AUTH.01J...` |
-| Mutable memory | `PL.MEM.<INSTANCE>.<TYPE>.<ID>` | `PL.MEM.PLATO_1_0_A.ACQUIRED.01J...` |
-| Provenance | `PL.PROV.<ID>` | `PL.PROV.01J...` |
-| Experiment | `PL.EXP.<LINEAGE>.<DATE>.<SEQ>` | `PL.EXP.A.20261114.001` |
+| Thinker | `TH.<THINKER>` | `TH.PLATO` |
+| Work | `TH.<THINKER>.WORK.<WORK>` | `TH.PLATO.WORK.REP` |
+| Logical segment | `TH.<THINKER>.SEG.<ID>` | `TH.PLATO.SEG.01K...` |
+| Edition | `TH.<THINKER>.ED.<EDITION>` | `TH.PLATO.ED.SLINGS2003` |
+| Textual witness | `TH.<THINKER>.WIT.<ID>` | `TH.PLATO.WIT.01K...` |
+| Translation | `TH.<THINKER>.TR.<ID>` | `TH.PLATO.TR.01K...` |
+| Speaker assertion | `TH.<THINKER>.ASSERT.SPK.<ID>` | `TH.PLATO.ASSERT.SPK.01K...` |
+| Attribution assertion | `TH.<THINKER>.ASSERT.AUTH.<ID>` | `TH.PLATO.ASSERT.AUTH.01K...` |
+| Mutable memory | `TH.<THINKER>.MEM.<INSTANCE>.<TYPE>.<ID>` | `TH.PLATO.MEM.PLATO_1_0_A.ACQUIRED.01K...` |
+| Provenance | `TH.<THINKER>.PROV.<ID>` | `TH.PLATO.PROV.01K...` |
+| Retrieval event | `TH.<THINKER>.RET.<ID>` | `TH.PLATO.RET.01K...` |
+| Snapshot | `TH.<THINKER>.SNAP.<ID>` | `TH.PLATO.SNAP.01K...` |
 
-## Work codes
+## Scholarly location is separate
 
-Work codes are controlled vocabulary and will be frozen only after Corpus Catalog review.
+Human-readable corpus addressing uses a locator object:
 
-Examples such as `REP` are illustrative until the catalog registry is accepted.
+```json
+{
+  "scheme": "STEPHANUS",
+  "value": "514a",
+  "components": {
+    "page": 514,
+    "section": "a"
+  }
+}
+```
 
-## Stephanus normalization
+A different profile may use:
 
-- stored display form: lowercase, e.g. `514a`
-- identifier form: uppercase, e.g. `514A`
-- page/letter is not inferred from model output; it must come from corpus structure
-- an ordinal distinguishes multiple logical segments beginning at the same Stephanus point
+```json
+{
+  "scheme": "BEKKER",
+  "value": "980a21",
+  "components": {
+    "page": 980,
+    "column": "a",
+    "line": 21
+  }
+}
+```
 
-## IDs for generated objects
+The generic framework validates the locator envelope. The Thinker Profile validates scheme-specific components.
 
-Generated assertion, memory and provenance IDs should be collision-resistant and sortable where practical. ULID is the current preferred candidate, but this is not yet frozen by ADR.
+## Generated IDs
+
+Generated segment, assertion, memory, retrieval, snapshot and provenance IDs should be collision-resistant and sortable where practical.
+
+ULID remains the preferred candidate for production-generated object suffixes, but the exact generator will be frozen separately before production ingestion.
 
 ## Change rule
 
-If a correction changes metadata about an existing logical object, retain its ID.
+A metadata correction retains an object's ID.
 
-Create a new ID only when the correction establishes that the previous object boundary or identity was fundamentally wrong. Such remapping must be explicit and recorded in provenance/migration metadata.
+A genuinely incorrect logical segmentation boundary may require new segment IDs. Such changes must be recorded through an explicit migration map and may not rewrite already frozen releases.
