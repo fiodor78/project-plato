@@ -18,6 +18,7 @@ TARGETS = {
     ROOT / "schemas/ingestion/source-asset.schema.json": ROOT / "fixtures/phase0/ingestion",
     ROOT / "schemas/framework/thinker-profile.schema.json": ROOT / "thinkers/plato/profile",
     ROOT / "schemas/runtime/runtime-projection.schema.json": ROOT / "thinkers/plato/profile",
+    ROOT / "schemas/annotations/discourse-annotation.schema.json": ROOT / "fixtures/phase0/annotations",
 }
 
 
