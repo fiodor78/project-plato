@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "source_asset",
-  "source_asset_id": "PL.SRC.TEST001",
+  "thinker_id": "TH.PLATO",
+  "source_asset_id": "SRC.TEST001",
   "source_uri": "https://example.invalid/project-plato/source-fixture",
   "acquired_at": "2026-10-04T21:00:00Z",
   "original_filename": "synthetic-source.txt",
