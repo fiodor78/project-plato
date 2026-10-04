@@ -3,43 +3,39 @@
 ## Completed
 
 - [x] Public canonical GitHub repository established.
-- [x] CUSTODIAN / PLATO logical separation accepted.
+- [x] CUSTODIAN / thinker logical separation accepted.
 - [x] Provenance-first epistemic architecture accepted.
-- [x] Edition-independent segment identity accepted.
+- [x] Edition-independent logical segment identity accepted.
 - [x] Structural + semantic retrieval accepted.
 - [x] ORIGINAL defined as an immutable corpus view.
 - [x] Deny-by-default runtime visibility projection accepted.
-- [x] Immutable corpus-release and PLATO-baseline model accepted.
-- [x] Initial Corpus schema v0.1.0.
-- [x] Initial Memory schema v0.1.0.
-- [x] Initial Provenance schema v0.1.0.
-- [x] Corpus manifest schema v0.1.0.
-- [x] Retrieval-event schema v0.1.0.
-- [x] PLATO snapshot/lineage schema v0.1.0.
-- [x] Automated JSON Schema validation.
-- [x] Minimal synthetic fixture corpus for architecture tests.
+- [x] Immutable corpus-release and instance-baseline model accepted.
+- [x] Source assets made immutable and checksum-addressed.
+- [x] Generic Thinker Core / Profile / Instance architecture accepted.
+- [x] Plato moved conceptually into an isolated Thinker Profile.
+- [x] Generic locator abstraction introduced.
+- [x] Plato Stephanus locator adapter created.
+- [x] Generic Corpus schema v0.2.0.
+- [x] Generic Memory schema v0.2.0.
+- [x] Generic Provenance schema v0.2.0.
+- [x] Generic release/retrieval/snapshot schemas v0.2.0.
+- [x] Thinker Profile schema created.
+- [x] Synthetic fixtures include two witnesses, a translation, speaker assertion, acquired memory and mixed-origin inference.
+- [x] Automated validation and executable Phase 0 ingestion gate.
 
-## Next
+## Remaining Phase 0
 
-- [ ] Define source-ingestion record and checksum policy.
-- [ ] Define segmentation policy and speaker-annotation policy.
-- [ ] Freeze work-code registry after Corpus Platonicum catalog review.
-- [ ] Add a second textual witness and a translation to the fixture.
-- [ ] Add inference-memory fixture derived from corpus + acquired testimony.
-- [ ] Add leakage tests for runtime visibility.
-- [ ] Pass the full Phase 0 ingestion gate.
+- [ ] Verify full CI after the generic-framework migration.
+- [ ] Add explicit runtime-projection leakage tests (including hidden edition metadata).
+- [ ] Freeze generated-ID strategy.
+- [ ] Test segmentation policy on representative real source structures without ingesting the complete corpus.
+- [ ] Pass final Phase 0 architecture gate.
 
-## Phase 0 ingestion gate
+## Then: Phase 1 / Phase 2
 
-Corpus ingestion may begin only when a test fixture can:
-
-1. register a work;
-2. create stable logical segments;
-3. attach two independent Greek textual witnesses to the same segment;
-4. attach a translation without changing segment identity;
-5. attach/change a speaker assertion without changing segment identity;
-6. attach a CUSTODIAN-only authenticity assertion;
-7. retrieve a passage structurally;
-8. record retrieval provenance;
-9. create an acquired memory and an inference derived from corpus + acquired memory;
-10. answer "where did this come from?" from provenance rather than free-form model reconstruction.
+- [ ] Build full Corpus Platonicum catalog.
+- [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
+- [ ] Freeze Plato work-code registry.
+- [ ] Select and register Greek source editions.
+- [ ] Verify legal/redistribution status.
+- [ ] Begin deterministic real corpus ingestion.
