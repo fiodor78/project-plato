@@ -1,11 +1,12 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "entity_type": "speaker_assertion",
-  "assertion_id": "PL.ASSERT.SPK.TEST001",
-  "segment_id": "PL.SEG.TEST.1A.001",
-  "speaker_id": "PL.SPEAKER.SYNTHETIC_SPEAKER",
+  "thinker_id": "TH.PLATO",
+  "assertion_id": "TH.PLATO.ASSERT.SPK.TEST001",
+  "segment_id": "TH.PLATO.SEG.TEST001",
+  "speaker_id": "TH.PLATO.SPEAKER.SYNTHETIC_SPEAKER",
   "speaker_label": "Synthetic Speaker",
   "assertion_status": "ASSERTED",
   "basis_ref": "synthetic-fixture",
-  "runtime_visibility": "PLATO_VISIBLE"
+  "runtime_visibility": "THINKER_VISIBLE"
 }
