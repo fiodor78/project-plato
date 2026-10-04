@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "entity_type": "work",
+  "work_id": "PL.WORK.TEST",
+  "slug": "synthetic-test-dialogue",
+  "titles": {
+    "greek": null,
+    "latin": null,
+    "english": "Synthetic Test Dialogue",
+    "polish": "Syntetyczny dialog testowy"
+  },
+  "stephanus_range": {
+    "start": "1a",
+    "end": "1b"
+  },
+  "traditional_group": null,
+  "traditional_order": 1,
+  "corpus_status": "IN_SCOPE",
+  "notes": "Synthetic fixture only. Not part of Corpus Platonicum."
+}
