@@ -2,10 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/ingestion/source-asset.schema.json",
   "title": "Thinker Framework Source Asset and Transformation",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "oneOf": [
-    { "$ref": "#/$defs/sourceAsset" },
-    { "$ref": "#/$defs/transformation" }
+    {
+      "$ref": "#/$defs/sourceAsset"
+    },
+    {
+      "$ref": "#/$defs/transformation"
+    }
   ],
   "$defs": {
     "sha256": {
@@ -16,64 +20,156 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "schema_version", "entity_type", "source_asset_id",
-        "source_uri", "acquired_at", "media_type", "byte_size",
-        "sha256", "redistribution_status", "custodian_storage_ref"
+        "schema_version",
+        "entity_type",
+        "source_asset_id",
+        "source_uri",
+        "acquired_at",
+        "media_type",
+        "byte_size",
+        "sha256",
+        "redistribution_status",
+        "custodian_storage_ref"
       ],
       "properties": {
-        "schema_version": { "type": "string", "const": "0.2.0" },
-        "entity_type": { "const": "source_asset" },
+        "schema_version": {
+          "type": "string",
+          "const": "0.2.1"
+        },
+        "entity_type": {
+          "const": "source_asset"
+        },
         "thinker_id": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "pattern": "^TH\\.[A-Z0-9_]+$",
           "description": "Optional because one source asset may be reusable across multiple thinker profiles."
         },
         "source_asset_id": {
           "type": "string",
-          "pattern": "^SRC\\.[A-Z0-9_-]+$"
+          "pattern": "^SRC\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
         },
-        "source_uri": { "type": "string", "format": "uri" },
-        "acquired_at": { "type": "string", "format": "date-time" },
-        "original_filename": { "type": ["string", "null"] },
-        "media_type": { "type": "string", "minLength": 1 },
-        "byte_size": { "type": "integer", "minimum": 0 },
-        "sha256": { "$ref": "#/$defs/sha256" },
+        "source_uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "acquired_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "original_filename": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "byte_size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
         "redistribution_status": {
           "type": "string",
-          "enum": ["PUBLIC_DOMAIN_CONFIRMED", "OPEN_LICENSE_CONFIRMED", "RESTRICTED", "UNKNOWN_REVIEW_REQUIRED"]
+          "enum": [
+            "PUBLIC_DOMAIN_CONFIRMED",
+            "OPEN_LICENSE_CONFIRMED",
+            "RESTRICTED",
+            "UNKNOWN_REVIEW_REQUIRED"
+          ]
         },
-        "license_ref": { "type": ["string", "null"] },
-        "custodian_storage_ref": { "type": "string", "minLength": 1 },
-        "notes": { "type": ["string", "null"] }
+        "license_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "custodian_storage_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "transformation": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "schema_version", "entity_type", "transformation_id",
-        "input_sha256", "output_sha256", "performed_at",
-        "method", "tool_version"
+        "schema_version",
+        "entity_type",
+        "transformation_id",
+        "input_sha256",
+        "output_sha256",
+        "performed_at",
+        "method",
+        "tool_version"
       ],
       "properties": {
-        "schema_version": { "type": "string", "const": "0.2.0" },
-        "entity_type": { "const": "source_transformation" },
-        "thinker_id": { "type": ["string", "null"], "pattern": "^TH\\.[A-Z0-9_]+$" },
-        "transformation_id": { "type": "string", "pattern": "^XFORM\\.[A-Z0-9_-]+$" },
-        "input_sha256": { "$ref": "#/$defs/sha256" },
-        "output_sha256": { "$ref": "#/$defs/sha256" },
-        "performed_at": { "type": "string", "format": "date-time" },
+        "schema_version": {
+          "type": "string",
+          "const": "0.2.1"
+        },
+        "entity_type": {
+          "const": "source_transformation"
+        },
+        "thinker_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^TH\\.[A-Z0-9_]+$"
+        },
+        "transformation_id": {
+          "type": "string",
+          "pattern": "^XFORM\\.[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "input_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "output_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "performed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
         "method": {
           "type": "string",
           "enum": [
-            "EXTRACT_TEXT", "DECOMPRESS", "ENCODING_NORMALIZATION",
-            "UNICODE_NORMALIZATION", "TEI_PARSE", "STRUCTURAL_ALIGNMENT",
+            "EXTRACT_TEXT",
+            "DECOMPRESS",
+            "ENCODING_NORMALIZATION",
+            "UNICODE_NORMALIZATION",
+            "TEI_PARSE",
+            "STRUCTURAL_ALIGNMENT",
             "MANUAL_CORRECTION"
           ]
         },
-        "tool_version": { "type": "string", "minLength": 1 },
-        "parameters": { "type": "object" },
-        "notes": { "type": ["string", "null"] }
+        "tool_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     }
   }
