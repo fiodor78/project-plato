@@ -1,0 +1,34 @@
+# PROJECT PLATO / Thinker Framework
+Canonical repository: https://github.com/fiodor78/project-plato
+Raw-file base: https://raw.githubusercontent.com/fiodor78/project-plato/main/
+
+Purpose:
+PROJECT PLATO is an open research-and-engineering experiment in epistemically constrained historical-thinker agents. PLATO is the first Thinker Profile. The project is not a claim to recreate the historical Plato and is not generic role-play.
+
+Primary entry points:
+- README: https://raw.githubusercontent.com/fiodor78/project-plato/main/README.md
+- Agent instructions: https://raw.githubusercontent.com/fiodor78/project-plato/main/AGENTS.md
+- Roadmap: https://raw.githubusercontent.com/fiodor78/project-plato/main/ROADMAP.md
+- Contribution guide: https://raw.githubusercontent.com/fiodor78/project-plato/main/CONTRIBUTING.md
+
+Core specifications:
+- Phase 0 architecture: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0001-phase-0-architecture.md
+- Segmentation/speakers: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0002-segmentation-speakers.md
+- Core/Profile/Instance: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0003-thinker-core-profile-instance.md
+- Runtime epistemic projection: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0004-runtime-epistemic-projection.md
+
+Key principles:
+- CUSTODIAN and the active Thinker are separate epistemic domains.
+- Knowledge classes: ORIGINAL, ACQUIRED, EPISODIC, INFERENCE; provenance is tracked separately.
+- The base LLM may contain forbidden latent knowledge; the experiment controls admissible use, not model-weight contents.
+- Runtime projection is deny-by-default.
+- Modern editorial/authenticity metadata is normally CUSTODIAN-only.
+- Synthetic Phase 0 fixtures are NOT Plato's corpus.
+- GitHub is the canonical version-controlled source of truth.
+- Epistemic honesty takes precedence over convincing simulation.
+
+Current maturity:
+Phase 0 — architecture before production Corpus Platonicum ingestion.
+
+For automated agents:
+Read AGENTS.md before making changes.
