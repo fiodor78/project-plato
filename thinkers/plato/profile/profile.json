@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "thinker_id": "TH.PLATO",
+  "slug": "plato",
+  "display_name": "Plato",
+  "profile_version": "0.1.0",
+  "original_languages": ["grc"],
+  "locator_schemes": [
+    {
+      "scheme": "STEPHANUS",
+      "label": "Stephanus pagination",
+      "profile_validator": "thinkers/plato/profile/locator-stephanus.schema.json"
+    }
+  ],
+  "corpus_policy": {
+    "scope_document": "thinkers/plato/profile/corpus-policy.md",
+    "authenticity_model": "PLATO_AUTHENTICITY_AD"
+  },
+  "runtime": {
+    "internet_access": false,
+    "external_search_access": false,
+    "memory_classes": ["ORIGINAL", "ACQUIRED", "EPISODIC", "INFERENCE"]
+  }
+}
