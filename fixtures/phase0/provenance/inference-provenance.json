@@ -1,20 +1,20 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.2.1",
   "thinker_id": "TH.PLATO",
-  "provenance_id": "TH.PLATO.PROV.TEST002",
-  "subject_id": "TH.PLATO.MEM.PLATO_0_1_TEST.INFERENCE.TEST002",
+  "provenance_id": "TH.PLATO.PROV.01a108c0-479a-7423-9472-f4d628dbf11d",
+  "subject_id": "TH.PLATO.MEM.PLATO_0_1_TEST.INFERENCE.01a108c0-479a-78c5-98f1-b079003d0b3f",
   "created_at": "2026-10-04T21:10:00Z",
   "created_by": "TEST_HARNESS",
   "sources": [
     {
-      "source_id": "TH.PLATO.SEG.TEST001",
+      "source_id": "TH.PLATO.SEG.01a108c0-4799-75a7-9445-69a6fdd19b35",
       "source_kind": "CORPUS_SEGMENT",
       "relation": "DERIVED_FROM",
       "role": "original knowledge",
       "excerpt_hash": null
     },
     {
-      "source_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.TEST001",
+      "source_id": "TH.PLATO.MEM.PLATO_0_1_TEST.ACQUIRED.01a108c0-479a-7564-8ca3-c86135ae79fe",
       "source_kind": "ACQUIRED_MEMORY",
       "relation": "DERIVED_FROM",
       "role": "acquired testimony",
@@ -22,7 +22,7 @@
     }
   ],
   "retrieval_context": {
-    "retrieval_event_id": "TH.PLATO.RET.TEST001",
+    "retrieval_event_id": "TH.PLATO.RET.01a108c0-479a-79de-93d0-bd28b6876680",
     "mode": "STRUCTURAL",
     "query_hash": null,
     "index_version": "test-index-0.2.0"
