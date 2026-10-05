@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-47a0-7001-8abc-000000000071",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_VII",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "B",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.14195/2183-4105_23_5",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Notomi (2022) argues directly against recent Anglophone rejection of the Seventh Letter and concludes that the traditional attribution to Plato should be respected."
+    },
+    {
+      "source_ref": "https://doi.org/10.1093/acprof:oso/9780198795797.003.0008",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Denyer's Oxford Studies review discusses Burnyeat and Frede's case against authenticity, criticizes details but endorses and amplifies their conclusion that the letter is pseudo-Platonic."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.003.0001",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Helfer (2023) treats the Platonic Letters as philosophically serious evidence and reviews the provenance/authenticity problem, illustrating that the collection remains an active scholarly field rather than a closed verdict."
+    }
+  ],
+  "rationale": "The Seventh Letter is a paradigmatic live authenticity dispute. Major modern scholars argue forcefully that it is pseudo-Platonic, while other recent specialist scholarship defends Platonic authorship and explicitly challenges the skeptical case. B therefore preserves genuine scholarly disagreement and avoids converting either school into a false consensus.",
+  "assessed_at": "2026-10-05T05:15:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
