@@ -58,7 +58,8 @@ def main() -> int:
         else:
             buckets["other"].append(entry)
 
-    require(len(assertions) >= 46, "Phase 1 authenticity coverage has reached at least 46 assessed texts")
+    require(len(assertions) >= 56, "Phase 1 authenticity coverage has reached at least 56 assessed texts")
+    require(not buckets["canonical_epistles"], "all thirteen canonical Epistles have provisional authenticity assessments")
     require(not buckets["other"], "all currently unresolved authenticity cases belong to explicitly tracked backlog groups")
 
     grades = Counter(a["classification"] for a in assertions)
