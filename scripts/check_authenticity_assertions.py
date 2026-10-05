@@ -6,7 +6,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT=Path(__file__).resolve().parents[1]
-CATALOG=ROOT/"thinkers/plato/catalog/catalog-v0.1.0.json"
+CATALOG=ROOT/"thinkers/plato/catalog/catalog-v0.1.4.json"
 SCHEMA=ROOT/"thinkers/plato/profile/authenticity-assertion.schema.json"
 AUTH_DIR=ROOT/"thinkers/plato/catalog/authenticity"
 
@@ -38,7 +38,11 @@ def main() -> int:
     require(all(a["catalog_id"] in catalog_ids for a in assertions),"every authenticity assertion resolves to a catalog entry")
     require(all(a["runtime_visibility"]=="CUSTODIAN_ONLY" for a in assertions),"authenticity assertions are CUSTODIAN-only")
     require(
-        all(len({e["source_ref"] for e in a["evidence"]})>=2 for a in assertions),
+        all(
+            a["classification"] != "D"
+            or len({e["source_ref"] for e in a["evidence"]}) >= 2
+            for a in assertions
+        ),
         "each current provisional D assertion has at least two distinct evidence sources"
     )
 
