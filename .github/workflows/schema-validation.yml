@@ -34,3 +34,6 @@ jobs:
 
       - name: Run authenticity assertion gate
         run: python scripts/check_authenticity_assertions.py
+
+      - name: Run authenticity coverage gate
+        run: python scripts/check_authenticity_coverage.py
