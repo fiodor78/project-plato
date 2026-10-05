@@ -38,7 +38,7 @@ The 2025 Pelucchi overview explicitly discusses material beyond the current PROJ
 
 - AP VII 217 (Archeanassa);
 - AP VII 516b / VII 35 (Pindar tradition);
-- AP IX 144;
+- AP IX 39 and AP IX 827 (omitted from the first working inventory but explicit in Pelucchi's attribution discussion);
 - Cougny III 33 (Aristophanes);
 - additional transmitted material that must be resolved from the critical edition.
 
@@ -58,9 +58,11 @@ The modern scholarly baseline is strongly skeptical:
 
 However, older and some modern discussions preserve individual candidates or subgroups as potentially authentic. The identity of those candidates must be mapped to exact AP/other-source references before assigning work-level A/B/C/D grades.
 
-## Required next step
+## Required next step — updated
 
-Build an **Epigram Crosswalk v1** with one row per historically attested item and columns for at least:
+The 37-item source-level historical scope is now complete. The project must now normalize the 14 scope items missing from catalog v0.1.4 and migrate once to catalog v0.1.5. The existing **Epigram Crosswalk** and historical-scope artifact provide the migration input.
+
+The crosswalk records with one row per historically attested item and columns for at least:
 
 - project catalog ID;
 - Pelucchi 2026 number;
@@ -74,12 +76,7 @@ Build an **Epigram Crosswalk v1** with one row per historically attested item an
 - current PROJECT PLATO inclusion status;
 - authenticity-review status.
 
-Only after the crosswalk is source-verified should PROJECT PLATO:
-
-1. add missing epigram members;
-2. resolve duplicates and variant attributions;
-3. freeze the epigram scope;
-4. assign individual authenticity grades.
+PROJECT PLATO has now source-verified the 37-item historical scope. Before individual authenticity grades are frozen it must still: add/normalize the 14 missing catalog objects, preserve witness relationships and homonymy, and then freeze the migrated epigram identities.
 
 ## Principal sources
 
@@ -96,4 +93,5 @@ Until the crosswalk is completed:
 - `TH.PLATO.CAT.EPIGRAMMATA` remains `PENDING_REVIEW`;
 - its 23 current child records are retained as verified individual attributions from the initial source;
 - the number 23 must not be described as the complete Plato epigram corpus;
-- Phase 1 “Build the full Corpus Platonicum catalog” remains open.
+- the source-level historical scope is now fixed at 37 items;
+- Phase 1 “Build the full Corpus Platonicum catalog” remains open until the 14 missing objects are normalized into catalog v0.1.5.
