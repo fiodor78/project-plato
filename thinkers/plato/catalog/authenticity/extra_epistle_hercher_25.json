@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10930-0025-7001-8abc-000000000025",
+  "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_25",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.30965/9783657793891_012",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Forcignanò and Martinelli Tempesta treat the extra-canonical Platonic epistles outside the traditional thirteen as spurious and discuss the individual Hercher-numbered items."
+    },
+    {
+      "source_ref": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/putting-the-platonic-letters-in-order-a-pen-pal-breakup-and-the-legacy-of-dion/DDC0840A75BD5640B0628BE6D648E42A",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "CONTEXT_ONLY",
+      "note": "Hirsch (2026) explicitly enumerates Hercher 14, 15, 24, 25, 26, 30, 31, 70 and 85 as other letters of 'Plato' outside the thirteen-letter collection, pointing to the 2023 corpus-history treatment."
+    }
+  ],
+  "rationale": "Brief recommendation for Krinis; current corpus-history scholarship treats it as spurious.",
+  "assessed_at": "2026-10-06T00:40:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
