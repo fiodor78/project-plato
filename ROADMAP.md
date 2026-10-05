@@ -46,6 +46,7 @@
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
   - [x] Classify first Thrasyllan dubia tranche: B for Alcibiades I, Hippias Major, Clitophon; C for Alcibiades II, Hipparchus, Rival Lovers, Theages, Minos, Epinomis.
   - [x] Classify Definitions, On Justice and On Virtue as high-confidence D cases.
+  - [x] Classify 26 core dialogues as provisional A (strongly accepted as Platonic).
 - [ ] Freeze Plato work-code registry.
 
 ## Phase 2 — source editions and ingestion
