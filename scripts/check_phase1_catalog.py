@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.1.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.2.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -109,6 +109,45 @@ def main() -> int:
         epigrams["entry_type"] == "ANTHOLOGY_COLLECTION"
         and epigrams["runtime_candidacy"] == "PENDING_REVIEW",
         "anthological Plato attribution is cataloged without automatic runtime admission"
+    )
+
+    allowed_scope_classes = {
+        "THRASYLLAN_CANON",
+        "THRASYLLAN_COLLECTION_MEMBER",
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION",
+        "ANTHOLOGICAL_ASCRIPTION",
+    }
+    require(
+        all(e.get("scope_classes") and set(e["scope_classes"]) <= allowed_scope_classes for e in entries),
+        "every catalog entry has at least one valid historical scope class"
+    )
+    require(
+        all(
+            "THRASYLLAN_CANON" in e["scope_classes"]
+            for e in thrasyllan
+        ),
+        "all Thrasyllan slots carry THRASYLLAN_CANON"
+    )
+    require(
+        all(
+            "THRASYLLAN_COLLECTION_MEMBER" in e["scope_classes"]
+            for e in letter_members
+        ),
+        "all thirteen Epistles carry THRASYLLAN_COLLECTION_MEMBER"
+    )
+    require(
+        all(
+            "LOST_ATTRIBUTION" in e["scope_classes"]
+            and "ANCIENT_EXPLICIT_SPURIA" in e["scope_classes"]
+            for e in lost
+        ),
+        "lost ancient spurious titles preserve both scope dimensions"
+    )
+    require(
+        "ANTHOLOGICAL_ASCRIPTION" in epigrams["scope_classes"],
+        "Epigrammata is explicitly separated as anthological attribution"
     )
 
     require(
