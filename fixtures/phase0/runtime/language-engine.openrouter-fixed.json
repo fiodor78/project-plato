@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "engine_config_id": "LE.SYNTHETIC.OPENROUTER_FIXED",
+  "gateway": "OPENROUTER",
+  "model": "example/provider-model",
+  "routing": {
+    "mode": "FIXED",
+    "providers": [
+      "ExampleProvider"
+    ],
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "max_price_usd_per_million_tokens": 5
+  },
+  "privacy": {
+    "training_allowed": false,
+    "zdr_required": true
+  },
+  "inference_parameters": {
+    "temperature": 0.2
+  },
+  "budget": {
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "max_cost_usd_per_request": 0.25
+  },
+  "audit": {
+    "record_requested_model": true,
+    "record_resolved_model": true,
+    "record_resolved_provider": true,
+    "record_usage": true,
+    "record_cost": true
+  }
+}
