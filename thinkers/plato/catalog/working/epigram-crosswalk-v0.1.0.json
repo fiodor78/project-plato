@@ -1,0 +1,339 @@
+{
+  "crosswalk_version": "0.1.0",
+  "status": "WORKING_NOT_FROZEN",
+  "thinker_id": "TH.PLATO",
+  "purpose": "Machine-readable Page/Massimo baseline for reconstruction of the complete historical Plato-attributed epigram corpus. Not a production catalog.",
+  "source_basis": [
+    {
+      "source_id": "MASSIMO_2020",
+      "citation": "Davide Massimo, Defining a ‘Pseudo–Plato’ Epigrammatist (2020)",
+      "url": "https://doi.org/10.1515/9783110684629-004"
+    },
+    {
+      "source_id": "PELUCCHI_2025",
+      "citation": "Marco Pelucchi, Gli epigrammi attribuiti a Platone: problemi ecdotici di un corpus pseudepigrafo (2025)",
+      "url": "https://doi.org/10.7347/AR-2025-p140"
+    },
+    {
+      "source_id": "PELUCCHI_2026",
+      "citation": "Marco Pelucchi, Gli epigrammi di Platone. Studio introduttivo, edizione e commento (2026)",
+      "url": "https://doi.org/10.54103/consonanze.269",
+      "note": "Exact 37-item numbering/order still being reconstructed; only directly verified anchors are populated."
+    }
+  ],
+  "verified_pelucchi_anchors": {
+    "1": "AP 7.669",
+    "2": "AP 7.670",
+    "3": "AP 7.99",
+    "4": "AP 7.100",
+    "5": "NON_ANTHOLOGY_ARCHEANASSA",
+    "7": "AP 5.79",
+    "8": "AP 5.80",
+    "10": "AP 7.259",
+    "11": "AP 7.256"
+  },
+  "items": [
+    {
+      "page_eg": "I",
+      "page_fge": "I",
+      "reference": "AP 7.669",
+      "pelucchi_2026_number": 1,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_669",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "II",
+      "page_fge": "II",
+      "reference": "AP 7.670",
+      "pelucchi_2026_number": 2,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_670",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "III",
+      "page_fge": "III",
+      "reference": "AP 5.77",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_78",
+      "crosswalk_status": "CONFLICT",
+      "note": "Massimo/Page prospectus prints AP 5.77; current catalog and Pelucchi/modern tradition use AP 5.78 for the Agathon epigram."
+    },
+    {
+      "page_eg": "IV",
+      "page_fge": "IV",
+      "reference": "AP 5.79",
+      "pelucchi_2026_number": 7,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_79",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "V",
+      "page_fge": "V",
+      "reference": "AP 5.80",
+      "pelucchi_2026_number": 8,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_80",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "VI",
+      "page_fge": "VI",
+      "reference": "AP 7.100",
+      "pelucchi_2026_number": 4,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_100",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "VII",
+      "page_fge": "VII",
+      "reference": "AP 9.39",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_39",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "VIII",
+      "page_fge": "VIII",
+      "reference": "AP 6.1",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_1",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "IX",
+      "page_fge": "IX",
+      "reference": "NON_ANTHOLOGY_ARCHEANASSA",
+      "pelucchi_2026_number": 5,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Platonic Archeanassa version in Diogenes/Athenaeus; related to AP 7.217 but not identical logical text."
+    },
+    {
+      "page_eg": "X",
+      "page_fge": "X",
+      "reference": "AP 7.99",
+      "pelucchi_2026_number": 3,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_99",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XI",
+      "page_fge": "XI",
+      "reference": "AP 7.259",
+      "pelucchi_2026_number": 10,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_259",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XII",
+      "page_fge": "XII",
+      "reference": "AP 7.256",
+      "pelucchi_2026_number": 11,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_256",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XIII",
+      "page_fge": "XIII",
+      "reference": "AP 9.506",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_506",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XIV",
+      "page_fge": "XIV",
+      "reference": "NON_ANTHOLOGY_ARISTOPHANES",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Vita Aristophanis / Olympiodorus / Prolegomena tradition; compare Cougny III 33."
+    },
+    {
+      "page_eg": "XV",
+      "page_fge": "XV",
+      "reference": "AP 9.51",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_51",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XVI",
+      "page_fge": "XVI",
+      "reference": "AP 9.823",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_823",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XVII",
+      "page_fge": "XVII",
+      "reference": "AP 16.13",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_13",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XVIII",
+      "page_fge": "XVIII",
+      "reference": "AP 7.368",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": null
+    },
+    {
+      "page_eg": "XIX",
+      "page_fge": "XIX",
+      "reference": "AP 7.265",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_265",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XX",
+      "page_fge": "XX",
+      "reference": "AP 7.269",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_269",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XXI",
+      "page_fge": "XXI",
+      "reference": "AP 6.43",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_43",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XXII",
+      "page_fge": "XXII(a)",
+      "reference": "AP 9.826",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_826",
+      "crosswalk_status": "MATCH",
+      "note": null
+    },
+    {
+      "page_eg": "XXIII",
+      "page_fge": "XXII(b)",
+      "reference": "AP 9.827",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Competing Ammianus attribution in the minor sylloge tradition."
+    },
+    {
+      "page_eg": "XXIV",
+      "page_fge": null,
+      "reference": "AP 16.248",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_248",
+      "crosswalk_status": "MATCH",
+      "note": "Competing attribution; Page associates with Plato Junior."
+    },
+    {
+      "page_eg": "XXV",
+      "page_fge": "XXIII",
+      "reference": "AP 16.160",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Page associates with Plato Junior."
+    },
+    {
+      "page_eg": "XXVI",
+      "page_fge": null,
+      "reference": "AP 16.161",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Page associates with Plato Junior."
+    },
+    {
+      "page_eg": "XXVII",
+      "page_fge": null,
+      "reference": "AP 9.747",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_747",
+      "crosswalk_status": "MATCH",
+      "note": "Page associates with Plato Junior."
+    },
+    {
+      "page_eg": "XXVIII",
+      "page_fge": null,
+      "reference": "AP 9.748",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Explicit Plato the Younger heading; one OCR extraction incorrectly reads 8.748."
+    },
+    {
+      "page_eg": "XXIX",
+      "page_fge": null,
+      "reference": "AP 9.751",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Explicit Plato the Younger heading."
+    },
+    {
+      "page_eg": "XXX",
+      "page_fge": null,
+      "reference": "AP 9.13",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "MISSING",
+      "note": "Explicit Plato the Younger heading; Pelucchi discusses AP 9.13a."
+    },
+    {
+      "page_eg": "XXXI",
+      "page_fge": null,
+      "reference": "AP 9.44",
+      "pelucchi_2026_number": null,
+      "current_catalog_id": null,
+      "crosswalk_status": "PROVISIONAL",
+      "note": "Highly plausible crosswalk for Diogenes' 'on gold'; direct Page/Pelucchi apparatus confirmation still required."
+    }
+  ],
+  "current_catalog_items_outside_page31": [
+    {
+      "reference": "AP 5.78",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_5_78",
+      "note": "Retain; independently supported by Pelucchi and modern scholarship despite Page/Massimo AP 5.77 conflict."
+    },
+    {
+      "reference": "AP 7.268",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_268",
+      "note": "Retain; explicitly part of broader pseudo-Platonic shipwreck group."
+    },
+    {
+      "reference": "AP 9.3",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_3",
+      "note": "Retain; competing Antipater attribution and explicit modern discussion."
+    }
+  ],
+  "unresolved_rules": [
+    "Do not mutate production catalog from this file alone.",
+    "Do not infer missing Pelucchi numbers from sequence.",
+    "Do not collapse Plato philosopher, Plato Junior, Plato Comicus, unspecified Plato, anonymous transmission, or competing named authors.",
+    "Resolve witness identity versus logical-text identity before catalog-v0.1.5."
+  ]
+}
