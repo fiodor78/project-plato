@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0002-7001-8abc-000000000002",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_II",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "C",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.1515/agph.1998.80.3.241",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Keyser argues that Letter II in its current form is not Platonic, adducing dating, doctrinal, hiatus and technological evidence and proposing a later intellectual context."
+    },
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury judges Letter II fairly certainly inauthentic, emphasizing conflicts of tone and content with the stronger Sicilian letter tradition."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.001.0001",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer (2023) revives a serious minority position that treats the thirteen Letters as a deliberately unified Platonic literary-philosophical work."
+    }
+  ],
+  "rationale": "Letter II has a substantial history of defense, but the stronger modern case points against Platonic authorship. Bury regarded it as fairly certainly inauthentic, and Keyser developed a detailed chronological, doctrinal and linguistic case for a substantially later provenance. Because serious scholarship has nevertheless defended the letter, and a recent monograph again argues for a unified Platonic design of the letter collection, PROJECT PLATO classifies it as C rather than D.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
