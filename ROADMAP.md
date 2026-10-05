@@ -41,6 +41,7 @@
 - [x] Verify all 13 Epistle addressees and preserve the Letter X Aristodemus/Aristodorus variant.
 - [x] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, extra-canonical extant attributions, ancient spuria/lost titles, anthological attributions).
 - [ ] Build the full Corpus Platonicum catalog.
+  - [x] Split Epigrammata into 23 individually addressable Greek Anthology attributions (provisional member inventory).
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
 - [ ] Freeze Plato work-code registry.
