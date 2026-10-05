@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0004-7001-8abc-000000000004",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_IV",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "C",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury highlights tensions in tone and in the relation to Dion and Letter VII as reasons against authenticity."
+    },
+    {
+      "source_ref": "https://www.persee.fr/doc/reg_0035-2039_1936_num_49_231_2790_t2_0483_0000_1",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "MIXED",
+      "note": "The review of Morrow reports that he was inclined to recognize Letter IV, though less confidently than several other letters."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.001.0001",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer (2023) treats the letter collection as a coherent Platonic literary project, preserving a serious recent minority defense."
+    }
+  ],
+  "rationale": "Letter IV has had defenders, including Morrow's qualified willingness to admit it, but major critical treatments have emphasized conflicts with the portrait of Dion and with Letter VII. Recent broad skepticism toward the minor letters strengthens the negative side. The continued existence of serious defenses prevents D; C best records probable inauthenticity with residual dispute.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
