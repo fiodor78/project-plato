@@ -116,3 +116,28 @@ Before catalog mutation:
 Pelucchi's article is especially valuable because it shows that the problem is not simply “which epigrams are authentic”. The prior question is **which historical textual objects were actually attributed to which Plato, in which witness and at what stage of transmission**.
 
 That distinction should be represented structurally in the profile before individual authenticity grades are frozen.
+
+
+## Verified Pelucchi 2026 numbering anchors
+
+The 2025 article explicitly cross-references selected items to the numbering of the then-forthcoming 2026 critical edition. These anchors are safe to record because they are stated directly in Pelucchi's notes rather than inferred from thematic order.
+
+| Pelucchi 2026 | Text / witness | Basis |
+|---:|---|---|
+| 1 | AP 7.669 | FGE 1 = epigr. 1 PELUCCHI |
+| 2 | AP 7.670 | FGE 2 = epigr. 2 PELUCCHI |
+| 3 | AP 7.99 | FGE 10 = epigr. 3 PELUCCHI |
+| 4 | AP 7.100 | FGE 6 = epigr. 4 PELUCCHI |
+| 5 | Platonic Archeanassa version related to AP 7.217 | FGE 9 = epigr. 5 PELUCCHI |
+| 7 | AP 5.79 | FGE 4 = epigr. 7 PELUCCHI |
+| 8 | AP 5.80 | FGE 5 = epigr. 8 PELUCCHI |
+| 10 | AP 7.259 | FGE 11 = epigr. 10 PELUCCHI |
+| 11 | AP 7.256 | FGE 12 = epigr. 11 PELUCCHI |
+
+Numbers 6 and 9 are deliberately **not filled by sequence inference**. Their likely identities may be suggested by the surrounding Diogenes/Page order, but PROJECT PLATO requires direct source confirmation before entering them in the crosswalk as verified.
+
+### Consequence
+
+The first eleven Pelucchi slots are now partially anchored, and the recovered order already demonstrates that Pelucchi's edition is not a trivial restatement of the first PROJECT PLATO digital inventory.
+
+The reconstruction should proceed by direct numbered anchors, not by assuming that Page, Diogenes, Anthologia Graeca author indexes and Pelucchi use the same order or the same logical-text boundaries.
