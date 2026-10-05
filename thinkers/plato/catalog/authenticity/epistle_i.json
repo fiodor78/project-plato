@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479c-7001-8abc-000000000011",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_I",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury's introduction/prefatory treatment rejects the First Letter and highlights conflicts with the more credible Sicilian narrative."
+    },
+    {
+      "source_ref": "https://doi.org/10.1017/S0048671X00001946",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Wohl surveys the authenticity debate and notes that modern acceptance of the collection commonly excludes Letter I (and XII)."
+    }
+  ],
+  "rationale": "The First Letter is rejected by modern scholarship with exceptional consistency. Bury treats it as spurious, and Victoria Wohl notes that modern defenses of the Epistles commonly exclude Letter I even where much of the collection is accepted. The classification records authorship judgment only; the letter remains part of the historical Platonic corpus tradition.",
+  "assessed_at": "2026-10-05T04:35:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
