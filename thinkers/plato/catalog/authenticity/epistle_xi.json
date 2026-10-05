@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0011-7001-8abc-000000000011",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_XI",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "B",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Bury considered the letter largely plausible but flagged the reference to Socrates and illness as a serious biographical difficulty."
+    },
+    {
+      "source_ref": "https://www.persee.fr/doc/reg_0035-2039_1936_num_49_231_2790_t2_0483_0000_1",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "The review of Morrow reports that he was strongly inclined to recognize Letter XI."
+    },
+    {
+      "source_ref": "https://hdl.handle.net/11579/7047",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Accattino's dedicated 1998 study, explicitly titled Plato (?), Letter XI, documents that attribution remained a live scholarly question."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.003.0012",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer (2023) treats Letter XI within a unified Platonic reading of the collection."
+    }
+  ],
+  "rationale": "Letter XI has significant support in the authenticity tradition: Bury found little intrinsically objectionable apart from a biographical difficulty, and Morrow was inclined to accept it. At the same time modern scholarship has continued to treat its authorship as an open problem, as reflected by Accattino's dedicated study and by broader rejection of the minor letters. B therefore records a genuine unresolved attribution rather than presumed authenticity.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
