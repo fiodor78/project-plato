@@ -42,6 +42,7 @@
 - [x] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, extra-canonical extant attributions, ancient spuria/lost titles, anthological attributions).
 - [ ] Build the full Corpus Platonicum catalog.
   - [x] Split Epigrammata into 23 individually addressable Greek Anthology attributions (provisional member inventory).
+  - [x] Add nine extra-canonical epistles (Hercher 14, 15, 24, 25, 26, 30, 31, 70, 85) identified by recent corpus-history scholarship.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
   - [x] Classify first Thrasyllan dubia tranche: B for Alcibiades I, Hippias Major, Clitophon; C for Alcibiades II, Hipparchus, Rival Lovers, Theages, Minos, Epinomis.
