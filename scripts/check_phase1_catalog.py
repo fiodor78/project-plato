@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.2.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.3.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -148,6 +148,27 @@ def main() -> int:
     require(
         "ANTHOLOGICAL_ASCRIPTION" in epigrams["scope_classes"],
         "Epigrammata is explicitly separated as anthological attribution"
+    )
+
+    epigram_members=[
+        e for e in entries
+        if e.get("parent_catalog_id") == "TH.PLATO.CAT.EPIGRAMMATA"
+    ]
+    require(len(epigram_members) == 23, "Epigrammata collection has 23 individually addressable anthology members in the current inventory")
+    refs={e["anthology_metadata"]["reference"] for e in epigram_members}
+    expected_refs={
+        "AP 5.78","AP 5.79","AP 5.80",
+        "AP 6.1","AP 6.43",
+        "AP 7.99","AP 7.100","AP 7.256","AP 7.259","AP 7.265","AP 7.268","AP 7.269","AP 7.669","AP 7.670",
+        "AP 9.3","AP 9.39","AP 9.51","AP 9.506","AP 9.747","AP 9.823","AP 9.826",
+        "AP 16.13","AP 16.248",
+    }
+    require(refs == expected_refs, "Epigram member references match the current Anthologia Graeca Plato inventory")
+    ap16248=next(e for e in epigram_members if e["anthology_metadata"]["reference"] == "AP 16.248")
+    require(
+        ap16248["anthology_metadata"]["addressee_review_status"] if False else
+        ap16248["anthology_metadata"]["attribution_review_status"] == "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "AP 16.248 preserves a competing attribution instead of flattening it"
     )
 
     require(
