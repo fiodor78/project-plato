@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0003-7001-8abc-000000000003",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_III",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "B",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.14195/1984-249X_21_9",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Lopes and Cornelli treat Letter III within a modern framework that rejects all canonical letters except VII and VIII as Platonic."
+    },
+    {
+      "source_ref": "https://www.persee.fr/doc/reg_0035-2039_1936_num_49_231_2790_t2_0483_0000_1",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "The contemporary review of Morrow's Studies reports that Morrow accepted Letter III as authentic."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.001.0001",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer (2023) argues for the literary unity and Platonic authorial design of the Letters as a whole."
+    }
+  ],
+  "rationale": "Letter III has long attracted materially stronger defenses than the clearest spurious letters. Morrow accepted it, whereas Bury and recent work by Lopes and Cornelli reject it; Helfer's 2023 monograph again treats the collection as a unified Platonic composition. The evidence therefore reflects a genuine authorship dispute rather than a stable consensus, so B is more faithful than either A or C.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
