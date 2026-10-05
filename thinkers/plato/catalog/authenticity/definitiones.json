@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479e-7001-8abc-000000000031",
+  "catalog_id": "TH.PLATO.CAT.DEFINITIONES",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.15388/Problemos.2016.89.9896",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Garbačiauskas explicitly treats Definitions as pseudo-Platonic and a late interpolation reflecting later philosophical traditions."
+    },
+    {
+      "source_ref": "https://dcamp.uk/benati",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Benati's critical-edition research project is explicitly devoted to the Pseudo-Platonic Definitions and treats the collection as chronologically stratified."
+    }
+  ],
+  "rationale": "Definitions is not regarded as a work of Plato in modern scholarship. Garbačiauskas characterizes it as a pseudo-Platonic late interpolation whose vocabulary reflects several later philosophical strata, including early Stoicism; current critical work likewise treats the text explicitly as the pseudo-Platonic Definitions. D is appropriate because Platonic authorship is not a live modern position, while the collection remains historically important to the wider Platonic corpus.",
+  "assessed_at": "2026-10-05T04:55:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
