@@ -8,7 +8,7 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "thinkers/plato/profile/epigram-crosswalk.schema.json"
-CROSSWALK = ROOT / "thinkers/plato/catalog/epigram-crosswalk-v0.1.0.json"
+CROSSWALK = ROOT / "thinkers/plato/catalog/epigram-crosswalk-v0.1.1.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -43,6 +43,14 @@ def main() -> int:
 
     missing = [r for r in rows if r["catalog_mapping_status"] == "MISSING"]
     require(len(missing) >= 3, "crosswalk records known catalog gaps rather than hiding them")
+
+    eg_xviii = next(r for r in rows if r["page_eg"] == "XVIII")
+    require(
+        eg_xviii["witnesses"][0]["reference"] == "7.268"
+        and eg_xviii["current_catalog_id"] == "TH.PLATO.CAT.EPIGRAM_7_268"
+        and eg_xviii["catalog_mapping_status"] == "MATCH",
+        "EG XVIII maps to AP 7.268 / FGE XVIII 640 rather than erroneous AP 7.368"
+    )
 
     require(
         all(r["pelucchi_2026_number"] is None for r in rows),
