@@ -42,6 +42,7 @@
 - [ ] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, Appendix Platonica, ancient spurious/lost attributions).
 - [ ] Build the full Corpus Platonicum catalog.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
+  - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
 - [ ] Freeze Plato work-code registry.
 
 ## Phase 2 — source editions and ingestion
