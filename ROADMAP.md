@@ -44,6 +44,7 @@
   - [x] Split Epigrammata into 23 individually addressable Greek Anthology attributions (provisional member inventory).
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
+  - [x] Classify first Thrasyllan dubia tranche: B for Alcibiades I, Hippias Major, Clitophon; C for Alcibiades II, Hipparchus, Rival Lovers, Theages, Minos, Epinomis.
 - [ ] Freeze Plato work-code registry.
 
 ## Phase 2 — source editions and ingestion
