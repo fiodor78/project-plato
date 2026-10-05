@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479f-7016-8abc-000000000062",
+  "catalog_id": "TH.PLATO.CAT.MENEXENUS",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "A",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://iep.utm.edu/plato/",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "IEP places this work in its working chronology of Plato's accepted dialogues and separately identifies the spuria/dubia."
+    },
+    {
+      "source_ref": "https://www.rep.routledge.com/articles/biographical/plato-427-347-bc/v-1/sections/authenticity-and-chronology",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Schofield's Routledge Encyclopedia treatment isolates the principal live authenticity problems rather than this work."
+    },
+    {
+      "source_ref": "https://doi.org/10.1177/0090591798026004003",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Monoson notes compelling evidence for genuineness, including Aristotle's citations, and describes modern scholarship as accepting Menexenus as authentic."
+    }
+  ],
+  "rationale": "Menexenus belongs to the core set of dialogues strongly accepted as Platonic in current reference scholarship and is not a live authorship problem comparable to the project's B/C/D cases. A does not imply settled chronology or that every dramatic speech expresses Plato's own beliefs.",
+  "assessed_at": "2026-10-05T05:05:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
