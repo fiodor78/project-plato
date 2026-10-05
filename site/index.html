@@ -89,12 +89,12 @@ CUSTODIAN prepares, verifies and audits the environment.</pre>
   <div class="grid">
     <div class="card"><strong>Historical scope</strong><br>Attestation-based Corpus Platonicum scope and taxonomy are defined.</div>
     <div class="card"><strong>Epistles</strong><br>All thirteen canonical letters are individually mapped and now have provisional work-specific authenticity assessments; Letter X preserves the Aristodemus/Aristodorus variant.</div>
-    <div class="card"><strong>Epigrammata</strong><br>The current 23-member Greek Anthology inventory is explicitly provisional. A validated 31-row Page/Massimo transmission crosswalk and deterministic migration-plan gate now separate matches, missing texts, unresolved identity conflicts and Plato Junior/homonymy exclusions. Pelucchi 2026 still has to complete the 37-text scope before catalog v0.1.5 is authorized.</div>
+    <div class="card"><strong>Epigrammata</strong><br>The current 23-member catalog is explicitly provisional, but the historical attribution scope is now source-complete at <strong>37 items</strong> from Pelucchi 2025. A validated Page/Massimo crosswalk separates matches, competing witnesses and Plato Junior/Plato Comicus homonymy. Fourteen additional historical objects still require normalization before catalog v0.1.5.</div>
     <div class="card"><strong>Authenticity</strong><br>A/B/C/D assessments are versioned, evidence-based CUSTODIAN assertions rather than corpus identity. Canonical and extra-canonical Epistle coverage is complete; the remaining authenticity backlog is the individual epigram corpus.</div>
     <div class="card"><strong>Work registry</strong><br>72 non-epigram semantic identifiers are now frozen in a validated <code>PARTIAL_FROZEN</code> registry. The 23 current individual Epigrammata members remain deliberately deferred.</div>
   </div>
 
-  <p class="muted">Production Greek-text ingestion has not yet begun. Phase 1 is still completing the historical catalog, including the epigram transmission crosswalk, attribution coverage and work-code registry before Phase 2 source-edition selection and deterministic ingestion. The number 23 must not be read as the complete historical Plato-epigram corpus.</p>
+  <p class="muted">Production Greek-text ingestion has not yet begun. Phase 1 is now migrating the source-complete 37-item epigram scope into the historical catalog, then finishing attribution coverage and the work-code registry before Phase 2 source-edition selection and deterministic ingestion. The number 23 refers only to the current provisional epigram catalog, not the historical scope.</p>
 
   <h2>Reusable beyond Plato</h2>
   <p>The core does not hard-code Stephanus pagination or Plato-specific assumptions. Citation systems are profile adapters: Plato can use Stephanus, Aristotle can use Bekker, and other profiles can use fragment, aphorism or proposition numbering. Each thinker receives an isolated corpus, memory and experiment lineage.</p>
@@ -106,6 +106,7 @@ CUSTODIAN prepares, verifies and audits the environment.</pre>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/ROADMAP.md">Roadmap</a><br>Live project progress and remaining phases.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/AGENTS.md">AGENTS.md</a><br>Operating rules for automated agents.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/research/EPIGRAMMATA-MIGRATION-PLAN-0001.md">Epigram migration plan</a><br>Current deterministic pre-v0.1.5 catalog delta and blocking conditions.</div>
+    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/research/EPIGRAMMATA-HISTORICAL-SCOPE-0003.md">Epigram historical scope</a><br>Source-complete 37-item transmission scope and correction record.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/research/WORK-CODE-REGISTRY-0001.md">Work-code registry</a><br>Partial freeze of stable semantic identities; Epigrammata member codes remain deferred.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/adr/ADR-0015-provider-neutral-language-engine-openrouter.md">ADR-0015</a><br>Why the runtime is provider-neutral and uses OpenRouter as the preferred first gateway.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/specs/SPEC-0006-language-engine-runtime.md">SPEC-0006</a><br>LanguageEngine runtime and model-gateway policy.</div>
