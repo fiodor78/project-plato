@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0010-7001-8abc-000000000010",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_X",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "C",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "PHILOSOPHICAL_CONTENT",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury regards the letter's conception of 'true philosophy' as markedly un-Platonic and rejects the letter."
+    },
+    {
+      "source_ref": "https://www.persee.fr/doc/reg_0035-2039_1936_num_49_231_2790_t2_0483_0000_1",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "The review of Morrow reports that he was inclined to recognize Letter X as authentic."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.003.0011",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer (2023) devotes a separate chapter to Letter X within his defense of the Letters as a unified Platonic literary work."
+    }
+  ],
+  "rationale": "Letter X is extremely short and has often been rejected because its reduction of philosophy to moral steadfastness is difficult to reconcile with Plato's wider conception of philosophy. Morrow nevertheless inclined toward authenticity, and Helfer gives the letter an integral place in a recent unified Platonic reading. The negative balance is stronger than for B-level cases, but the history of defense is too substantial for D.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
