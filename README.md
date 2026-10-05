@@ -133,6 +133,18 @@ PLATO-1.0-B
 
 Mutable memory is isolated per instance unless an experiment explicitly transfers information.
 
+## Language engine
+
+The language model is a replaceable execution engine, not PLATO's corpus or long-term memory.
+
+The Thinker Core uses a provider-neutral **LanguageEngine** boundary. The preferred first production gateway is **OpenRouter**, while direct-provider and mock adapters remain valid alternatives.
+
+For reproducible experimental baselines, model selection and provider routing must be pinned and audited. Automatic model routing is not allowed for a frozen baseline unless routing itself is the experiment.
+
+A baseline records the requested model, routing/fallback policy and inference configuration; runtime audit records the resolved model/provider, usage, latency and cost where available. Engine/provider metadata is CUSTODIAN/runtime information and does not automatically become thinker-visible.
+
+See [ADR-0015](docs/adr/ADR-0015-provider-neutral-language-engine-openrouter.md) and [SPEC-0006](docs/specs/SPEC-0006-language-engine-runtime.md).
+
 ## CUSTODIAN and the active thinker
 
 The project deliberately separates two roles.
@@ -352,8 +364,10 @@ Start with:
 - [SPEC-0001 — Phase 0 architecture](docs/specs/SPEC-0001-phase-0-architecture.md)
 - [SPEC-0003 — Thinker Core / Profile / Instance](docs/specs/SPEC-0003-thinker-core-profile-instance.md)
 - [SPEC-0004 — Runtime epistemic projection](docs/specs/SPEC-0004-runtime-epistemic-projection.md)
+- [SPEC-0006 — LanguageEngine runtime](docs/specs/SPEC-0006-language-engine-runtime.md)
 - [ADR-0011 — Generic Thinker Framework](docs/adr/ADR-0011-generic-thinker-framework.md)
 - [ADR-0012 — UUIDv7 identifiers](docs/adr/ADR-0012-uuidv7-identifiers.md)
+- [ADR-0015 — Provider-neutral LanguageEngine / OpenRouter](docs/adr/ADR-0015-provider-neutral-language-engine-openrouter.md)
 
 ADRs record **why** major architectural decisions were made. Specifications describe the current operational design.
 
