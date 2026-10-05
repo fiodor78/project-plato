@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.3.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.4.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -169,6 +169,26 @@ def main() -> int:
         ap16248["anthology_metadata"]["addressee_review_status"] if False else
         ap16248["anthology_metadata"]["attribution_review_status"] == "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
         "AP 16.248 preserves a competing attribution instead of flattening it"
+    )
+
+    extra_epistles=[
+        e for e in entries
+        if (e.get("provisional_work_code") or "").startswith("EXTRA_EPISTLE_HERCHER_")
+    ]
+    require(len(extra_epistles) == 9, "catalog includes nine extra-canonical Hercher-numbered Platonic epistles")
+    expected_extra={14,15,24,25,26,30,31,70,85}
+    actual_extra={
+        int(e["provisional_work_code"].rsplit("_",1)[1])
+        for e in extra_epistles
+    }
+    require(actual_extra == expected_extra, "extra-canonical epistle inventory matches current corpus-history scholarship")
+    require(
+        all("EXTRA_CANONICAL_EXTANT_ATTRIBUTION" in e["scope_classes"] for e in extra_epistles),
+        "all extra-canonical epistles carry the correct historical scope class"
+    )
+    require(
+        all(e["runtime_candidacy"] == "PENDING_REVIEW" for e in extra_epistles),
+        "extra-canonical epistles are not automatically admitted to runtime"
     )
 
     require(
