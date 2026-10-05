@@ -87,6 +87,19 @@ Typical CUSTODIAN-only / runtime-only material includes:
 
 If a new field is introduced, treat it as hidden until explicitly allow-listed.
 
+## Language-engine discipline
+
+The base LLM is a replaceable execution engine.
+
+- Do not hard-code a model vendor into Thinker Core semantics.
+- Preferred first production gateway: OpenRouter.
+- Frozen experimental baselines must pin the requested model and routing policy.
+- Automatic model routing or silent provider fallback must not be used in a reproducible baseline unless explicitly part of the experiment.
+- API keys are server-side secrets and must never be committed or exposed to the thinker.
+- Model/provider/cost metadata is CUSTODIAN/runtime metadata unless deliberately communicated as ACQUIRED knowledge.
+
+See `ADR-0015` and `SPEC-0006`.
+
 ## Synthetic fixtures are not corpus
 
 Everything under `fixtures/phase0/` is synthetic architecture-test data unless explicitly documented otherwise.
