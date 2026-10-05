@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a10920-0005-7001-8abc-000000000005",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_V",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "C",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "LITERARY_DEPENDENCE",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury argues that Letter V appears to reuse material from the Republic and Letter VII in a way suggestive of deliberate Platonic imitation."
+    },
+    {
+      "source_ref": "https://www.persee.fr/doc/reg_0035-2039_1936_num_49_231_2790_t2_0483_0000_1",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "The review of Morrow reports Letter V among the letters he rejected or regarded as suspect."
+    },
+    {
+      "source_ref": "https://doi.org/10.7591/cornell/9781501772894.001.0001",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Helfer's 2023 literary-unity thesis supplies serious recent minority support for treating the collection as Platonic."
+    }
+  ],
+  "rationale": "Letter V is among the weaker canonical claims. Bury and Post reject it, Morrow treated it as rejected or suspect, and its dependence on recognizable Platonic motifs has often been read as imitation rather than authorship. A recent unified-authorship defense of the Letters keeps the case from being treated as closed at D level, but the balance remains strongly negative; C is appropriate.",
+  "assessed_at": "2026-10-06T00:20:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
