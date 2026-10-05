@@ -14,8 +14,11 @@ Primary entry points:
 
 Core specifications:
 - Epigram crosswalk schema: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/epigram-crosswalk.schema.json
-- Page/Massimo epigram crosswalk: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/epigram-crosswalk-v0.1.0.json
+- Page/Massimo epigram crosswalk: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/epigram-crosswalk-v0.1.1.json
 - Epigram migration plan: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/research/EPIGRAMMATA-MIGRATION-PLAN-0001.md
+- Epigram historical-scope schema: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/epigram-historical-scope.schema.json
+- Epigram historical scope: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/epigram-historical-scope-v0.1.0.json
+- Epigram historical-scope note: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/research/EPIGRAMMATA-HISTORICAL-SCOPE-0003.md
 - Work-code registry schema: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/work-registry.schema.json
 - Work-code registry: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/work-registry-v0.1.0.json
 - Work-code registry note: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/research/WORK-CODE-REGISTRY-0001.md
@@ -49,7 +52,7 @@ Key principles:
 Current maturity:
 Phase 0 is accepted.
 Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry. All thirteen canonical Epistles and all nine extra-canonical Hercher-numbered Epistles now have provisional work-specific authenticity assessments.
-The current 23-member epigram inventory is provisional and incomplete. A machine-readable 31-row Page/Massimo crosswalk and deterministic pre-v0.1.5 migration gate are validated in CI; Pelucchi 2026 still has to complete the 37-text historical scope. The work-code registry is PARTIAL_FROZEN: 72 non-epigram semantic identities are frozen while the 23 current individual Epigrammata members remain deferred.
+The current 23-member epigram catalog is provisional, but the source-level historical attribution scope is now complete at 37 items from Pelucchi 2025. Fourteen scope objects remain to be normalized into catalog v0.1.5. The validated crosswalk isolates Plato the Younger / Plato Comicus homonymy and competing attributions.
 Production Greek-text ingestion has not yet begun.
 
 For automated agents:
