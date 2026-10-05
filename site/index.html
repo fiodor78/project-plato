@@ -3,68 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="PROJECT PLATO — an open experiment in epistemically constrained historical-thinker agents and the reusable Thinker Framework.">
+  <meta name="description" content="PROJECT PLATO — an open research project building epistemically constrained historical-thinker agents and the reusable Thinker Framework.">
   <title>PROJECT PLATO — Thinker Framework</title>
   <style>
     :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color-scheme: light dark; }
-    body { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 5rem; line-height: 1.62; }
+    body { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 5rem; line-height: 1.62; }
     h1 { font-size: clamp(2.2rem, 7vw, 4.6rem); line-height: .98; margin: 1.2rem 0; }
-    h2 { margin-top: 2.4rem; }
-    .lead { font-size: 1.25rem; max-width: 760px; }
+    h2 { margin-top: 2.5rem; }
+    h3 { margin-bottom: .45rem; }
+    .lead { font-size: 1.24rem; max-width: 790px; }
     .status { display: inline-block; padding: .35rem .7rem; border: 1px solid currentColor; border-radius: 999px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1rem; }
     .card { border: 1px solid color-mix(in srgb, currentColor 25%, transparent); border-radius: .8rem; padding: 1rem; }
     code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
     pre { overflow-x: auto; padding: 1rem; border-radius: .6rem; background: color-mix(in srgb, currentColor 8%, transparent); }
     a { text-underline-offset: .18em; }
+    .muted { opacity: .78; }
     footer { margin-top: 4rem; opacity: .75; font-size: .95rem; }
   </style>
 </head>
 <body>
-  <p class="status">Phase 0 — architecture before corpus ingestion</p>
+  <p class="status">Phase 1 — Corpus Platonicum catalog and attribution model</p>
+
   <h1>PROJECT PLATO</h1>
-  <p class="lead">An open research-and-engineering project exploring epistemically constrained historical-thinker agents. Plato is the first profile of a reusable <strong>Thinker Framework</strong>.</p>
+  <p class="lead">An open research-and-engineering project exploring whether a language-model-based agent can function as an <strong>epistemically constrained historical thinker</strong>. Plato is the first profile of a reusable <strong>Thinker Framework</strong>.</p>
 
   <h2>The experiment</h2>
-  <p>The project asks what happens when a language-model-based agent is allowed to reason only from a frozen historical corpus, deliberately acquired later knowledge, its own episodic history, and explicit inferences—while provenance remains auditable.</p>
-  <p>It is not a claim to recreate the historical Plato and not a theatrical role-play system. The base model already contains modern knowledge; the experiment therefore controls <em>permission to use knowledge</em>, rather than pretending that knowledge is absent from the model's weights.</p>
+  <p>The project asks what happens when an agent reasons from a controlled historical corpus, explicitly acquired later knowledge, its own episodic history and traceable inferences—while the origin of that knowledge remains auditable.</p>
+  <p>It is not an attempt to recreate the historical Plato, and it is not ordinary role-play. The base language model inevitably contains modern latent knowledge; PROJECT PLATO therefore controls <em>permission to use knowledge</em>, rather than pretending that forbidden knowledge is absent from model weights.</p>
+
+  <h2>How PLATO will be used</h2>
+  <p>The intended user experience is a normal conversation: <strong>interlocutor ↔ PLATO</strong>. CUSTODIAN does not mediate each turn. Instead it prepares and audits the environment: corpus, retrieval, provenance, memory policy, tests and epistemic boundaries.</p>
+
+  <pre>Interlocutor ↔ PLATO
+                  │
+                  ├── ORIGINAL corpus
+                  ├── ACQUIRED knowledge
+                  ├── EPISODIC memory
+                  ├── INFERENCE
+                  └── provenance / audit
+
+CUSTODIAN prepares, verifies and audits the environment.</pre>
 
   <h2>Architecture</h2>
   <pre>Thinker Core
   └── Thinker Profile: PLATO
         ├── Corpus Platonicum
         ├── Stephanus locator adapter
-        ├── profile policies
-        └── frozen release
+        ├── attribution/authenticity model
+        ├── runtime projection
+        └── frozen profile release
               ├── PLATO-1.0-A
               └── PLATO-1.0-B</pre>
 
   <div class="grid">
-    <div class="card"><strong>ORIGINAL</strong><br>Frozen corpus knowledge.</div>
-    <div class="card"><strong>ACQUIRED</strong><br>Later testimony/information.</div>
-    <div class="card"><strong>EPISODIC</strong><br>Instance-specific history.</div>
-    <div class="card"><strong>INFERENCE</strong><br>Derived conclusions.</div>
+    <div class="card"><strong>ORIGINAL</strong><br>Read-only knowledge grounded in a frozen corpus release.</div>
+    <div class="card"><strong>ACQUIRED</strong><br>Information communicated after the instance begins.</div>
+    <div class="card"><strong>EPISODIC</strong><br>Instance-specific remembered interactions and events.</div>
+    <div class="card"><strong>INFERENCE</strong><br>Conclusions derived from admissible sources.</div>
   </div>
 
+  <h2>Language engine</h2>
+  <p>The language model is a replaceable reasoning and generation engine. It is <strong>not</strong> PLATO's corpus or long-term memory.</p>
+  <p>The Thinker Core uses a provider-neutral <code>LanguageEngine</code> boundary. The preferred first production gateway is <strong>OpenRouter</strong>, while direct-provider and mock adapters remain possible.</p>
+  <p>For frozen experimental baselines, automatic model selection is not allowed. The requested model, routing policy, fallback policy and relevant inference parameters must be pinned and audited. Actual provider/model execution metadata, token use and cost remain CUSTODIAN/runtime metadata rather than thinker-visible knowledge.</p>
+
+  <pre>Thinker Runtime
+   │
+   ├── corpus
+   ├── memory
+   ├── provenance
+   └── epistemic projection
+          │
+          ▼
+   LanguageEngine
+          │
+          ├── OpenRouter  ← preferred first production gateway
+          ├── direct provider
+          └── mock engine</pre>
+
   <h2>CUSTODIAN vs. thinker</h2>
-  <p>CUSTODIAN may use modern scholarship, the web, source criticism and hidden test data. The active thinker may not. Runtime data is filtered through a deny-by-default projection so modern editorial metadata does not accidentally enter model context.</p>
+  <p>CUSTODIAN may use modern scholarship, the web, source criticism and hidden test data. The active thinker may not. Runtime data is filtered through a deny-by-default projection so modern editorial metadata, technical IDs, source URLs and hidden authenticity judgments do not accidentally enter model context.</p>
+
+  <h2>Current Phase 1 work</h2>
+  <div class="grid">
+    <div class="card"><strong>Historical scope</strong><br>Attestation-based Corpus Platonicum scope and taxonomy are defined.</div>
+    <div class="card"><strong>Epistles</strong><br>Thirteen canonical letters are individually mapped; Letter X preserves the Aristodemus/Aristodorus variant.</div>
+    <div class="card"><strong>Epigrammata</strong><br>Greek Anthology attributions are represented as individually addressable members.</div>
+    <div class="card"><strong>Authenticity</strong><br>A/B/C/D assessments are versioned, evidence-based CUSTODIAN assertions rather than corpus identity.</div>
+  </div>
+
+  <p class="muted">Production Greek-text ingestion has not yet begun. Phase 1 is still completing the historical catalog, attribution coverage and work-code registry before Phase 2 source-edition selection and deterministic ingestion.</p>
 
   <h2>Reusable beyond Plato</h2>
-  <p>The core does not hard-code Stephanus pagination. Citation systems are profile adapters: Plato can use Stephanus, Aristotle can use Bekker, and other profiles can use fragment, aphorism or proposition numbering.</p>
+  <p>The core does not hard-code Stephanus pagination or Plato-specific assumptions. Citation systems are profile adapters: Plato can use Stephanus, Aristotle can use Bekker, and other profiles can use fragment, aphorism or proposition numbering. Each thinker receives an isolated corpus, memory and experiment lineage.</p>
 
   <h2>Read the project</h2>
   <div class="grid">
     <div class="card"><a href="https://github.com/fiodor78/project-plato">GitHub repository</a><br>Canonical version-controlled source.</div>
-    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/README.md">Full README</a><br>Motivation, architecture, limitations and status.</div>
+    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/README.md">Full README</a><br>Motivation, architecture, limitations and current status.</div>
+    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/ROADMAP.md">Roadmap</a><br>Live project progress and remaining phases.</div>
     <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/AGENTS.md">AGENTS.md</a><br>Operating rules for automated agents.</div>
-    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/CONTRIBUTING.md">Contributing</a><br>How to participate without breaking provenance.</div>
+    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/adr/ADR-0015-provider-neutral-language-engine-openrouter.md">ADR-0015</a><br>Why the runtime is provider-neutral and uses OpenRouter as the preferred first gateway.</div>
+    <div class="card"><a href="https://github.com/fiodor78/project-plato/blob/main/docs/specs/SPEC-0006-language-engine-runtime.md">SPEC-0006</a><br>LanguageEngine runtime and model-gateway policy.</div>
   </div>
 
   <h2>Machine-readable entry point</h2>
-  <p><a href="llms.txt">llms.txt</a> provides a lightweight list of canonical documents for automated readers.</p>
-
-  <h2>Current work</h2>
-  <p>Phase 0 is finalizing schemas, UUIDv7 identities, runtime leakage tests, segmentation rules and the architecture gate. Full production ingestion of Corpus Platonicum begins only after those checks pass.</p>
+  <p><a href="llms.txt">llms.txt</a> provides a compact set of canonical links and operating principles for automated readers.</p>
 
   <footer>
     <p>Project principle: <strong>epistemic honesty over convincing simulation.</strong></p>
