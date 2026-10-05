@@ -38,6 +38,9 @@ jobs:
       - name: Run epigram migration-plan gate
         run: python scripts/check_epigram_migration_plan.py
 
+      - name: Run work-code registry gate
+        run: python scripts/check_work_registry.py
+
       - name: Run authenticity assertion gate
         run: python scripts/check_authenticity_assertions.py
 
