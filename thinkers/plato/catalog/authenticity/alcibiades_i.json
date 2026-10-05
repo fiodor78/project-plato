@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479d-7001-8abc-000000000021",
+  "catalog_id": "TH.PLATO.CAT.ALCIBIADES_I",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "B",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.rep.routledge.com/articles/biographical/plato-427-347-bc/v-1/sections/authenticity-and-chronology",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Schofield identifies Alcibiades I as one of the principal extended works on which informed scholarly opinion remains divided."
+    },
+    {
+      "source_ref": "https://api.pageplace.de/preview/DT0400.9780197564769_A46893185/preview-9780197564769_A46893185.pdf",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "A recent synthetic treatment notes First Alcibiades as one of the dialogues that still commonly falls under suspicion."
+    }
+  ],
+  "rationale": "Modern scholarship remains genuinely divided on Alcibiades I. Schofield identifies it as one of the major extended authenticity problems, and recent reference literature continues to treat it as a principal surviving disputed dialogue. The evidence does not justify either secure acceptance or confident rejection, so B is the appropriate project grade.",
+  "assessed_at": "2026-10-05T04:45:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
