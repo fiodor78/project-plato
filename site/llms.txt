@@ -43,6 +43,7 @@ Key principles:
 Current maturity:
 Phase 0 is accepted.
 Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry. All thirteen canonical Epistles and all nine extra-canonical Hercher-numbered Epistles now have provisional work-specific authenticity assessments.
+The current 23-member epigram inventory is provisional and incomplete; a Page/Massimo/Pelucchi crosswalk is active because Pelucchi's broader historical corpus contains 37 texts attributed to Plato.
 Production Greek-text ingestion has not yet begun.
 
 For automated agents:
