@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479d-7003-8abc-000000000023",
+  "catalog_id": "TH.PLATO.CAT.CLITOPHON",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "B",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.rep.routledge.com/articles/biographical/plato-427-347-bc/v-1/sections/authenticity-and-chronology",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Schofield identifies Clitophon among the difficult short authenticity cases."
+    },
+    {
+      "source_ref": "https://bmcr.brynmawr.edu/2001/2001.11.06",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Review of Slings documents both the long authenticity dispute and Slings' eventual acceptance of Platonic authorship, while noting continuing doubts."
+    },
+    {
+      "source_ref": "https://www.cambridge.org/core/journals/cambridge-classical-journal/article/pseudodialogue-in-platos-clitophon/E8BF40A4242501E83EA8ED95A3FA0E7B",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "MIXED",
+      "note": "Cambridge Classical Journal notes the centrality of authenticity to scholarship and the absence of compelling philological reasons to deny Platonic authorship."
+    }
+  ],
+  "rationale": "Clitophon has a long history of rejection, but significant modern scholarship defends Platonic authorship and no decisive philological argument has settled the question. The project therefore records it as disputed rather than probably spurious.",
+  "assessed_at": "2026-10-05T04:45:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
