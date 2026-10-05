@@ -6,7 +6,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT=Path(__file__).resolve().parents[1]
-CATALOG=ROOT/"thinkers/plato/catalog/catalog-v0.1.4.json"
+CATALOG=ROOT/"thinkers/plato/catalog/catalog-v0.1.5.json"
 SCHEMA=ROOT/"thinkers/plato/profile/authenticity-assertion.schema.json"
 AUTH_DIR=ROOT/"thinkers/plato/catalog/authenticity"
 
