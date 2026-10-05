@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CROSSWALK = ROOT / "thinkers/plato/catalog/epigram-crosswalk-v0.1.0.json"
+CROSSWALK = ROOT / "thinkers/plato/catalog/epigram-crosswalk-v0.1.1.json"
 CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.4.json"
 
 
@@ -30,8 +30,8 @@ def main() -> int:
 
     counts = Counter(r["catalog_mapping_status"] for r in rows)
     require(counts == {
-        "MATCH": 18,
-        "MISSING": 4,
+        "MATCH": 19,
+        "MISSING": 3,
         "UNRESOLVED": 2,
         "EXCLUDE_FROM_PHILOSOPHER_PROFILE": 7,
     }, "Page/Massimo migration-plan buckets are stable and exhaustive")
@@ -46,10 +46,9 @@ def main() -> int:
     supplemental = set(epigram_members) - mapped_catalog_ids
     require(
         supplemental == {
-            "TH.PLATO.CAT.EPIGRAM_7_268",
             "TH.PLATO.CAT.EPIGRAM_9_3",
         },
-        "current catalog preserves exactly the two Page-baseline supplemental epigrams"
+        "current catalog preserves exactly the one Page-baseline supplemental epigram"
     )
 
     excluded_with_catalog = [
@@ -68,7 +67,7 @@ def main() -> int:
     require(unresolved == {"III", "XXXI"}, "identity conflicts remain limited to EG III and EG XXXI in the Page baseline")
 
     missing = {r["page_eg"] for r in rows if r["catalog_mapping_status"] == "MISSING"}
-    require(missing == {"IX", "XIV", "XVIII", "XXIII"}, "known Page-baseline catalog additions are explicit and stable")
+    require(missing == {"IX", "XIV", "XXIII"}, "known Page-baseline catalog additions are explicit and stable")
 
     require(
         all(r["pelucchi_2026_number"] is None for r in rows),
