@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/epigram-historical-scope.schema.json",
+  "title": "Plato Epigram Historical Scope",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scope_version",
+    "thinker_id",
+    "scope_basis",
+    "scope_status",
+    "source_refs",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "scope_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "thinker_id": {
+      "const": "TH.PLATO"
+    },
+    "scope_basis": {
+      "const": "PELUCCHI_2025_SOURCE_EXPLICIT_37"
+    },
+    "scope_status": {
+      "const": "SOURCE_COMPLETE_IDENTITY_REVIEW_ACTIVE"
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 37,
+      "maxItems": 37,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scope_id",
+          "logical_reference",
+          "witnesses",
+          "attribution_targets",
+          "profile_relation",
+          "current_catalog_id",
+          "catalog_mapping_status",
+          "pelucchi_2026_number",
+          "source_anchors",
+          "notes"
+        ],
+        "properties": {
+          "scope_id": {
+            "type": "string",
+            "pattern": "^TH\\.PLATO\\.EPSCOPE\\.[A-Z0-9_]+$"
+          },
+          "logical_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "witnesses": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "scheme",
+                "reference",
+                "relation"
+              ],
+              "properties": {
+                "scheme": {
+                  "type": "string",
+                  "enum": [
+                    "AP",
+                    "APL",
+                    "COUGNY",
+                    "DIOGENES_LAERTIUS",
+                    "ATHENAEUS",
+                    "OTHER"
+                  ]
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relation": {
+                  "type": "string",
+                  "enum": [
+                    "PRIMARY",
+                    "PARALLEL",
+                    "RELATED",
+                    "VARIANT_WITNESS"
+                  ]
+                }
+              }
+            }
+          },
+          "attribution_targets": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "PLATO_PHILOSOPHER",
+                "PLATO_UNSPECIFIED",
+                "PLATO_YOUNGER",
+                "PLATO_COMICUS",
+                "OTHER_AUTHOR",
+                "ANONYMOUS"
+              ]
+            }
+          },
+          "profile_relation": {
+            "type": "string",
+            "enum": [
+              "PHILOSOPHER_CANDIDATE",
+              "MIXED_REVIEW",
+              "HOMONYM_EXCLUDED"
+            ]
+          },
+          "current_catalog_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^TH\\.PLATO\\.CAT\\.[A-Z0-9_]+$"
+          },
+          "catalog_mapping_status": {
+            "type": "string",
+            "enum": [
+              "PRESENT",
+              "MISSING"
+            ]
+          },
+          "pelucchi_2026_number": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 37
+          },
+          "source_anchors": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
