@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479f-7010-8abc-000000000056",
+  "catalog_id": "TH.PLATO.CAT.EUTHYDEMUS",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "A",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://iep.utm.edu/plato/",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "The Internet Encyclopedia of Philosophy places this work in its working chronology of Plato's authentic dialogues; it separates spuria/dubia and notes that most dialogues in the accepted group are now only rarely doubted."
+    },
+    {
+      "source_ref": "https://www.rep.routledge.com/articles/biographical/plato-427-347-bc/v-1/sections/authenticity-and-chronology",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "SUPPORTS_AUTHENTICITY",
+      "note": "Schofield's Routledge Encyclopedia treatment isolates the live authenticity problems (including Alcibiades I, Hippias Major, Clitophon/Theages and Letter VII) rather than this work; it notes that most major dialogues have strong ancient attestation."
+    }
+  ],
+  "rationale": "Euthydemus belongs to the core set of dialogues treated as genuinely Platonic in current reference scholarship and is not a live authorship problem comparable to the project's B/C/D cases. A records strong scholarly acceptance, not certainty about chronology or the identification of any character's speech with Plato's own beliefs.",
+  "assessed_at": "2026-10-05T05:05:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
