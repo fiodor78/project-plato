@@ -1,5 +1,6 @@
 # PROJECT PLATO / Thinker Framework
 Canonical repository: https://github.com/fiodor78/project-plato
+Public documentation: https://fiodor78.github.io/project-plato/
 Raw-file base: https://raw.githubusercontent.com/fiodor78/project-plato/main/
 
 Purpose:
@@ -16,6 +17,15 @@ Core specifications:
 - Segmentation/speakers: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0002-segmentation-speakers.md
 - Core/Profile/Instance: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0003-thinker-core-profile-instance.md
 - Runtime epistemic projection: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0004-runtime-epistemic-projection.md
+- Plato historical catalog: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0005-plato-historical-catalog.md
+- LanguageEngine runtime: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0006-language-engine-runtime.md
+
+Key ADRs:
+- Generic Thinker Framework: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/adr/ADR-0011-generic-thinker-framework.md
+- UUIDv7 identifiers: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/adr/ADR-0012-uuidv7-identifiers.md
+- Attestation-based corpus scope: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/adr/ADR-0013-attestation-based-corpus-scope.md
+- Versioned authenticity assessments: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/adr/ADR-0014-versioned-authenticity-assessments.md
+- Provider-neutral LanguageEngine / OpenRouter: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/adr/ADR-0015-provider-neutral-language-engine-openrouter.md
 
 Key principles:
 - CUSTODIAN and the active Thinker are separate epistemic domains.
@@ -23,12 +33,17 @@ Key principles:
 - The base LLM may contain forbidden latent knowledge; the experiment controls admissible use, not model-weight contents.
 - Runtime projection is deny-by-default.
 - Modern editorial/authenticity metadata is normally CUSTODIAN-only.
+- The language model is a replaceable execution engine, not thinker memory or corpus.
+- OpenRouter is the preferred first production gateway, but Thinker Core remains provider-neutral.
+- Frozen experimental baselines must pin model and routing; automatic routing is not allowed unless it is itself the experiment.
 - Synthetic Phase 0 fixtures are NOT Plato's corpus.
 - GitHub is the canonical version-controlled source of truth.
 - Epistemic honesty takes precedence over convincing simulation.
 
 Current maturity:
-Phase 0 — architecture before production Corpus Platonicum ingestion.
+Phase 0 is accepted.
+Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry.
+Production Greek-text ingestion has not yet begun.
 
 For automated agents:
 Read AGENTS.md before making changes.
