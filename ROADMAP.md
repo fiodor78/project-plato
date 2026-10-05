@@ -58,6 +58,7 @@
   - [x] Classify Definitions, On Justice and On Virtue as high-confidence D cases.
   - [x] Classify 26 core dialogues as provisional A (strongly accepted as Platonic).
 - [ ] Freeze Plato work-code registry.
+  - [x] Freeze 72 non-epigram semantic codes in a `PARTIAL_FROZEN` registry; defer the 23 current Epigrammata members until the historical epigram scope is resolved.
 
 ## Phase 2 — source editions and ingestion
 
