@@ -9,7 +9,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = ROOT / "thinkers/plato/profile/work-registry.schema.json"
 REGISTRY = ROOT / "thinkers/plato/profile/work-registry-v0.1.0.json"
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.4.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.5.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -27,7 +27,7 @@ def main() -> int:
     require(not errors, "work-code registry validates against schema")
 
     entries = registry["entries"]
-    require(registry["registry_status"] == "PARTIAL_FROZEN", "registry explicitly remains partial while epigrams are unresolved")
+    require(registry["registry_status"] == "PARTIAL_FROZEN", "registry explicitly remains partial while epigram member codes are deferred")
     require(registry["deferred_scopes"] == ["EPIGRAMMATA_MEMBERS"], "only Epigrammata members are deferred")
 
     semantic_ids = [e["semantic_id"] for e in entries]
@@ -42,6 +42,7 @@ def main() -> int:
         for e in catalog["entries"]
         if e.get("parent_catalog_id") == "TH.PLATO.CAT.EPIGRAMMATA"
     }
+    require(len(epigram_members) == 37, "all 37 epigram member codes remain deferred in the partial registry")
     expected = {
         e["catalog_id"]
         for e in catalog["entries"]
