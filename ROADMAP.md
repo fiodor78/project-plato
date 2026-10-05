@@ -44,6 +44,7 @@
 - [ ] Build the full Corpus Platonicum catalog.
   - [x] Split Epigrammata into 23 individually addressable Greek Anthology attributions (provisional member inventory).
   - [x] Add machine-readable 31-row Page/Massimo epigram crosswalk with explicit Plato / Plato Junior / homonymy handling and CI gate.
+  - [x] Add deterministic pre-v0.1.5 epigram migration-plan gate; catalog mutation remains blocked until Pelucchi 2026 numbering is captured.
   - [ ] Complete the crosswalk against Pelucchi 2026 and expand the provisional 23-item inventory to the complete ancient attribution corpus.
   - [x] Add nine extra-canonical epistles (Hercher 14, 15, 24, 25, 26, 30, 31, 70, 85) identified by recent corpus-history scholarship.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
