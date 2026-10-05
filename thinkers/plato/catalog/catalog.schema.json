@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/catalog.schema.json",
   "title": "Plato Historical Attribution Catalog",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -14,7 +14,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "0.1.1"
+      "const": "0.1.2"
     },
     "catalog_version": {
       "type": "string"
@@ -78,7 +78,8 @@
           "runtime_candidacy",
           "attestations",
           "review_status",
-          "runtime_visibility"
+          "runtime_visibility",
+          "scope_classes"
         ],
         "properties": {
           "catalog_id": {
@@ -293,6 +294,22 @@
                 "type": "null"
               }
             ]
+          },
+          "scope_classes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "THRASYLLAN_CANON",
+                "THRASYLLAN_COLLECTION_MEMBER",
+                "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+                "ANCIENT_EXPLICIT_SPURIA",
+                "LOST_ATTRIBUTION",
+                "ANTHOLOGICAL_ASCRIPTION"
+              ]
+            }
           }
         }
       }
