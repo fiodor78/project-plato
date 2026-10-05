@@ -35,6 +35,9 @@ jobs:
       - name: Run epigram crosswalk gate
         run: python scripts/check_epigram_crosswalk.py
 
+      - name: Run epigram migration-plan gate
+        run: python scripts/check_epigram_migration_plan.py
+
       - name: Run authenticity assertion gate
         run: python scripts/check_authenticity_assertions.py
 
