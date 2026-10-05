@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/epigram-crosswalk.schema.json",
+  "title": "Plato Epigram Transmission Crosswalk",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "crosswalk_version",
+    "thinker_id",
+    "scope",
+    "sources",
+    "rows"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "crosswalk_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "thinker_id": {
+      "const": "TH.PLATO"
+    },
+    "scope": {
+      "const": "PAGE_MASSIMO_31_BASELINE"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "row_id",
+          "page_eg",
+          "page_fge",
+          "witnesses",
+          "attribution_target",
+          "current_catalog_id",
+          "catalog_mapping_status",
+          "pelucchi_2026_number",
+          "authenticity_review_status",
+          "notes"
+        ],
+        "properties": {
+          "row_id": {
+            "type": "string",
+            "pattern": "^TH\\.PLATO\\.EPX\\.EG_[IVXLCDM]+$"
+          },
+          "page_eg": {
+            "type": "string",
+            "pattern": "^[IVXLCDM]+$"
+          },
+          "page_fge": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "witnesses": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "scheme",
+                "reference",
+                "relation"
+              ],
+              "properties": {
+                "scheme": {
+                  "type": "string",
+                  "enum": [
+                    "AP",
+                    "APL",
+                    "DIOGENES_LAERTIUS",
+                    "ATHENAEUS",
+                    "VITA_ARISTOPHANIS",
+                    "OTHER"
+                  ]
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relation": {
+                  "type": "string",
+                  "enum": [
+                    "PRIMARY_TEXT",
+                    "PARALLEL_WITNESS",
+                    "RELATED_TEXT",
+                    "NUMBERING_CONFLICT",
+                    "PROVISIONAL_MATCH"
+                  ]
+                },
+                "attribution_label": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "attribution_target": {
+            "type": "string",
+            "enum": [
+              "PLATO_PHILOSOPHER",
+              "PLATO_YOUNGER",
+              "PLATO_COMICUS",
+              "PLATO_UNSPECIFIED",
+              "OTHER",
+              "MIXED_OR_COMPETING"
+            ]
+          },
+          "current_catalog_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^TH\\.PLATO\\.CAT\\.[A-Z0-9_]+$"
+          },
+          "catalog_mapping_status": {
+            "type": "string",
+            "enum": [
+              "MATCH",
+              "MISSING",
+              "UNRESOLVED",
+              "EXCLUDE_FROM_PHILOSOPHER_PROFILE"
+            ]
+          },
+          "pelucchi_2026_number": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "authenticity_review_status": {
+            "type": "string",
+            "enum": [
+              "NOT_STARTED",
+              "BLOCKED_ON_IDENTITY",
+              "READY_FOR_REVIEW",
+              "REVIEWED"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
