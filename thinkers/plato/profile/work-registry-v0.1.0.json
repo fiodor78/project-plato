@@ -1,0 +1,731 @@
+{
+  "schema_version": "0.1.0",
+  "registry_version": "0.1.0",
+  "thinker_id": "TH.PLATO",
+  "registry_status": "PARTIAL_FROZEN",
+  "deferred_scopes": [
+    "EPIGRAMMATA_MEMBERS"
+  ],
+  "entries": [
+    {
+      "semantic_id": "TH.PLATO.WORK.EUTHYPHRO",
+      "catalog_id": "TH.PLATO.CAT.EUTHYPHRO",
+      "code": "EUTHYPHRO",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Euthyphro",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.APOLOGY",
+      "catalog_id": "TH.PLATO.CAT.APOLOGY",
+      "code": "APOLOGY",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Apology of Socrates",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.CRITO",
+      "catalog_id": "TH.PLATO.CAT.CRITO",
+      "code": "CRITO",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Crito",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.PHAEDO",
+      "catalog_id": "TH.PLATO.CAT.PHAEDO",
+      "code": "PHAEDO",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Phaedo",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.CRATYLUS",
+      "catalog_id": "TH.PLATO.CAT.CRATYLUS",
+      "code": "CRATYLUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Cratylus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.THEAETETUS",
+      "catalog_id": "TH.PLATO.CAT.THEAETETUS",
+      "code": "THEAETETUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Theaetetus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.SOPHIST",
+      "catalog_id": "TH.PLATO.CAT.SOPHIST",
+      "code": "SOPHIST",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Sophist",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.STATESMAN",
+      "catalog_id": "TH.PLATO.CAT.STATESMAN",
+      "code": "STATESMAN",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Statesman",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.PARMENIDES",
+      "catalog_id": "TH.PLATO.CAT.PARMENIDES",
+      "code": "PARMENIDES",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Parmenides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.PHILEBUS",
+      "catalog_id": "TH.PLATO.CAT.PHILEBUS",
+      "code": "PHILEBUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Philebus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.SYMPOSIUM",
+      "catalog_id": "TH.PLATO.CAT.SYMPOSIUM",
+      "code": "SYMPOSIUM",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Symposium",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.PHAEDRUS",
+      "catalog_id": "TH.PLATO.CAT.PHAEDRUS",
+      "code": "PHAEDRUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Phaedrus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ALCIBIADES_I",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_I",
+      "code": "ALCIBIADES_I",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Alcibiades I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ALCIBIADES_II",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_II",
+      "code": "ALCIBIADES_II",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Alcibiades II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.HIPPARCHUS",
+      "catalog_id": "TH.PLATO.CAT.HIPPARCHUS",
+      "code": "HIPPARCHUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Hipparchus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.RIVAL_LOVERS",
+      "catalog_id": "TH.PLATO.CAT.RIVAL_LOVERS",
+      "code": "RIVAL_LOVERS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Rival Lovers",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.THEAGES",
+      "catalog_id": "TH.PLATO.CAT.THEAGES",
+      "code": "THEAGES",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Theages",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.CHARMIDES",
+      "catalog_id": "TH.PLATO.CAT.CHARMIDES",
+      "code": "CHARMIDES",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Charmides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.LACHES",
+      "catalog_id": "TH.PLATO.CAT.LACHES",
+      "code": "LACHES",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Laches",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.LYSIS",
+      "catalog_id": "TH.PLATO.CAT.LYSIS",
+      "code": "LYSIS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Lysis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EUTHYDEMUS",
+      "catalog_id": "TH.PLATO.CAT.EUTHYDEMUS",
+      "code": "EUTHYDEMUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Euthydemus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.PROTAGORAS",
+      "catalog_id": "TH.PLATO.CAT.PROTAGORAS",
+      "code": "PROTAGORAS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Protagoras",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.GORGIAS",
+      "catalog_id": "TH.PLATO.CAT.GORGIAS",
+      "code": "GORGIAS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Gorgias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.MENO",
+      "catalog_id": "TH.PLATO.CAT.MENO",
+      "code": "MENO",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Meno",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.HIPPIAS_MAJOR",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MAJOR",
+      "code": "HIPPIAS_MAJOR",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Hippias Major",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.HIPPIAS_MINOR",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MINOR",
+      "code": "HIPPIAS_MINOR",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Hippias Minor",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ION",
+      "catalog_id": "TH.PLATO.CAT.ION",
+      "code": "ION",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Ion",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.MENEXENUS",
+      "catalog_id": "TH.PLATO.CAT.MENEXENUS",
+      "code": "MENEXENUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Menexenus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.CLITOPHON",
+      "catalog_id": "TH.PLATO.CAT.CLITOPHON",
+      "code": "CLITOPHON",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Clitophon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.REPUBLIC",
+      "catalog_id": "TH.PLATO.CAT.REPUBLIC",
+      "code": "REPUBLIC",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Republic",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.TIMAEUS",
+      "catalog_id": "TH.PLATO.CAT.TIMAEUS",
+      "code": "TIMAEUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Timaeus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.CRITIAS",
+      "catalog_id": "TH.PLATO.CAT.CRITIAS",
+      "code": "CRITIAS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Critias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.MINOS",
+      "catalog_id": "TH.PLATO.CAT.MINOS",
+      "code": "MINOS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Minos",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.LAWS",
+      "catalog_id": "TH.PLATO.CAT.LAWS",
+      "code": "LAWS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Laws",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPINOMIS",
+      "catalog_id": "TH.PLATO.CAT.EPINOMIS",
+      "code": "EPINOMIS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epinomis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.COLLECTION.EPISTLES",
+      "catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "code": "EPISTLES",
+      "entity_kind": "COLLECTION",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistles",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_I",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_I",
+      "code": "EPISTLE_I",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_II",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_II",
+      "code": "EPISTLE_II",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_III",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_III",
+      "code": "EPISTLE_III",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle III",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_IV",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IV",
+      "code": "EPISTLE_IV",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle IV",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_V",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_V",
+      "code": "EPISTLE_V",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle V",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_VI",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VI",
+      "code": "EPISTLE_VI",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle VI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_VII",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VII",
+      "code": "EPISTLE_VII",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle VII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_VIII",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VIII",
+      "code": "EPISTLE_VIII",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle VIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_IX",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IX",
+      "code": "EPISTLE_IX",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle IX",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_X",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_X",
+      "code": "EPISTLE_X",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle X",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_XI",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XI",
+      "code": "EPISTLE_XI",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle XI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_XII",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XII",
+      "code": "EPISTLE_XII",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle XII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EPISTLE_XIII",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XIII",
+      "code": "EPISTLE_XIII",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epistle XIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.DEFINITIONES",
+      "catalog_id": "TH.PLATO.CAT.DEFINITIONES",
+      "code": "DEFINITIONES",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Definitions",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ON_JUSTICE",
+      "catalog_id": "TH.PLATO.CAT.ON_JUSTICE",
+      "code": "ON_JUSTICE",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "On Justice",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ON_VIRTUE",
+      "catalog_id": "TH.PLATO.CAT.ON_VIRTUE",
+      "code": "ON_VIRTUE",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "On Virtue",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.DEMODOCUS",
+      "catalog_id": "TH.PLATO.CAT.DEMODOCUS",
+      "code": "DEMODOCUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Demodocus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.SISYPHUS",
+      "catalog_id": "TH.PLATO.CAT.SISYPHUS",
+      "code": "SISYPHUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Sisyphus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.ERYXIAS",
+      "catalog_id": "TH.PLATO.CAT.ERYXIAS",
+      "code": "ERYXIAS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Eryxias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.AXIOCHUS",
+      "catalog_id": "TH.PLATO.CAT.AXIOCHUS",
+      "code": "AXIOCHUS",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Axiochus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.HALCYON",
+      "catalog_id": "TH.PLATO.CAT.HALCYON",
+      "code": "HALCYON",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Halcyon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.LOST.MIDON",
+      "catalog_id": "TH.PLATO.CAT.MIDON",
+      "code": "MIDON",
+      "entity_kind": "LOST_TITLE",
+      "code_status": "FROZEN",
+      "title_snapshot": "Midon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.LOST.PHAEACIANS",
+      "catalog_id": "TH.PLATO.CAT.PHAEACIANS",
+      "code": "PHAEACIANS",
+      "entity_kind": "LOST_TITLE",
+      "code_status": "FROZEN",
+      "title_snapshot": "Phaeacians",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.LOST.CHELIDON",
+      "catalog_id": "TH.PLATO.CAT.CHELIDON",
+      "code": "CHELIDON",
+      "entity_kind": "LOST_TITLE",
+      "code_status": "FROZEN",
+      "title_snapshot": "Chelidon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.LOST.SEVENTH_DAY",
+      "catalog_id": "TH.PLATO.CAT.SEVENTH_DAY",
+      "code": "SEVENTH_DAY",
+      "entity_kind": "LOST_TITLE",
+      "code_status": "FROZEN",
+      "title_snapshot": "Seventh Day",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.LOST.EPIMENIDES",
+      "catalog_id": "TH.PLATO.CAT.EPIMENIDES",
+      "code": "EPIMENIDES",
+      "entity_kind": "LOST_TITLE",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epimenides",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY"
+    },
+    {
+      "semantic_id": "TH.PLATO.COLLECTION.EPIGRAMMATA",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "code": "EPIGRAMMATA",
+      "entity_kind": "COLLECTION",
+      "code_status": "FROZEN",
+      "title_snapshot": "Epigrammata",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_14",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_14",
+      "code": "EXTRA_EPISTLE_HERCHER_14",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 14)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_15",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_15",
+      "code": "EXTRA_EPISTLE_HERCHER_15",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 15)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_24",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_24",
+      "code": "EXTRA_EPISTLE_HERCHER_24",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 24)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_25",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_25",
+      "code": "EXTRA_EPISTLE_HERCHER_25",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 25)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_26",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_26",
+      "code": "EXTRA_EPISTLE_HERCHER_26",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 26)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_30",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_30",
+      "code": "EXTRA_EPISTLE_HERCHER_30",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle (Hercher 30)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_31",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_31",
+      "code": "EXTRA_EPISTLE_HERCHER_31",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle to Philip (Hercher 31)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_70",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_70",
+      "code": "EXTRA_EPISTLE_HERCHER_70",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle to Axiochus (Hercher 70)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    },
+    {
+      "semantic_id": "TH.PLATO.WORK.EXTRA_EPISTLE_HERCHER_85",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_85",
+      "code": "EXTRA_EPISTLE_HERCHER_85",
+      "entity_kind": "WORK",
+      "code_status": "FROZEN",
+      "title_snapshot": "Extra-canonical Epistle to Dionysius (Hercher 85)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW"
+    }
+  ]
+}
