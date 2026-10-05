@@ -18,6 +18,7 @@ TARGETS = {
     ROOT / "schemas/ingestion/source-asset.schema.json": ROOT / "fixtures/phase0/ingestion",
     ROOT / "schemas/framework/thinker-profile.schema.json": ROOT / "thinkers/plato/profile",
     ROOT / "schemas/runtime/runtime-projection.schema.json": ROOT / "thinkers/plato/profile",
+    ROOT / "schemas/runtime/language-engine.schema.json": ROOT / "fixtures/phase0/runtime",
     ROOT / "schemas/annotations/discourse-annotation.schema.json": ROOT / "fixtures/phase0/annotations",
     ROOT / "thinkers/plato/catalog/catalog.schema.json": ROOT / "thinkers/plato/catalog",
 }
@@ -62,7 +63,7 @@ def main() -> int:
         print(f"\nValidation failed: {failures} schema target(s) have no valid object.")
         return 1
 
-    print("\nAll Phase 0 schema targets have at least one valid object.")
+    print("\nAll schema targets have at least one valid object.")
     return 0
 
 
