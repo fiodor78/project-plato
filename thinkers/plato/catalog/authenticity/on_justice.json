@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479e-7002-8abc-000000000032",
+  "catalog_id": "TH.PLATO.CAT.ON_JUSTICE",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.1093/oso/9780192893352.003.0005",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Jażdżewska treats On Justice in the Appendix Platonica / pseudo-Platonic dialogue corpus."
+    },
+    {
+      "source_ref": "https://doi.org/10.25205/1995-4328-2025-19-2-704-719",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Magrini's 2025 study explicitly calls On Justice an apocryphal Platonic dialogue and refers to the Platonic inauthenticity of the source material."
+    }
+  ],
+  "rationale": "On Justice belongs to the Appendix Platonica rather than the genuine Platonic corpus. Recent specialist work explicitly describes it as an apocryphal Platonic dialogue and proceeds from the inauthenticity of the Platonic attribution. D therefore records the strong modern authorship judgment without removing the dialogue from the historical attribution catalog.",
+  "assessed_at": "2026-10-05T04:55:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
