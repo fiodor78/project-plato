@@ -22,6 +22,7 @@
 - [x] Thinker Profile schema created.
 - [x] Synthetic fixtures include two witnesses, a translation, speaker assertion, acquired memory and mixed-origin inference.
 - [x] Automated validation and executable Phase 0 ingestion gate.
+- [x] Provider-neutral LanguageEngine architecture accepted; OpenRouter chosen as the preferred first production gateway with pinned routing for frozen baselines.
 
 ## Phase 0 — accepted
 
