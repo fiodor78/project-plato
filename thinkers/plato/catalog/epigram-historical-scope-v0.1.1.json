@@ -1,0 +1,874 @@
+{
+  "schema_version": "0.1.0",
+  "scope_version": "0.1.1",
+  "thinker_id": "TH.PLATO",
+  "scope_basis": "PELUCCHI_2025_SOURCE_EXPLICIT_37",
+  "scope_status": "SOURCE_COMPLETE_IDENTITY_REVIEW_ACTIVE",
+  "source_refs": [
+    "Marco Pelucchi, Gli epigrammi attribuiti a Platone: problemi ecdotici di un corpus pseudepigrafo, Atene e Roma 19 (2025), 140-157, DOI 10.7347/AR-2025-p140",
+    "Marco Pelucchi, Gli epigrammi di Platone. Studio introduttivo, edizione e commento, Milano University Press (2026), DOI 10.54103/consonanze.269"
+  ],
+  "items": [
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_5_78",
+      "logical_reference": "AP 5.78",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.78",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER",
+        "ANONYMOUS"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_78",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Agathon epigram; anonymous transmission also attested."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_5_79",
+      "logical_reference": "AP 5.79",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.79",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_79",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 7,
+      "source_anchors": [
+        "PELUCCHI_2025_P153"
+      ],
+      "notes": "Pelucchi discusses assignment to Plato and labels it FGE 4 = epigr. 7 PELUCCHI."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_5_80",
+      "logical_reference": "AP 5.80",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.80",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_80",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 8,
+      "source_anchors": [
+        "PELUCCHI_2025_P142",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Philodemus attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_99",
+      "logical_reference": "AP 7.99",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.99",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_99",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 3,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_100",
+      "logical_reference": "AP 7.100",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.100",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_100",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 4,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.ARCHEANASSA",
+      "logical_reference": "Archeanassa Platonic tradition",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.217",
+          "relation": "RELATED"
+        },
+        {
+          "scheme": "DIOGENES_LAERTIUS",
+          "reference": "3.31",
+          "relation": "PARALLEL"
+        },
+        {
+          "scheme": "ATHENAEUS",
+          "reference": "12.589c",
+          "relation": "PARALLEL"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_ARCHEANASSA",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 5,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": "Platonic version/tradition must remain distinct from naive identity with the Anthology witness."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_669",
+      "logical_reference": "AP 7.669",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.669",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_669",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 1,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_670",
+      "logical_reference": "AP 7.670",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.670",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_670",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 2,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_256",
+      "logical_reference": "AP 7.256",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.256",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "ANONYMOUS"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_256",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 11,
+      "source_anchors": [
+        "PELUCCHI_2025_P142",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_259",
+      "logical_reference": "AP 7.259",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.259",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_259",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": 10,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_265",
+      "logical_reference": "AP 7.265",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.265",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_265",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_268",
+      "logical_reference": "AP 7.268",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.268",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_268",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": "Correct Page/FGE XVIII mapping; not AP 7.368."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_7_269",
+      "logical_reference": "AP 7.269",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.269",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_269",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_6_1",
+      "logical_reference": "AP 6.1",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "6.1",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_1",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_6_43",
+      "logical_reference": "AP 6.43",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "6.43",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_43",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.COUGNY_III_33",
+      "logical_reference": "Cougny III 33",
+      "witnesses": [
+        {
+          "scheme": "COUGNY",
+          "reference": "III 33",
+          "relation": "PRIMARY"
+        },
+        {
+          "scheme": "OTHER",
+          "reference": "Vitae Aristophanis",
+          "relation": "PARALLEL"
+        },
+        {
+          "scheme": "OTHER",
+          "reference": "Olympiodorus in Plat. Alcib. I 31.11-13",
+          "relation": "PARALLEL"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_PHILOSOPHER"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_COUGNY_III_33",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": "Aristophanes epigram preserved outside the core Anthology mapping."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_506",
+      "logical_reference": "AP 9.506",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.506",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_506",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.PINDAR_TRADITION",
+      "logical_reference": "AP 7.516b ~ AP 7.35",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.516b",
+          "relation": "PRIMARY"
+        },
+        {
+          "scheme": "AP",
+          "reference": "7.35",
+          "relation": "VARIANT_WITNESS"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR",
+        "ANONYMOUS"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_PINDAR_TRADITION",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P142",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Leonidas attribution; treated as one logical witness relationship."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_51",
+      "logical_reference": "AP 9.51",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.51",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_51",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_3",
+      "logical_reference": "AP 9.3",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.3",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_3",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Competing Antipater of Thessalonica attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_44",
+      "logical_reference": "AP 9.44",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.44",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_44",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Statyllius Flaccus attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_45",
+      "logical_reference": "AP 9.45",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.45",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_45",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Statyllius Flaccus attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_359",
+      "logical_reference": "AP 9.359",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.359",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_COMICUS",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_359",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Assigned to Plato Comicus in one transmission and elsewhere to other authors."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_39",
+      "logical_reference": "AP 9.39",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.39",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_39",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Musicius attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_827",
+      "logical_reference": "AP 9.827",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.827",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_827",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Ammianus attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_823",
+      "logical_reference": "AP 9.823",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.823",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_823",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_11",
+      "logical_reference": "APl 11",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "11",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_11",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Competing Hermocreon attribution."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_13",
+      "logical_reference": "APl 13",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "13",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_13",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Current digital catalog numbers Appendix Planudea material as AP 16.13."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_210",
+      "logical_reference": "APl 210",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "210",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "PHILOSOPHER_CANDIDATE",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_210",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": null
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_747",
+      "logical_reference": "AP 9.747",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.747",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_747",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Page/Massimo homonymy layer associates this with Plato the Younger."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_826",
+      "logical_reference": "AP 9.826",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.826",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_UNSPECIFIED"
+      ],
+      "profile_relation": "MIXED_REVIEW",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_826",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Minor-sylloge attribution requires homonymy review."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_248",
+      "logical_reference": "APl 248",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "248",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER",
+        "OTHER_AUTHOR"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_248",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143",
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Page/Massimo associates this with Plato the Younger; competing attribution also exists."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_160",
+      "logical_reference": "APl 160",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "160",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_160",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Page/Massimo associates with Plato the Younger."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.APL_161",
+      "logical_reference": "APl 161",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "161",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_161",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P143"
+      ],
+      "notes": "Page/Massimo associates with Plato the Younger."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_13A",
+      "logical_reference": "AP 9.13a",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.13a",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_13A",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Explicitly transmitted as Plato the Younger."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_748",
+      "logical_reference": "AP 9.748",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.748",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_748",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Explicitly transmitted as Plato the Younger."
+    },
+    {
+      "scope_id": "TH.PLATO.EPSCOPE.AP_9_751",
+      "logical_reference": "AP 9.751",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.751",
+          "relation": "PRIMARY"
+        }
+      ],
+      "attribution_targets": [
+        "PLATO_YOUNGER"
+      ],
+      "profile_relation": "HOMONYM_EXCLUDED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_751",
+      "catalog_mapping_status": "PRESENT",
+      "pelucchi_2026_number": null,
+      "source_anchors": [
+        "PELUCCHI_2025_P144"
+      ],
+      "notes": "Explicitly transmitted as Plato the Younger."
+    }
+  ]
+}
