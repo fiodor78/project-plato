@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479e-7003-8abc-000000000033",
+  "catalog_id": "TH.PLATO.CAT.ON_VIRTUE",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.1093/oso/9780192893352.003.0005",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Jażdżewska treats On Virtue among the Appendix Platonica / pseudo-Platonic dialogues."
+    },
+    {
+      "source_ref": "https://research.rug.nl/en/publications/anonymizing-agents-of-change-in-philosophical-pseudepigraphy-the-/",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Joosse's peer-reviewed chapter explicitly studies 'Pseudo-Plato, De virtute' and its authorial strategy as philosophical pseudepigraphy."
+    },
+    {
+      "source_ref": "https://dx.doi.org/10.30965/9783657793891_003",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Donato treats On Virtue as a Platonic 'spuria' that reuses and reformulates the Meno."
+    }
+  ],
+  "rationale": "On Virtue is treated in current scholarship as a pseudo-Platonic dialogue that reworks material from Plato's Meno. Specialist studies analyze its pseudepigraphic strategies and its place in the Appendix Platonica rather than defend Platonic authorship. D is therefore appropriate.",
+  "assessed_at": "2026-10-05T04:55:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
