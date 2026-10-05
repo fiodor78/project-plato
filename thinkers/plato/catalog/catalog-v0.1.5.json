@@ -1,0 +1,4547 @@
+{
+  "schema_version": "0.1.4",
+  "catalog_version": "0.1.5",
+  "thinker_id": "TH.PLATO",
+  "sources": [
+    {
+      "source_id": "PLSRC.DL_3_57_62",
+      "citation": "Diogenes Laertius, Lives of Eminent Philosophers III.57–62 (trans. R. D. Hicks), Perseus Digital Library.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0004.tlg001.perseus-eng1:3.1",
+      "source_type": "ANCIENT_TESTIMONY",
+      "notes": "Primary ancient testimony for Thrasyllan tetralogies, thirteen Epistles, and an explicit list of spurious dialogues."
+    },
+    {
+      "source_id": "PLSRC.BURNET_V_PERSEUS",
+      "citation": "John Burnet (ed.), Platonis Opera, Tomus V: Tetralogia IX, Definitiones, et Spuria; Perseus catalog record.",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg034.perseus-grc1",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Catalog metadata records volume contents including Minos, Laws, Epinomis, Epistles, Definitiones, De iusto, De virtute, Demodocus, Sisyphus, Eryxias, Axiochus."
+    },
+    {
+      "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+      "citation": "John Burnet (ed.), Platonis Epistulae / Letters; Perseus catalog record.",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg036.opp-grc1",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Edition-level attestation for the extant thirteen-letter collection; member-level recipient metadata remains under review."
+    },
+    {
+      "source_id": "PLSRC.JAZDZEWSKA_2022",
+      "citation": "Katarzyna Jażdżewska, 'Platonic Dubia and the Appendix Platonica', in Greek Dialogue in Antiquity: Post-Platonic Transformations (Oxford University Press, 2022).",
+      "url": "https://doi.org/10.1093/oso/9780192893352.003.0005",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Modern analytical distinction between Thrasyllan dubia and extra-canonical pseudo-Platonic dialogues."
+    },
+    {
+      "source_id": "PLSRC.HALCYON_PERSEUS",
+      "citation": "Pseudo-Lucian, Halcyon, ed. Karl Jacobitz; First1KGreek / Perseus.",
+      "url": "https://beta.perseus.tufts.edu/urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1/",
+      "source_type": "CATALOG",
+      "notes": "Extant Halcyon survives in the Pseudo-Lucian textual tradition; Diogenes III.62 attests an ancient Platonic ascription while calling it spurious."
+    },
+    {
+      "source_id": "PLSRC.PERSEUS_EPIGRAMMATA",
+      "citation": "Perseus Catalog, Epigrammata under the Plato textgroup (tlg0059.tlg039).",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg039",
+      "source_type": "ANTHOLOGY",
+      "notes": "Catalog evidence for a corpus of epigrams transmitted/ascribed under Plato's name."
+    },
+    {
+      "source_id": "PLSRC.PAGE_EPIGRAMS",
+      "citation": "Denys L. Page, Further Greek Epigrams, Part 2: Epigrams ascribed to famous names of the pre-Alexandrian era (Cambridge University Press, online 2010).",
+      "url": "https://doi.org/10.1017/CBO9780511719998.005",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Reports collections of epigrams ascribed to Plato circulating before the end of the second century BCE; authenticity is a separate question."
+    },
+    {
+      "source_id": "PLSRC.BURY_EPISTLES_LOEB",
+      "citation": "R. G. Bury (trans. & intro.), Plato: Timaeus, Critias, Cleitophon, Menexenus, Epistles, Loeb Classical Library; digital transcription of the Epistles and prefatory notes.",
+      "url": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Used to verify manuscript-order letter headings/addressees and relevant prefatory notes; compared with Diogenes Laertius III.61."
+    },
+    {
+      "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+      "citation": "Anthologia Graeca Project, author page for Plato (tlg-0059), listing epigrams attributed to Plato by Greek Anthology number.",
+      "url": "https://anthologiagraeca.org/authors/51/",
+      "source_type": "ANTHOLOGY",
+      "notes": "Used as the current digital inventory of individual Greek Anthology epigrams attributed to Plato. Individual competing attributions remain subject to source review."
+    },
+    {
+      "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+      "citation": "Filippo Forcignanò and Stefano Martinelli Tempesta, 'Comparing Corpora, Rethinking Authenticity: Why Are Platonic Letters “Platonic”?', in The Making of the Platonic Corpus (Brill, 2023), pp. 203–221.",
+      "url": "https://doi.org/10.30965/9783657793891_012",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Documents extra-canonical letters attributed to Plato outside the canonical thirteen and discusses their transmission."
+    },
+    {
+      "source_id": "PLSRC.HIRSCH_2026",
+      "citation": "Tobias Hirsch, 'Putting the Platonic Letters in Order: A Pen Pal Break-Up and the Legacy of Dion', Classical Quarterly (2026).",
+      "url": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/putting-the-platonic-letters-in-order-a-pen-pal-breakup-and-the-legacy-of-dion/DDC0840A75BD5640B0628BE6D648E42A",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Explicitly enumerates nine other letters of 'Plato' outside the canonical thirteen: Hercher 14, 15, 24, 25, 26, 30, 31, 70, 85."
+    },
+    {
+      "source_id": "PLSRC.HERCHER_EPISTOLOGRAPHI_1873",
+      "citation": "Rudolf Hercher (ed.), Epistolographi Graeci (Paris: Didot, 1873), Platonic/Socratic epistolary material.",
+      "url": "https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg036.opp-grc2",
+      "source_type": "CRITICAL_EDITION",
+      "notes": "Historical editorial witness used together with modern corpus-history scholarship; not all extra-canonical letter numbering is exposed by the current Perseus CTS segmentation."
+    },
+    {
+      "source_id": "PLSRC.PELUCCHI_2025",
+      "citation": "Marco Pelucchi, 'Gli epigrammi attribuiti a Platone: problemi ecdotici di un corpus pseudepigrafo', Atene e Roma 19 (2025), 140–157.",
+      "url": "https://doi.org/10.7347/AR-2025-p140",
+      "source_type": "MODERN_SCHOLARSHIP",
+      "notes": "Source-explicit basis for the 37-item historical epigram attribution scope, transmission variants, competing attributions, and homonymy."
+    }
+  ],
+  "entries": [
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EUTHYPHRO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EUTHYPHRO",
+      "entry_type": "WORK",
+      "canonical_title": "Euthyphro",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "APOLOGY",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.APOLOGY",
+      "entry_type": "WORK",
+      "canonical_title": "Apology of Socrates",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRITO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRITO",
+      "entry_type": "WORK",
+      "canonical_title": "Crito",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHAEDO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEDO",
+      "entry_type": "WORK",
+      "canonical_title": "Phaedo",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "1.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRATYLUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRATYLUS",
+      "entry_type": "WORK",
+      "canonical_title": "Cratylus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "THEAETETUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.THEAETETUS",
+      "entry_type": "WORK",
+      "canonical_title": "Theaetetus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "SOPHIST",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SOPHIST",
+      "entry_type": "WORK",
+      "canonical_title": "Sophist",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "STATESMAN",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.STATESMAN",
+      "entry_type": "WORK",
+      "canonical_title": "Statesman",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "2.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PARMENIDES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PARMENIDES",
+      "entry_type": "WORK",
+      "canonical_title": "Parmenides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHILEBUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHILEBUS",
+      "entry_type": "WORK",
+      "canonical_title": "Philebus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "SYMPOSIUM",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SYMPOSIUM",
+      "entry_type": "WORK",
+      "canonical_title": "Symposium",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PHAEDRUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEDRUS",
+      "entry_type": "WORK",
+      "canonical_title": "Phaedrus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "3.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Alcibiades",
+        "Greater Alcibiades"
+      ],
+      "provisional_work_code": "ALCIBIADES_I",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_I",
+      "entry_type": "WORK",
+      "canonical_title": "Alcibiades I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Second Alcibiades"
+      ],
+      "provisional_work_code": "ALCIBIADES_II",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ALCIBIADES_II",
+      "entry_type": "WORK",
+      "canonical_title": "Alcibiades II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "HIPPARCHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPARCHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Hipparchus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Lovers",
+        "Rivals"
+      ],
+      "provisional_work_code": "RIVAL_LOVERS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.RIVAL_LOVERS",
+      "entry_type": "WORK",
+      "canonical_title": "Rival Lovers",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "4.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "THEAGES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.THEAGES",
+      "entry_type": "WORK",
+      "canonical_title": "Theages",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CHARMIDES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CHARMIDES",
+      "entry_type": "WORK",
+      "canonical_title": "Charmides",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LACHES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LACHES",
+      "entry_type": "WORK",
+      "canonical_title": "Laches",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LYSIS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LYSIS",
+      "entry_type": "WORK",
+      "canonical_title": "Lysis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "5.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EUTHYDEMUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EUTHYDEMUS",
+      "entry_type": "WORK",
+      "canonical_title": "Euthydemus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "PROTAGORAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PROTAGORAS",
+      "entry_type": "WORK",
+      "canonical_title": "Protagoras",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "GORGIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.GORGIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Gorgias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MENO",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MENO",
+      "entry_type": "WORK",
+      "canonical_title": "Meno",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "6.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Greater Hippias"
+      ],
+      "provisional_work_code": "HIPPIAS_MAJOR",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MAJOR",
+      "entry_type": "WORK",
+      "canonical_title": "Hippias Major",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Lesser Hippias"
+      ],
+      "provisional_work_code": "HIPPIAS_MINOR",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HIPPIAS_MINOR",
+      "entry_type": "WORK",
+      "canonical_title": "Hippias Minor",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "ION",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ION",
+      "entry_type": "WORK",
+      "canonical_title": "Ion",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MENEXENUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MENEXENUS",
+      "entry_type": "WORK",
+      "canonical_title": "Menexenus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "7.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CLITOPHON",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CLITOPHON",
+      "entry_type": "WORK",
+      "canonical_title": "Clitophon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "REPUBLIC",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.REPUBLIC",
+      "entry_type": "WORK",
+      "canonical_title": "Republic",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "TIMAEUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.TIMAEUS",
+      "entry_type": "WORK",
+      "canonical_title": "Timaeus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "CRITIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CRITIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Critias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "8.4",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "MINOS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MINOS",
+      "entry_type": "WORK",
+      "canonical_title": "Minos",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.1",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "LAWS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.LAWS",
+      "entry_type": "WORK",
+      "canonical_title": "Laws",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.2",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPINOMIS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPINOMIS",
+      "entry_type": "WORK",
+      "canonical_title": "Epinomis",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.3",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Letters",
+        "Epistulae"
+      ],
+      "provisional_work_code": "EPISTLES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "entry_type": "COLLECTION",
+      "canonical_title": "Epistles",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_TETRALOGIES",
+          "status": "INCLUDED",
+          "position": "9.4",
+          "note": "Collection occupies the fourth position of Tetralogy IX; Diogenes says it contains thirteen letters."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "THRASYLLAN_CANON"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_I",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_I",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle I",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "I",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "I",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 1,
+        "traditional_number_roman": "I",
+        "addressees": [
+          {
+            "label": "Dionysius II of Syracuse",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.DIONYSIUS_II"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_II",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_II",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle II",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "II",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "II",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 2,
+        "traditional_number_roman": "II",
+        "addressees": [
+          {
+            "label": "Dionysius II of Syracuse",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.DIONYSIUS_II"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_III",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_III",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle III",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "III",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "III",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 3,
+        "traditional_number_roman": "III",
+        "addressees": [
+          {
+            "label": "Dionysius II of Syracuse",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.DIONYSIUS_II"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_IV",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IV",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle IV",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "IV",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "IV",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 4,
+        "traditional_number_roman": "IV",
+        "addressees": [
+          {
+            "label": "Dion",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.DION"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_V",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_V",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle V",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "V",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "V",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 5,
+        "traditional_number_roman": "V",
+        "addressees": [
+          {
+            "label": "Perdiccas III of Macedon",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.PERDICCAS_III"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VI",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VI",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VI",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VI",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 6,
+        "traditional_number_roman": "VI",
+        "addressees": [
+          {
+            "label": "Hermias of Atarneus",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.HERMIAS"
+          },
+          {
+            "label": "Erastus",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.ERASTUS"
+          },
+          {
+            "label": "Coriscus",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.CORISCUS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VII",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 7,
+        "traditional_number_roman": "VII",
+        "addressees": [
+          {
+            "label": "Friends and associates of Dion",
+            "entity_kind": "GROUP",
+            "normalized_id": "PL.GROUP.DION_FRIENDS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_VIII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_VIII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle VIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "VIII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "VIII",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 8,
+        "traditional_number_roman": "VIII",
+        "addressees": [
+          {
+            "label": "Friends and associates of Dion",
+            "entity_kind": "GROUP",
+            "normalized_id": "PL.GROUP.DION_FRIENDS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_IX",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_IX",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle IX",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "IX",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "IX",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 9,
+        "traditional_number_roman": "IX",
+        "addressees": [
+          {
+            "label": "Archytas of Tarentum",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.ARCHYTAS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_X",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": "Addressee verified from the transmitted letter heading; ancient grouped testimony preserves the variant Aristodemus.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_X",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle X",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "X",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "X",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 10,
+        "traditional_number_roman": "X",
+        "addressees": [
+          {
+            "label": "Aristodorus",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.ARISTODORUS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED_WITH_VARIANT",
+        "variant_notes": [
+          "Diogenes Laertius III.61 gives Aristodemus in his grouped addressee list, while the transmitted Letter X heading and modern editions read Aristodorus."
+        ]
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XI",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XI",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XI",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XI",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XI",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 11,
+        "traditional_number_roman": "XI",
+        "addressees": [
+          {
+            "label": "Laodamas",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.LAODAMAS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XII",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 12,
+        "traditional_number_roman": "XII",
+        "addressees": [
+          {
+            "label": "Archytas of Tarentum",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.ARCHYTAS"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPISTLE_XIII",
+      "parent_catalog_id": "TH.PLATO.CAT.EPISTLES",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPISTLE_XIII",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epistle XIII",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "THRASYLLAN_EPISTLES",
+          "status": "INCLUDED",
+          "position": "XIII",
+          "note": "Diogenes attests a collection of thirteen Epistles; modern member numbering is aligned through the extant edited collection."
+        },
+        {
+          "source_id": "PLSRC.BURNET_EPISTLES_PERSEUS",
+          "system": "BURNET_EPISTLES",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": "XIII",
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "epistolary_metadata": {
+        "letter_number": 13,
+        "traditional_number_roman": "XIII",
+        "addressees": [
+          {
+            "label": "Dionysius II of Syracuse",
+            "entity_kind": "PERSON",
+            "normalized_id": "PL.PERSON.DIONYSIUS_II"
+          }
+        ],
+        "source_refs": [
+          "PLSRC.DL_3_57_62",
+          "PLSRC.BURY_EPISTLES_LOEB"
+        ],
+        "addressee_review_status": "SOURCE_VERIFIED",
+        "variant_notes": []
+      },
+      "scope_classes": [
+        "THRASYLLAN_COLLECTION_MEMBER"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "DEFINITIONES",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.DEFINITIONES",
+      "entry_type": "WORK",
+      "canonical_title": "Definitions",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "De iusto"
+      ],
+      "provisional_work_code": "ON_JUSTICE",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ON_JUSTICE",
+      "entry_type": "WORK",
+      "canonical_title": "On Justice",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "De virtute"
+      ],
+      "provisional_work_code": "ON_VIRTUE",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ON_VIRTUE",
+      "entry_type": "WORK",
+      "canonical_title": "On Virtue",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "DEMODOCUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.DEMODOCUS",
+      "entry_type": "WORK",
+      "canonical_title": "Demodocus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Acephali"
+      ],
+      "provisional_work_code": "SISYPHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SISYPHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Sisyphus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Erasistratus"
+      ],
+      "provisional_work_code": "ERYXIAS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.ERYXIAS",
+      "entry_type": "WORK",
+      "canonical_title": "Eryxias",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "AXIOCHUS",
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.AXIOCHUS",
+      "entry_type": "WORK",
+      "canonical_title": "Axiochus",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "TEXT_CANDIDATE",
+      "attestations": [
+        {
+          "source_id": "PLSRC.BURNET_V_PERSEUS",
+          "system": "BURNET_OCT_VOL5",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": null
+        },
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Listed by Diogenes Laertius among dialogues acknowledged as spurious."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Alcyon"
+      ],
+      "provisional_work_code": "HALCYON",
+      "parent_catalog_id": null,
+      "notes": "Requires explicit profile decision on runtime inclusion because the surviving textual tradition is not the Burnet Platonic corpus.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.HALCYON",
+      "entry_type": "WORK",
+      "canonical_title": "Halcyon",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Diogenes reports the Platonic ascription while treating the work as spurious."
+        },
+        {
+          "source_id": "PLSRC.HALCYON_PERSEUS",
+          "system": "PSEUDO_LUCIAN_TRANSMISSION",
+          "status": "EDITORIALLY_INCLUDED",
+          "position": null,
+          "note": "Extant Greek text is cataloged in the Pseudo-Lucian tradition."
+        },
+        {
+          "source_id": "PLSRC.JAZDZEWSKA_2022",
+          "system": "MODERN_APPENDIX_DISCUSSION",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Discussed among pseudo-Platonic / Appendix Platonica dialogues."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION",
+        "ANCIENT_EXPLICIT_SPURIA"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Horse-breeder"
+      ],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.MIDON",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Midon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.PHAEACIANS",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Phaeacians",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.CHELIDON",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Chelidon",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.SEVENTH_DAY",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Seventh Day",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": null,
+      "parent_catalog_id": null,
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIMENIDES",
+      "entry_type": "LOST_TITLE",
+      "canonical_title": "Epimenides",
+      "survival_status": "LOST",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.DL_3_57_62",
+          "system": "DIOGENES_SPURIOUS_LIST",
+          "status": "EXPLICITLY_SPURIOUS",
+          "position": null,
+          "note": "Ancient title attested as spurious; no production text is currently known to survive."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANCIENT_EXPLICIT_SPURIA",
+        "LOST_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Epigrams"
+      ],
+      "provisional_work_code": "EPIGRAMMATA",
+      "parent_catalog_id": null,
+      "notes": "Individual epigrams and competing attributions must be resolved before catalog freeze.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "entry_type": "ANTHOLOGY_COLLECTION",
+      "canonical_title": "Epigrammata",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PERSEUS_EPIGRAMMATA",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Perseus catalogs an Epigrammata work under the Plato textgroup."
+        },
+        {
+          "source_id": "PLSRC.PAGE_EPIGRAMS",
+          "system": "HISTORICAL_EPIGRAM_COLLECTIONS",
+          "status": "ASCRIBED",
+          "position": null,
+          "note": "Modern scholarship reports collections ascribed to Plato circulating by the late second century BCE."
+        }
+      ],
+      "review_status": "PROVISIONAL",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_5_78",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_5_78",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 5.78",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 5.78",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 5.78",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 5.78",
+        "book": 5,
+        "epigram": 78,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_5_78",
+        "logical_reference": "AP 5.78",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "5.78",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER",
+          "ANONYMOUS"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_5_79",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_5_79",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 5.79",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 5.79",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 5.79",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 5.79",
+        "book": 5,
+        "epigram": 79,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_5_79",
+        "logical_reference": "AP 5.79",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "5.79",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 7
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_5_80",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_5_80",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 5.80",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 5.80",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 5.80",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 5.80",
+        "book": 5,
+        "epigram": 80,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_5_80",
+        "logical_reference": "AP 5.80",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "5.80",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": 8
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_6_1",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_6_1",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 6.1",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 6.1",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 6.1",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 6.1",
+        "book": 6,
+        "epigram": 1,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_6_1",
+        "logical_reference": "AP 6.1",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "6.1",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_6_43",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_6_43",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 6.43",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 6.43",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 6.43",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 6.43",
+        "book": 6,
+        "epigram": 43,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_6_43",
+        "logical_reference": "AP 6.43",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "6.43",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_99",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_99",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.99",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.99",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.99",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.99",
+        "book": 7,
+        "epigram": 99,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_99",
+        "logical_reference": "AP 7.99",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.99",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 3
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_100",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_100",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.100",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.100",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.100",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.100",
+        "book": 7,
+        "epigram": 100,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_100",
+        "logical_reference": "AP 7.100",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.100",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 4
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_256",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_256",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.256",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.256",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.256",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.256",
+        "book": 7,
+        "epigram": 256,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_256",
+        "logical_reference": "AP 7.256",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.256",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "ANONYMOUS"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": 11
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_259",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_259",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.259",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.259",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.259",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.259",
+        "book": 7,
+        "epigram": 259,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_259",
+        "logical_reference": "AP 7.259",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.259",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 10
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_265",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_265",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.265",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.265",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.265",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.265",
+        "book": 7,
+        "epigram": 265,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_265",
+        "logical_reference": "AP 7.265",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.265",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_268",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_268",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.268",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.268",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.268",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.268",
+        "book": 7,
+        "epigram": 268,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_268",
+        "logical_reference": "AP 7.268",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.268",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_269",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_269",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.269",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.269",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.269",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.269",
+        "book": 7,
+        "epigram": 269,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_269",
+        "logical_reference": "AP 7.269",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.269",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_669",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_669",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.669",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.669",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.669",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.669",
+        "book": 7,
+        "epigram": 669,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_669",
+        "logical_reference": "AP 7.669",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.669",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 1
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_7_670",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_7_670",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 7.670",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 7.670",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.670",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 7.670",
+        "book": 7,
+        "epigram": 670,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_7_670",
+        "logical_reference": "AP 7.670",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.670",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": 2
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_3",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_3",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.3",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.3",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.3",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.3",
+        "book": 9,
+        "epigram": 3,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_3",
+        "logical_reference": "AP 9.3",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.3",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_39",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_39",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.39",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.39",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.39",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.39",
+        "book": 9,
+        "epigram": 39,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_39",
+        "logical_reference": "AP 9.39",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.39",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_51",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_51",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.51",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.51",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.51",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.51",
+        "book": 9,
+        "epigram": 51,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_51",
+        "logical_reference": "AP 9.51",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.51",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_506",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_506",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.506",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.506",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.506",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.506",
+        "book": 9,
+        "epigram": 506,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_506",
+        "logical_reference": "AP 9.506",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.506",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_747",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_747",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.747",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.747",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.747",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.747",
+        "book": 9,
+        "epigram": 747,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_747",
+        "logical_reference": "AP 9.747",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.747",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_823",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_823",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.823",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.823",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.823",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.823",
+        "book": 9,
+        "epigram": 823,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_823",
+        "logical_reference": "AP 9.823",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.823",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_826",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_826",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.826",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 9.826",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.826",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 9.826",
+        "book": 9,
+        "epigram": 826,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_826",
+        "logical_reference": "AP 9.826",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.826",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_16_13",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_16_13",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 16.13",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 16.13",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 13",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 16.13",
+        "book": 16,
+        "epigram": 13,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED",
+        "competing_attribution": null
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_13",
+        "logical_reference": "APl 13",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "13",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_16_248",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Also attributed in the anthology tradition to Antipater.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_16_248",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 16.248",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.ANTHOLOGIA_GRAECA_PROJECT",
+          "system": "ANTHOLOGICAL_ASCRIPTION",
+          "status": "ASCRIBED",
+          "position": "AP 16.248",
+          "note": "Listed under Plato by the Anthologia Graeca Project."
+        },
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 248",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "ANTHOLOGICAL_ASCRIPTION",
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "anthology_metadata": {
+        "reference_scheme": "GREEK_ANTHOLOGY",
+        "reference": "AP 16.248",
+        "book": 16,
+        "epigram": 248,
+        "source_refs": [
+          "PLSRC.ANTHOLOGIA_GRAECA_PROJECT"
+        ],
+        "attribution_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "competing_attribution": "Also attributed in the anthology tradition to Antipater."
+      },
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_248",
+        "logical_reference": "APl 248",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "248",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 14"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_14",
+      "parent_catalog_id": null,
+      "notes": "Letter of recommendation for Georgios in the extra-canonical epistolographic tradition; indisputably spurious in current corpus-history scholarship.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_14",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 14)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 14",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 14",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 15"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_15",
+      "parent_catalog_id": null,
+      "notes": "Letter of recommendation for Callimachus in the extra-canonical epistolographic tradition; indisputably spurious in current corpus-history scholarship.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_15",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 15)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 15",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 15",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 24"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_24",
+      "parent_catalog_id": null,
+      "notes": "Extra-canonical Platonic epistle transmitted outside the canonical thirteen; detailed recipient/content metadata remains to be normalized from the direct edition.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_24",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 24)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 24",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 24",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 25"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_25",
+      "parent_catalog_id": null,
+      "notes": "Brief recommendation letter for Krinis to an unnamed addressee according to modern corpus-history scholarship.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_25",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 25)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 25",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 25",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 26"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_26",
+      "parent_catalog_id": null,
+      "notes": "Extra-canonical letter praising an unnamed recipient's friendship with Dionysius II according to modern corpus-history scholarship.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_26",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 26)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 26",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 26",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 30"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_30",
+      "parent_catalog_id": null,
+      "notes": "Extra-canonical Socratic/Platonic epistle preserved outside the canonical thirteen; detailed metadata remains to be normalized from the direct edition.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_30",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle (Hercher 30)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 30",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 30",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 31"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_31",
+      "parent_catalog_id": null,
+      "notes": "Letter attributed to Plato and addressed to Philip II; modern scholarship discusses its relation to Speusippus' letter to Philip.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_31",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle to Philip (Hercher 31)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 31",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 31",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 70"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_70",
+      "parent_catalog_id": null,
+      "notes": "Very brief advice letter headed Plato to Axiochus in the later epistolographic tradition.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_70",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle to Axiochus (Hercher 70)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 70",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 70",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [
+        "Hercher Epistle 85"
+      ],
+      "provisional_work_code": "EXTRA_EPISTLE_HERCHER_85",
+      "parent_catalog_id": null,
+      "notes": "Very brief later epistle headed Plato to Dionysius in the epistolographic tradition.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EXTRA_EPISTLE_HERCHER_85",
+      "entry_type": "WORK",
+      "canonical_title": "Extra-canonical Epistle to Dionysius (Hercher 85)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.HIRSCH_2026",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 85",
+          "note": "Enumerated among letters of 'Plato' outside the canonical collection of thirteen."
+        },
+        {
+          "source_id": "PLSRC.FORCIGNANO_MARTINELLI_2023",
+          "system": "EXTRA_CANONICAL_EPISTOLOGRAPHY",
+          "status": "ASCRIBED",
+          "position": "Hercher 85",
+          "note": "Discussed in the corpus-history study of Platonic epistolography."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EXTRA_CANONICAL_EXTANT_ATTRIBUTION"
+      ]
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_ARCHEANASSA",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Platonic version/tradition must remain distinct from naive identity with the Anthology witness.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_ARCHEANASSA",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram — Archeanassa Platonic tradition",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "Archeanassa Platonic tradition",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.ARCHEANASSA",
+        "logical_reference": "Archeanassa Platonic tradition",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.217",
+            "relation": "RELATED"
+          },
+          {
+            "scheme": "DIOGENES_LAERTIUS",
+            "reference": "3.31",
+            "relation": "PARALLEL"
+          },
+          {
+            "scheme": "ATHENAEUS",
+            "reference": "12.589c",
+            "relation": "PARALLEL"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": 5
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_COUGNY_III_33",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Aristophanes epigram preserved outside the core Anthology mapping.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_COUGNY_III_33",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram Cougny III 33",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "Cougny III 33",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.COUGNY_III_33",
+        "logical_reference": "Cougny III 33",
+        "witnesses": [
+          {
+            "scheme": "COUGNY",
+            "reference": "III 33",
+            "relation": "PRIMARY"
+          },
+          {
+            "scheme": "OTHER",
+            "reference": "Vitae Aristophanis",
+            "relation": "PARALLEL"
+          },
+          {
+            "scheme": "OTHER",
+            "reference": "Olympiodorus in Plat. Alcib. I 31.11-13",
+            "relation": "PARALLEL"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_PHILOSOPHER"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_VARIANT",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_PINDAR_TRADITION",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Competing Leonidas attribution; treated as one logical witness relationship.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_PINDAR_TRADITION",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram — Pindar transmission (AP 7.516b ~ 7.35)",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 7.516b ~ AP 7.35",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.PINDAR_TRADITION",
+        "logical_reference": "AP 7.516b ~ AP 7.35",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "7.516b",
+            "relation": "PRIMARY"
+          },
+          {
+            "scheme": "AP",
+            "reference": "7.35",
+            "relation": "VARIANT_WITNESS"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR",
+          "ANONYMOUS"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_44",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Competing Statyllius Flaccus attribution.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_44",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.44",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.44",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_44",
+        "logical_reference": "AP 9.44",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.44",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_45",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Competing Statyllius Flaccus attribution.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_45",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.45",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.45",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_45",
+        "logical_reference": "AP 9.45",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.45",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_359",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Assigned to Plato Comicus in one transmission and elsewhere to other authors.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_359",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.359",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.359",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_359",
+        "logical_reference": "AP 9.359",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.359",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_COMICUS",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_827",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Competing Ammianus attribution.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_827",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.827",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.827",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_827",
+        "logical_reference": "AP 9.827",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.827",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_APL_11",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Competing Hermocreon attribution.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_11",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram APl 11",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 11",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_11",
+        "logical_reference": "APl 11",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "11",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED",
+          "OTHER_AUTHOR"
+        ],
+        "profile_relation": "MIXED_REVIEW",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED_WITH_COMPETING_ATTRIBUTION",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_APL_210",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": null,
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_210",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram APl 210",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "PENDING_REVIEW",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 210",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_210",
+        "logical_reference": "APl 210",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "210",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_UNSPECIFIED"
+        ],
+        "profile_relation": "PHILOSOPHER_CANDIDATE",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "SOURCE_VERIFIED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_APL_160",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Page/Massimo associates with Plato the Younger.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_160",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram APl 160",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 160",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_160",
+        "logical_reference": "APl 160",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "160",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_APL_161",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Page/Massimo associates with Plato the Younger.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_APL_161",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram APl 161",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "APl 161",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.APL_161",
+        "logical_reference": "APl 161",
+        "witnesses": [
+          {
+            "scheme": "APL",
+            "reference": "161",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_13A",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Explicitly transmitted as Plato the Younger.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_13A",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.13a",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.13a",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_13A",
+        "logical_reference": "AP 9.13a",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.13a",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_748",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Explicitly transmitted as Plato the Younger.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_748",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.748",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.748",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_748",
+        "logical_reference": "AP 9.748",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.748",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    },
+    {
+      "alternate_titles": [],
+      "provisional_work_code": "EPIGRAM_9_751",
+      "parent_catalog_id": "TH.PLATO.CAT.EPIGRAMMATA",
+      "notes": "Explicitly transmitted as Plato the Younger.",
+      "runtime_visibility": "CUSTODIAN_ONLY",
+      "catalog_id": "TH.PLATO.CAT.EPIGRAM_9_751",
+      "entry_type": "MEMBER",
+      "canonical_title": "Epigram AP 9.751",
+      "survival_status": "EXTANT",
+      "runtime_candidacy": "CATALOG_ONLY",
+      "attestations": [
+        {
+          "source_id": "PLSRC.PELUCCHI_2025",
+          "system": "EPIGRAMMATIC_ATTRIBUTION_CORPUS",
+          "status": "ASCRIBED",
+          "position": "AP 9.751",
+          "note": "Included in Pelucchi's source-explicit 37-item corpus of epigrams attributed to Plato."
+        }
+      ],
+      "review_status": "SOURCE_VERIFIED",
+      "scope_classes": [
+        "EPIGRAMMATIC_ASCRIPTION",
+        "ANTHOLOGICAL_ASCRIPTION"
+      ],
+      "epigrammatic_metadata": {
+        "historical_scope_id": "TH.PLATO.EPSCOPE.AP_9_751",
+        "logical_reference": "AP 9.751",
+        "witnesses": [
+          {
+            "scheme": "AP",
+            "reference": "9.751",
+            "relation": "PRIMARY"
+          }
+        ],
+        "attribution_targets": [
+          "PLATO_YOUNGER"
+        ],
+        "profile_relation": "HOMONYM_EXCLUDED",
+        "source_refs": [
+          "PLSRC.PELUCCHI_2025"
+        ],
+        "identity_review_status": "HOMONYM_EXCLUDED",
+        "pelucchi_2026_number": null
+      }
+    }
+  ]
+}
