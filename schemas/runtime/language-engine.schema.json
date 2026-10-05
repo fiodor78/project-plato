@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/schemas/runtime/language-engine.schema.json",
+  "title": "LanguageEngine Configuration",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "engine_config_id",
+    "gateway",
+    "model",
+    "routing",
+    "privacy",
+    "audit"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "engine_config_id": {
+      "type": "string",
+      "pattern": "^LE\\.[A-Z0-9_.-]+$"
+    },
+    "gateway": {
+      "type": "string",
+      "enum": [
+        "OPENROUTER",
+        "DIRECT_PROVIDER",
+        "MOCK"
+      ]
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "allow_fallbacks",
+        "require_parameters"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "FIXED",
+            "ORDERED",
+            "AUTO"
+          ]
+        },
+        "providers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "allow_fallbacks": {
+          "type": "boolean"
+        },
+        "require_parameters": {
+          "type": "boolean"
+        },
+        "max_price_usd_per_million_tokens": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "training_allowed",
+        "zdr_required"
+      ],
+      "properties": {
+        "training_allowed": {
+          "type": "boolean"
+        },
+        "zdr_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "inference_parameters": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_input_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "max_output_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "max_cost_usd_per_request": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_requested_model",
+        "record_resolved_model",
+        "record_resolved_provider",
+        "record_usage",
+        "record_cost"
+      ],
+      "properties": {
+        "record_requested_model": {
+          "const": true
+        },
+        "record_resolved_model": {
+          "const": true
+        },
+        "record_resolved_provider": {
+          "const": true
+        },
+        "record_usage": {
+          "const": true
+        },
+        "record_cost": {
+          "const": true
+        }
+      }
+    }
+  }
+}
