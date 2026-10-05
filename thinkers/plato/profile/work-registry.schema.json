@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/work-registry.schema.json",
+  "title": "Plato Work-Code Registry",
+  "version": "0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registry_version",
+    "thinker_id",
+    "registry_status",
+    "deferred_scopes",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "registry_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "thinker_id": {
+      "const": "TH.PLATO"
+    },
+    "registry_status": {
+      "const": "PARTIAL_FROZEN"
+    },
+    "deferred_scopes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "EPIGRAMMATA_MEMBERS"
+        ]
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "semantic_id",
+          "catalog_id",
+          "code",
+          "entity_kind",
+          "code_status",
+          "title_snapshot",
+          "survival_status",
+          "runtime_candidacy"
+        ],
+        "properties": {
+          "semantic_id": {
+            "type": "string",
+            "pattern": "^TH\\.PLATO\\.(WORK|COLLECTION|LOST)\\.[A-Z0-9_]+$"
+          },
+          "catalog_id": {
+            "type": "string",
+            "pattern": "^TH\\.PLATO\\.CAT\\.[A-Z0-9_]+$"
+          },
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+          },
+          "entity_kind": {
+            "type": "string",
+            "enum": [
+              "WORK",
+              "COLLECTION",
+              "LOST_TITLE"
+            ]
+          },
+          "code_status": {
+            "const": "FROZEN"
+          },
+          "title_snapshot": {
+            "type": "string",
+            "minLength": 1
+          },
+          "survival_status": {
+            "type": "string",
+            "enum": [
+              "EXTANT",
+              "LOST",
+              "FRAGMENTARY",
+              "UNKNOWN"
+            ]
+          },
+          "runtime_candidacy": {
+            "type": "string",
+            "enum": [
+              "TEXT_CANDIDATE",
+              "CATALOG_ONLY",
+              "PENDING_REVIEW"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
