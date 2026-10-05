@@ -44,7 +44,7 @@ https://doi.org/10.1515/9783110684629-004
 | XV | XV | AP 9.51 | `TH.PLATO.CAT.EPIGRAM_9_51` | MATCH |
 | XVI | XVI | “AP 9.823” / minor sylloge | `TH.PLATO.CAT.EPIGRAM_9_823` | MATCH |
 | XVII | XVII | AP 16.13 | `TH.PLATO.CAT.EPIGRAM_16_13` | MATCH |
-| XVIII | XVIII | AP 7.368 | no current record | MISSING |
+| XVIII | XVIII | **AP 7.268** | `TH.PLATO.CAT.EPIGRAM_7_268` | **MATCH — corrected from erroneous AP 7.368 extraction** |
 | XIX | XIX | AP 7.265 | `TH.PLATO.CAT.EPIGRAM_7_265` | MATCH |
 | XX | XX | AP 7.269 | `TH.PLATO.CAT.EPIGRAM_7_269` | MATCH |
 | XXI | XXI | AP 6.43 | `TH.PLATO.CAT.EPIGRAM_6_43` | MATCH |
@@ -61,10 +61,9 @@ https://doi.org/10.1515/9783110684629-004
 
 ## Current catalog items not accounted for by the Page/Massimo 31 baseline
 
-Three current PROJECT PLATO member records do not appear as exact references in the Massimo/Page prospectus:
+Two current PROJECT PLATO member records required special handling in the first crosswalk:
 
 - AP 5.78
-- AP 7.268
 - AP 9.3
 
 These must **not** be deleted. Later and broader scholarship clearly treats at least these references as part of the historical Plato-attribution problem.
@@ -72,7 +71,7 @@ These must **not** be deleted. Later and broader scholarship clearly treats at l
 In particular:
 
 - current scholarship commonly cites the Agathon kiss epigram as **AP 5.78**, while the extracted Massimo table prints **AP 5.77** for EG III;
-- Pelucchi's 2025 overview explicitly includes AP 7.268 among the three shipwreck epigrams;
+- the first machine extraction incorrectly read EG XVIII as AP 7.368; independent scholarly citation gives **AP 7.268 = FGE XVIII 640**, so v0.1.1 maps EG XVIII to the already existing AP 7.268 record;
 - other modern scholarship explicitly discusses AP 9.3 as “Plato” or Antipater of Thessalonica.
 
 This indicates an editorial-numbering / transmission-scope problem, not merely a bad catalog scrape.
@@ -146,3 +145,17 @@ Before modifying the production catalog:
 The Page/Massimo baseline proves that the current 23-member `Epigrammata` inventory is incomplete and also that simple “author = Plato” metadata is insufficient.
 
 The next catalog version should be driven by a **transmission crosswalk**, not by one anthology's author index.
+
+## EG XVIII correction
+
+Crosswalk v0.1.0 inherited **AP 7.368** from a machine-readable extraction of the Massimo/Page table. This was incorrect.
+
+Independent scholarship on the seventh book of the Anthologia Palatina identifies the Platonic item as:
+
+`AP 7.268 = FGE XVIII 640`.
+
+By contrast, AP 7.368 is transmitted as an epigram of Erycius.
+
+Crosswalk v0.1.1 therefore changes EG XVIII to AP 7.268 and maps it to the existing catalog record `TH.PLATO.CAT.EPIGRAM_7_268`.
+
+This correction reduces Page-baseline `MISSING` rows from four to three and demonstrates why automated source cross-checks are required before catalog expansion.
