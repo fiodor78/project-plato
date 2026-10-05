@@ -38,6 +38,9 @@ jobs:
       - name: Run epigram migration-plan gate
         run: python scripts/check_epigram_migration_plan.py
 
+      - name: Run epigram historical-scope gate
+        run: python scripts/check_epigram_historical_scope.py
+
       - name: Run work-code registry gate
         run: python scripts/check_work_registry.py
 
