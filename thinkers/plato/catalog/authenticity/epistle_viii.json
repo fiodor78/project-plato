@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-47a0-7002-8abc-000000000072",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_VIII",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "C",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://doi.org/10.1017/S0009838820000141",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Atack (2020) explicitly treats the Eighth Letter as pseudo-Platonic and analyses it as a later response to Plato's literary method and political thought."
+    },
+    {
+      "source_ref": "https://www.rep.routledge.com/articles/biographical/plato-427-347-bc/v-1/sections/authenticity-and-chronology",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Schofield notes that the Eighth Letter is a case where historical problems may provide unusually strong grounds against authenticity."
+    },
+    {
+      "source_ref": "https://doi.org/10.1017/S0048671X00001946",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "MIXED",
+      "note": "Wohl's survey records that the Seventh and Eighth Letters had often been accepted as genuine in twentieth-century scholarship, demonstrating that the Eighth has a stronger historical claim than the extra-canonical spuria."
+    }
+  ],
+  "rationale": "Recent specialist work treats the Eighth Letter as pseudo-Platonic and emphasizes historical problems, but the work enjoyed substantial scholarly acceptance in earlier modern scholarship. PROJECT PLATO therefore uses C — probably inauthentic — rather than D, preserving the difference between a historically serious disputed attribution and the clearest pseudo-Platonic spuria.",
+  "assessed_at": "2026-10-05T05:25:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
