@@ -99,3 +99,9 @@ The corpus and initial memory state may be identical while the language engine d
 - Expensive models can be reserved for benchmark or difficult-reasoning runs.
 - Runtime reproducibility requires stricter provider pinning than an ordinary consumer chatbot.
 - Model/provider metadata becomes part of the audit record, not the thinker's epistemic world.
+
+## References
+
+- OpenRouter provider routing: https://openrouter.ai/docs/features/provider-routing
+- OpenRouter privacy policy: https://openrouter.ai/privacy
+- OpenRouter Zero Data Retention overview: https://openrouter.ai/blog/insights/zero-data-retention/
