@@ -39,7 +39,7 @@
 - [x] Create initial 63-entry catalog inventory and automated structural gate.
 - [x] Define modern-authenticity assessment methodology and assertion schema.
 - [x] Verify all 13 Epistle addressees and preserve the Letter X Aristodemus/Aristodorus variant.
-- [ ] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, Appendix Platonica, ancient spurious/lost attributions).
+- [x] Define and freeze the historical corpus-scope taxonomy (Thrasyllian canon, extra-canonical extant attributions, ancient spuria/lost titles, anthological attributions).
 - [ ] Build the full Corpus Platonicum catalog.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
