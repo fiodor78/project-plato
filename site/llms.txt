@@ -42,7 +42,7 @@ Key principles:
 
 Current maturity:
 Phase 0 is accepted.
-Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry.
+Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry. All thirteen canonical Epistles now have provisional work-specific authenticity assessments.
 Production Greek-text ingestion has not yet begun.
 
 For automated agents:
