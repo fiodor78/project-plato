@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.4.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.5.json"
 AUTH_DIR = ROOT / "thinkers/plato/catalog/authenticity"
 
 
@@ -61,6 +61,7 @@ def main() -> int:
     require(len(assertions) >= 65, "Phase 1 authenticity coverage has reached at least 65 assessed texts")
     require(not buckets["canonical_epistles"], "all thirteen canonical Epistles have provisional authenticity assessments")
     require(not buckets["extra_canonical_epistles"], "all nine extra-canonical Epistles have provisional authenticity assessments")
+    require(len(buckets["epigrams"]) == 37, "37 unresolved epigram authenticity cases remain after catalog v0.1.5 migration")
     require(not buckets["other"], "all currently unresolved authenticity cases belong to explicitly tracked backlog groups")
 
     grades = Counter(a["classification"] for a in assertions)
