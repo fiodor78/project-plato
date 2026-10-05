@@ -445,3 +445,17 @@ The same Core/Profile architecture can later support additional thinkers without
 ## Project integrity principle
 
 When forced to choose between a more convincing simulation and a more epistemically honest one, the project chooses **epistemic honesty**.
+
+## Epigram scope status
+
+The epigram problem is now separated into **scope** and **catalog normalization**.
+
+Pelucchi's 2025 survey explicitly states that 37 epigrams are variously attributed to Plato in ancient Greek and Latin transmission. PROJECT PLATO now records those 37 as a machine-validated historical attribution scope. The existing catalog still has 23 individual Epigrammata members; 14 additional objects require normalization before catalog v0.1.5.
+
+The historical scope includes homonymous and competing attributions. Material assigned to Plato the Younger or Plato Comicus remains historically relevant to the attribution problem but is structurally excluded from automatic philosopher-Plato runtime candidacy.
+
+See:
+- `thinkers/plato/catalog/epigram-historical-scope-v0.1.0.json`
+- `docs/research/EPIGRAMMATA-HISTORICAL-SCOPE-0003.md`
+- `thinkers/plato/catalog/epigram-crosswalk-v0.1.1.json`
+
