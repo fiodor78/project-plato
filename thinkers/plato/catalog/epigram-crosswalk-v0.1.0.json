@@ -1,0 +1,633 @@
+{
+  "schema_version": "0.1.0",
+  "crosswalk_version": "0.1.0",
+  "thinker_id": "TH.PLATO",
+  "scope": "PAGE_MASSIMO_31_BASELINE",
+  "sources": [
+    "D. L. Page, Epigrammata Graeca (1975)",
+    "D. L. Page, Further Greek Epigrams (1981)",
+    "Davide Massimo, Defining a 'Pseudo-Plato' Epigrammatist (2020), DOI 10.1515/9783110684629-004",
+    "Marco Pelucchi, Gli epigrammi attribuiti a Platone (2025), DOI 10.7347/AR-2025-p140"
+  ],
+  "rows": [
+    {
+      "row_id": "TH.PLATO.EPX.EG_I",
+      "page_eg": "I",
+      "page_fge": "I",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.669",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_669",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Aster epigram."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_II",
+      "page_eg": "II",
+      "page_fge": "II",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.670",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_670",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Aster epigram."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_III",
+      "page_eg": "III",
+      "page_fge": "III",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.77",
+          "relation": "NUMBERING_CONFLICT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_UNSPECIFIED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_78",
+      "catalog_mapping_status": "UNRESOLVED",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Massimo/Page extraction gives AP 5.77; modern Plato tradition identifies the Agathon poem as AP 5.78. Do not split yet."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_IV",
+      "page_eg": "IV",
+      "page_fge": "IV",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.79",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_79",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_V",
+      "page_eg": "V",
+      "page_fge": "V",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "5.80",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "MIXED_OR_COMPETING",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_5_80",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Competing Philodemus transmission must remain visible."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_VI",
+      "page_eg": "VI",
+      "page_fge": "VI",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.100",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_100",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_VII",
+      "page_eg": "VII",
+      "page_fge": "VII",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.39",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "MIXED_OR_COMPETING",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_39",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Anthology attribution is not uniform."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_VIII",
+      "page_eg": "VIII",
+      "page_fge": "VIII",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "6.1",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_1",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_IX",
+      "page_eg": "IX",
+      "page_fge": "IX",
+      "witnesses": [
+        {
+          "scheme": "DIOGENES_LAERTIUS",
+          "reference": "3.31",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        },
+        {
+          "scheme": "ATHENAEUS",
+          "reference": "13.589c",
+          "relation": "PARALLEL_WITNESS",
+          "attribution_label": null
+        },
+        {
+          "scheme": "AP",
+          "reference": "7.217",
+          "relation": "RELATED_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "MISSING",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Archeanassa tradition; logical relationship to AP 7.217 must be normalized."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_X",
+      "page_eg": "X",
+      "page_fge": "X",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.99",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_99",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XI",
+      "page_eg": "XI",
+      "page_fge": "XI",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.259",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_259",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XII",
+      "page_eg": "XII",
+      "page_fge": "XII",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.256",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_256",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XIII",
+      "page_eg": "XIII",
+      "page_fge": "XIII",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.506",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_506",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XIV",
+      "page_eg": "XIV",
+      "page_fge": "XIV",
+      "witnesses": [
+        {
+          "scheme": "VITA_ARISTOPHANIS",
+          "reference": "52 Koster",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        },
+        {
+          "scheme": "OTHER",
+          "reference": "Olympiodorus Vita Platonis 2.70",
+          "relation": "PARALLEL_WITNESS",
+          "attribution_label": null
+        },
+        {
+          "scheme": "OTHER",
+          "reference": "Prolegomena in Platonis philosophiam 3.9",
+          "relation": "PARALLEL_WITNESS",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "MISSING",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Non-Anthology Aristophanes epigram."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XV",
+      "page_eg": "XV",
+      "page_fge": "XV",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.51",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_51",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XVI",
+      "page_eg": "XVI",
+      "page_fge": "XVI",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.823",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_UNSPECIFIED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_823",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Minor-sylloge transmission."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XVII",
+      "page_eg": "XVII",
+      "page_fge": "XVII",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "16.13",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_UNSPECIFIED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_13",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XVIII",
+      "page_eg": "XVIII",
+      "page_fge": "XVIII",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.368",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "MISSING",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XIX",
+      "page_eg": "XIX",
+      "page_fge": "XIX",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.265",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_265",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XX",
+      "page_eg": "XX",
+      "page_fge": "XX",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "7.269",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_7_269",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXI",
+      "page_eg": "XXI",
+      "page_fge": "XXI",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "6.43",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_PHILOSOPHER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_6_43",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": null
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXII",
+      "page_eg": "XXII",
+      "page_fge": "XXII(a)",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.826",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_UNSPECIFIED",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_826",
+      "catalog_mapping_status": "MATCH",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "READY_FOR_REVIEW",
+      "notes": "Minor-sylloge transmission."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXIII",
+      "page_eg": "XXIII",
+      "page_fge": "XXII(b)",
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.827",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "MIXED_OR_COMPETING",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "MISSING",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Ammonius/Plato attribution variation."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXIV",
+      "page_eg": "XXIV",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "16.248",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_16_248",
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Page associates this with Plato Junior; current catalog must not imply philosopher-Plato runtime candidacy."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXV",
+      "page_eg": "XXV",
+      "page_fge": "XXIII",
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "16.160",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Page assigns to Plato Junior."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXVI",
+      "page_eg": "XXVI",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "APL",
+          "reference": "16.161",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Page assigns to Plato Junior."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXVII",
+      "page_eg": "XXVII",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.747",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": "TH.PLATO.CAT.EPIGRAM_9_747",
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Page assigns to Plato Junior."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXVIII",
+      "page_eg": "XXVIII",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.748",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Explicit Plato the Younger heading in the transmission."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXIX",
+      "page_eg": "XXIX",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.751",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Explicit Plato the Younger heading in the transmission."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXX",
+      "page_eg": "XXX",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "AP",
+          "reference": "9.13",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "PLATO_YOUNGER",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "EXCLUDE_FROM_PHILOSOPHER_PROFILE",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Massimo/Page baseline associates this item with Plato Junior; Pelucchi 2025 cites AP 9.13a."
+    },
+    {
+      "row_id": "TH.PLATO.EPX.EG_XXXI",
+      "page_eg": "XXXI",
+      "page_fge": null,
+      "witnesses": [
+        {
+          "scheme": "DIOGENES_LAERTIUS",
+          "reference": "3.33",
+          "relation": "PRIMARY_TEXT",
+          "attribution_label": null
+        },
+        {
+          "scheme": "AP",
+          "reference": "9.44",
+          "relation": "PROVISIONAL_MATCH",
+          "attribution_label": null
+        }
+      ],
+      "attribution_target": "MIXED_OR_COMPETING",
+      "current_catalog_id": null,
+      "catalog_mapping_status": "UNRESOLVED",
+      "pelucchi_2026_number": null,
+      "authenticity_review_status": "BLOCKED_ON_IDENTITY",
+      "notes": "Gold/halter epigram; AP 9.44 match is plausible but must be verified against direct Page/Pelucchi apparatus."
+    }
+  ]
+}
