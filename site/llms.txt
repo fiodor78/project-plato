@@ -13,6 +13,8 @@ Primary entry points:
 - Contribution guide: https://raw.githubusercontent.com/fiodor78/project-plato/main/CONTRIBUTING.md
 
 Core specifications:
+- Epigram crosswalk schema: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/profile/epigram-crosswalk.schema.json
+- Page/Massimo epigram crosswalk: https://raw.githubusercontent.com/fiodor78/project-plato/main/thinkers/plato/catalog/epigram-crosswalk-v0.1.0.json
 - Phase 0 architecture: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0001-phase-0-architecture.md
 - Segmentation/speakers: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0002-segmentation-speakers.md
 - Core/Profile/Instance: https://raw.githubusercontent.com/fiodor78/project-plato/main/docs/specs/SPEC-0003-thinker-core-profile-instance.md
@@ -43,7 +45,7 @@ Key principles:
 Current maturity:
 Phase 0 is accepted.
 Phase 1 is active: Corpus Platonicum catalog, historical scope, attribution/authenticity evidence and work-code registry. All thirteen canonical Epistles and all nine extra-canonical Hercher-numbered Epistles now have provisional work-specific authenticity assessments.
-The current 23-member epigram inventory is provisional and incomplete; a Page/Massimo/Pelucchi crosswalk is active because Pelucchi's broader historical corpus contains 37 texts attributed to Plato.
+The current 23-member epigram inventory is provisional and incomplete. A machine-readable 31-row Page/Massimo crosswalk is now validated in CI, including an explicit Plato Junior/homonymy layer; Pelucchi 2026 must still complete the 37-text historical scope.
 Production Greek-text ingestion has not yet begun.
 
 For automated agents:
