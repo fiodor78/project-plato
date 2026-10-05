@@ -1,6 +1,6 @@
 # CORPUS SCOPE TAXONOMY 0001 — Plato profile
 
-**Status:** Frozen for Phase 1 catalog construction
+**Status:** Frozen for Phase 1 catalog construction; extended by ADR-0016 for epigrammatic attribution
 
 ## Purpose
 
@@ -46,7 +46,15 @@ Such entries are **catalog-only** and cannot contribute text to ORIGINAL knowled
 
 Material attributed to Plato through anthology transmission rather than the dialogue/epistle manuscript corpus.
 
-Current use: the Epigrammata collection.
+This remains a transmission-level class and may coexist with broader epigrammatic identity.
+
+### EPIGRAMMATIC_ASCRIPTION
+
+A logical epigrammatic object belongs to the historical Plato-attribution problem, regardless of whether its surviving witness is in the Greek Anthology, Appendix Planudea, Diogenes Laertius, Athenaeus, a biographical tradition, or another source.
+
+This class was added by ADR-0016 after the source-complete 37-item epigram reconstruction showed that anthology transmission alone was too narrow to represent the historical corpus.
+
+An item may carry both `EPIGRAMMATIC_ASCRIPTION` and `ANTHOLOGICAL_ASCRIPTION`. Non-anthological logical objects carry only the broader class.
 
 ## Rules
 
