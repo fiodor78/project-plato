@@ -1,12 +1,12 @@
 # EPIGRAMMATA PELUCCHI INVENTORY 0001 — source-explicit references from Pelucchi 2025
 
-**Status:** Phase 1 working inventory; incomplete by design
+**Status:** SUPERSEDED FOR SCOPE COMPLETENESS by `EPIGRAMMATA-HISTORICAL-SCOPE-0003.md`; retained as a research trail
 
 ## Purpose
 
 Record only those epigram references that can be verified directly from Marco Pelucchi's 2025 survey before the full 2026 critical-edition list is obtained.
 
-Pelucchi states that the historical corpus under Plato's name consists of **37 texts**. This document does not infer the seven not yet resolved from arithmetic; it separates source-explicit references from unresolved members.
+Pelucchi states that the historical corpus under Plato's name consists of **37 texts**. This working note was initially incomplete. Subsequent direct recovery of pp. 142–144 and p. 153 supplied the omitted AP 9.39 and AP 9.827 and confirmed AP 5.79, allowing the source-level 37-item scope to be closed without arithmetic inference.
 
 Primary source:
 Marco Pelucchi, “Gli epigrammi attribuiti a Platone: problemi ecdotici di un corpus pseudepigrafo”, *Atene e Roma* 19 (2025), 140–157.
@@ -141,3 +141,13 @@ Numbers 6 and 9 are deliberately **not filled by sequence inference**. Their lik
 The first eleven Pelucchi slots are now partially anchored, and the recovered order already demonstrates that Pelucchi's edition is not a trivial restatement of the first PROJECT PLATO digital inventory.
 
 The reconstruction should proceed by direct numbered anchors, not by assuming that Page, Diogenes, Anthologia Graeca author indexes and Pelucchi use the same order or the same logical-text boundaries.
+
+
+## Supersession note
+
+The authoritative current scope artifact is:
+
+- `thinkers/plato/catalog/epigram-historical-scope-v0.1.0.json`
+- `docs/research/EPIGRAMMATA-HISTORICAL-SCOPE-0003.md`
+
+The earlier apparent gap was caused by omission of **AP 9.39** and **AP 9.827** from this working transcription, not by an unknown AP 9.144 item. AP 9.144 is not part of the source-complete Pelucchi scope used by PROJECT PLATO.
