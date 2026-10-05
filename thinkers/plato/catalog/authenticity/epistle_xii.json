@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "assertion_id": "TH.PLATO.AUTH.01a108c0-479c-7002-8abc-000000000012",
+  "catalog_id": "TH.PLATO.CAT.EPISTLE_XII",
+  "classification_system": "PLATO_AUTHENTICITY_AD_V1",
+  "classification": "D",
+  "assessment_status": "PROVISIONAL",
+  "evidence": [
+    {
+      "source_ref": "https://www.viachrista.org/Library/Plato_Epistles_Loeb.html",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "Bury's prefatory note calls Letter XII certainly spurious and connects it with pseudo-Pythagorean Ocellus material."
+    },
+    {
+      "source_ref": "https://plato.stanford.edu/archives/fall2003/entries/archytas/",
+      "evidence_type": "MODERN_SCHOLARSHIP",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "The Stanford Encyclopedia discussion of Archytas identifies the Twelfth Letter as pseudo-Platonic in connection with a spurious Archytan letter."
+    },
+    {
+      "source_ref": "MANUSCRIPT_AUTHENTICITY_DENIAL",
+      "evidence_type": "EDITORIAL_HISTORY",
+      "direction": "AGAINST_AUTHENTICITY",
+      "note": "The Twelfth Letter is uniquely followed in the manuscript tradition by an explicit denial of Platonic authorship."
+    }
+  ],
+  "rationale": "The Twelfth Letter is exceptionally weak as a claim to Platonic authorship. Its manuscript tradition itself preserves an explicit authenticity denial, Bury treats it as certainly spurious and links it to pseudo-Pythagorean forgery, and modern scholarship continues to identify it as pseudo-Platonic. D is therefore appropriate while retaining the text in the historical attribution catalog.",
+  "assessed_at": "2026-10-05T04:35:00Z",
+  "supersedes_assertion_id": null,
+  "runtime_visibility": "CUSTODIAN_ONLY"
+}
