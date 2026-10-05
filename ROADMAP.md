@@ -49,6 +49,7 @@
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
   - [x] Classify Epistle VII as B (genuinely disputed) with evidence for both sides.
   - [x] Classify Epistle VIII as C (probably inauthentic; older acceptance preserved as reception history).
+  - [x] Complete provisional A/B/C/D coverage for all thirteen canonical Epistles.
   - [x] Classify first Thrasyllan dubia tranche: B for Alcibiades I, Hippias Major, Clitophon; C for Alcibiades II, Hipparchus, Rival Lovers, Theages, Minos, Epinomis.
   - [x] Classify Definitions, On Justice and On Virtue as high-confidence D cases.
   - [x] Classify 26 core dialogues as provisional A (strongly accepted as Platonic).
