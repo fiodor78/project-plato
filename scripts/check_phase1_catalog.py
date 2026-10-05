@@ -6,7 +6,7 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.0.json"
+CATALOG = ROOT / "thinkers/plato/catalog/catalog-v0.1.1.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -52,6 +52,38 @@ def main() -> int:
         if e["parent_catalog_id"] == "TH.PLATO.CAT.EPISTLES"
     ]
     require(len(letter_members) == 13, "Epistles collection has thirteen separately addressable members")
+
+    expected_epistle_addressees = {
+        "I": ["Dionysius II of Syracuse"],
+        "II": ["Dionysius II of Syracuse"],
+        "III": ["Dionysius II of Syracuse"],
+        "IV": ["Dion"],
+        "V": ["Perdiccas III of Macedon"],
+        "VI": ["Hermias of Atarneus", "Erastus", "Coriscus"],
+        "VII": ["Friends and associates of Dion"],
+        "VIII": ["Friends and associates of Dion"],
+        "IX": ["Archytas of Tarentum"],
+        "X": ["Aristodorus"],
+        "XI": ["Laodamas"],
+        "XII": ["Archytas of Tarentum"],
+        "XIII": ["Dionysius II of Syracuse"],
+    }
+    for letter in letter_members:
+        meta = letter.get("epistolary_metadata")
+        require(meta is not None, f"{letter['catalog_id']} has epistolary metadata")
+        numeral = meta["traditional_number_roman"]
+        labels = [a["label"] for a in meta["addressees"]]
+        require(labels == expected_epistle_addressees[numeral], f"Epistle {numeral} addressee mapping is correct")
+        require(
+            {"PLSRC.DL_3_57_62", "PLSRC.BURY_EPISTLES_LOEB"} <= set(meta["source_refs"]),
+            f"Epistle {numeral} addressee mapping has ancient and edition-level support"
+        )
+
+    epistle_x = next(e for e in letter_members if e["catalog_id"] == "TH.PLATO.CAT.EPISTLE_X")
+    require(
+        epistle_x["epistolary_metadata"]["addressee_review_status"] == "SOURCE_VERIFIED_WITH_VARIANT",
+        "Epistle X preserves Aristodemus/Aristodorus variant rather than flattening it"
+    )
 
     lost=[e for e in entries if e["survival_status"] == "LOST"]
     require(bool(lost), "catalog preserves ancient lost-title attestations")
