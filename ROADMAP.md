@@ -44,7 +44,9 @@
   - [x] Split Epigrammata into 23 individually addressable Greek Anthology attributions (provisional member inventory).
   - [x] Add nine extra-canonical epistles (Hercher 14, 15, 24, 25, 26, 30, 31, 70, 85) identified by recent corpus-history scholarship.
 - [ ] Establish profile-specific A/B/C/D attribution classifications with cited scholarly basis.
+  - [x] Add automated authenticity coverage gate and explicit unresolved queues.
   - [x] Classify Epistles I and XII as high-confidence D cases with cited evidence.
+  - [x] Classify Epistle VII as B (genuinely disputed) with evidence for both sides.
   - [x] Classify first Thrasyllan dubia tranche: B for Alcibiades I, Hippias Major, Clitophon; C for Alcibiades II, Hipparchus, Rival Lovers, Theages, Minos, Epinomis.
   - [x] Classify Definitions, On Justice and On Virtue as high-confidence D cases.
   - [x] Classify 26 core dialogues as provisional A (strongly accepted as Platonic).
